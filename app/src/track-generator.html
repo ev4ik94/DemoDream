@@ -43,7 +43,17 @@
                 </button>
 
             </div>
+            
             <div class="main-nav__buttons">
+                <div class="nav__right d-none">
+                    <div class="nav__searching">
+                        <label for="">
+                            <input type="text" class="nav__search-input input-bottom"
+                                placeholder="Поиск артистов, лейблов, треков">
+                            <a href="#"><img src="img/search.svg" alt=""></a>
+                        </label>
+                    </div>
+                </div>
                 <a href="./account-executor.html" class="main-nav__burger"><img src="img/burger.svg" alt=""></a>
             </div>
         </nav>
@@ -139,7 +149,7 @@
                 <div class="generator__buttons d-flex">
                     <div>
                         <button class="disable" id="create-compilation">Сделать подборку</button>
-                        <button class="disable" id="reset-all">Пройти опрос заново</button>
+                        <button class="disable" id="reset-all"><span>Пройти опрос </span> заново</button>
                     </div>
                     <div>
                         <button class="d-none" id="preview-question"><svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -147,7 +157,7 @@
                                 <path fill-rule="evenodd"
                                     d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                             </svg> Вернуться</button>
-                        <button class="disable" id="next-question">Следующий вопрос <svg
+                        <button class="disable button-mob" id="next-question">Следующий <span>вопрос</span><svg
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#37E7FF"
                                 class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
