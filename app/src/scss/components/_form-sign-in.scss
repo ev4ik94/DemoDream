@@ -1,0 +1,402 @@
+.cabinet {
+    transition: opacity .3s ease;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+  }
+  
+  .authentication__group_images{
+    height: 500px;
+  }
+  
+  .cabinet:not(show) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .cabinet.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .modal {
+    padding: 25px 65px 0px 0;
+    margin: 1vh auto;
+    max-width: 986px;
+    width: 100%;
+    position: relative;
+  }
+
+  .modal.show {
+    display: block;
+  }
+
+  .modal:not(show) {
+    display: none;
+  }
+  
+  .btn__close {
+    position: absolute;
+    border: none;
+    background: no-repeat;
+    top: 20px;
+    right: 0%;
+    z-index: 4;
+  }
+  
+  .btn__close svg {
+    width: 30px;
+    height: 30px;
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(224, 13, 70, 1));
+    filter: drop-shadow(0px 0px 3px rgba(224, 13, 70, 0.7));
+  }
+  
+  .btn__close:focus {
+    outline: none;
+  }
+  
+  .check {
+    background: #1D1D27;
+    border: 2px solid #D7E2FF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .check__start {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .check__title {
+    font-size: 25px;
+    line-height: 30px;
+    color: #fff;
+    padding-top: 55px;
+  }
+  
+  .check__logo {
+    right: 0;
+    padding: 25px 32px 0 0;
+  }
+  
+  .check__main {
+    width: 60%;
+    padding-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .check__stars {
+    padding-top: 20px;
+  }
+  
+  .check__stars img {
+    padding-left: 7px;
+    padding-right: 8px;
+  }
+  
+  .check__social {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .check__social p {
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+  }
+  
+  .check__right_block {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 43px;
+  }
+  
+  .social__link {
+    padding-bottom: 30px;
+  }
+  
+  .input__data {
+    padding-right: 70px;
+  }
+  
+  .input__data >  div{
+    padding: 10px 0px;
+  }
+  
+  .social__img a {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .check__input {
+    padding-bottom: 20px;
+  }
+  
+  .check__input p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+  }
+  
+  .input__data>div:last-child {
+    position: relative;
+  }
+  
+  .button__show_password {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  #forget-password {
+    border: none;
+    background: transparent;
+    color: #AFB8C1;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  #forget-password:hover {
+    text-decoration: underline;
+  }
+  
+  .input__data input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background: no-repeat;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.58);
+  }
+  
+  .input__data p {
+    font-size: 14px;
+    color: #AFB8C1;
+    max-width: 366px;
+    padding: 10px 0 25px 10px;
+  }
+  
+  .check__form_button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .check__button {
+    display: flex;
+    padding-top: 30px;
+  }
+  
+  .check__link button {
+    background: #F70E4D;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    padding: 11px 32px 10px 30px;
+    box-shadow: 0px 0px 10px rgba(247, 14, 77, 1);
+  }
+  
+  .check__link {
+    padding-right: 44px;
+  }
+  
+  .check__checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .check__checkbox input {
+    background: #FFFFFF;
+    border-radius: 1.5px;
+  }
+  
+  .check__checkbox p {
+    font-size: 11px;
+    line-height: 13px;
+    color: rgba(255, 255, 255, 0.53);
+    padding-left: 5px;
+    padding-bottom: 0 !important;
+  }
+  
+  /*.check__confidentiality {*/
+  /*  max-width: 315px;*/
+  /*}*/
+  
+  
+  .check__confidentiality p {
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.53);
+  }
+  
+  .link__confidentiality {
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.53);
+  }
+  
+  .taylor__img {
+    position: absolute;
+    top: 15%;
+    right: -10%;
+    width: 267px;
+    height: 172px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: rotate(15.51deg);
+  }
+  
+  .taylor__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  
+  
+  .israel__img {
+    position: absolute;
+    width: 214px;
+    height: 136px;
+    top: 17%;
+    right: 35%;
+    transform: rotate(-13.18deg);
+  }
+  
+  .israel__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .emiliano__img {
+    position: absolute;
+    width: 287px;
+    height: 128px;
+    top: 65%;
+    right: 14%;
+  }
+  
+  .emiliano__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .check__info {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 605px;
+  }
+  
+  .social__link a {
+    padding-left: 6px;
+    padding-right: 6px;
+    text-decoration: none;
+  }
+  
+  .check__right {
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.53);
+  }
+  
+  .confidentiality {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 43px;
+    max-width: 743px;
+  }
+  
+  .ring__end_1{
+    display: none;
+  }
+  
+  .ring__end {
+    position: absolute;
+    display: none;
+    width: 130px;
+    height: 89px;
+    right: 0px;
+    bottom: -10px;
+  }
+  
+  .ring__end img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .register__right_block .check__stars{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  
+  
+  
+  .input__data select{
+    width: 100%;
+    position: relative;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  
+  
+  .input__data select > option{
+    color: #000;
+  }
+  
+  .input__data p {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #AFB8C1;
+    padding: 10px 0 25px 10px;
+  }
+  
+  .input__data p > a{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .input__data p > a:hover{
+    text-decoration: none;
+  }
+  
+  .title__input_data {
+    font-size: 16px!important;
+    color: #fff!important;
+    padding-left: 0!important;
+  }

@@ -1,0 +1,89 @@
+.platform {
+    margin-bottom: 150px;
+    
+    &__title {
+         max-width: 730px;
+    }
+    
+    &__title > img {
+        margin-right: 20px;
+       
+    }
+    
+    &__box-item:last-child {
+        position: relative;
+        padding: 40px 42px;
+       background: url(../../img/alexandre-st-louis-IlfpKwRMln0-unsplash%201.png) center center no-repeat;
+       background-size: cover;
+       height: auto;
+       background-color: #000;
+       top: -240px;
+    }
+    
+    
+    &__box-wrapper {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: -100px;
+        
+        & > img {
+            height: auto;
+        }
+    }
+    
+    &__pic-above--horiz {
+        max-width: 500px;
+        position: relative;
+        top: -75px;
+        margin-right: 10px;
+        max-height: 463px;
+    }
+    
+     &__pic-above--vertic {
+        max-width: 350px;
+        max-height: 492px;
+    }
+    
+    &__pic-above {
+        position: absolute;
+        right: 58px;
+        top: 83px;
+        
+        & img {
+            max-width: 100%;
+            width: 429px;
+            border-radius: 10px;
+        }
+    }
+    
+    &__description-gray {
+        max-width: 460px;
+    }
+    
+    &__description-bold {
+        max-width: 600px;
+        margin-top: 57px;
+        margin-bottom: 51px;
+    }
+    
+    &__text-gray {
+        display: block;
+        max-width: 600px;
+    }
+    
+    &__button-pink {
+        padding: 14px 24px;
+        
+    }
+    
+    &__button-wrapper {
+        margin-top: 38px;
+    }
+    
+    &__text-sm {
+        margin-top: 220px;
+        max-width: 360px
+        
+    }
+}

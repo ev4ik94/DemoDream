@@ -1,0 +1,1514 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <title>Генератов треков</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="main-nav">
+            <div class="main-nav__logo">
+                <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
+            </div>
+            <div class="right-executor">
+                <p>Личный кабинет</p>
+            </div>
+            <div class="mask">
+                <div class="mask__img">
+                    <img src="./img/Mask Group.jpg" alt="">
+                </div>
+                <div class="mask__content">
+                    <div class="mask__info">
+                        <div class="mask__name">
+                            <p>Mike Fliper</p>
+                            <a href="./account-label.html">
+                                <img src="./img/online.svg" alt="">
+                            </a>
+                        </div>
+                        <span>Исполнитель</span>
+                    </div>
+                </div>
+                <button class="mask__bell">
+                    <img src="./img/bell.svg" alt="">
+                </button>
+
+            </div>
+            <div class="main-nav__buttons">
+                <a href="./account-executor.html" class="main-nav__burger"><img src="img/burger.svg" alt=""></a>
+            </div>
+        </nav>
+
+        <div class="searching">
+            <div class="searching__button">
+                <button>Топы</button>
+                <button>Чарты</button>
+            </div>
+
+            <div class="nav__right">
+                <div class="nav__searching">
+                    <label for="">
+                        <input type="text" class="nav__search-input input-bottom"
+                            placeholder="Поиск артистов, лейблов, треков">
+                        <a href="#"><img src="img/search.svg" alt=""></a>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <!--------------- BANNER GENERATOR QUESTIONS--------------------------------->
+
+        <section class="generator position-relative">
+            <div class="banner_image position-absolute"><img src="./img/nicolagypsicola-hnZYcZNiha8-unsplash%201.png"
+                    alt=""></div>
+            <div class="generator__banner position-relative">
+                <p class="generator__title">ГЕНЕРАТОР ТРЕКОВ</p>
+                <p class="generator__desc">Бесплатный генератор треков сделает для вас лучшую подборку из топовых треков
+                    различных жанров под ваше сегоднашнее настроение</p>
+                <div class="generator__stars">
+                    <ul class="d-flex">
+                        <li>
+                            <button><img src="./img/star.svg" alt=""></button>
+                        </li>
+                        <li>
+                            <button><img src="./img/star-active.svg" alt=""></button>
+                        </li>
+                        <li>
+                            <button><img src="./img/star.svg" alt=""></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="generator__question" data-quest-id="1">Каково ваше эмоциональное состояние на данный момент?
+                    Выберите подходящий ответ:</p>
+                <p class="generator__question" data-quest-id="2">Какое навправление вы обычно слушаете в такие дни?
+                    Выберите подходящий ответ:</p>
+
+                <div class="generator__block_answer_group">
+                    <div class="generator__answer d-flex" data-id="answer_group_1" data-index="1">
+                        <div class="generator__info" data-id="11">
+                            <p>01</p>
+                            <p>Подавлен(а), раздражен(а) и нестрессоустойчив(а)</p>
+                        </div>
+                        <div class="generator__info" data-id="12">
+                            <p>02</p>
+                            <p>Я в ужасе от чего-либо и испытываю сильный гнев</p>
+                        </div>
+                        <div class="generator__info" data-id="13">
+                            <p>03</p>
+                            <p>У меня бурная радость и физиологическая активность</p>
+                        </div>
+                        <div class="generator__info" data-id="14">
+                            <p>04</p>
+                            <p>Спокойствие, восстановление и гармония </p>
+                        </div>
+                    </div>
+
+                    <div class="generator__answer d-none" data-id="answer_group_2" data-index="2">
+                        <div class="generator__info" data-id="21">
+                            <p>01</p>
+                            <p>Люблю тяжелый рок на любом языке</p>
+                        </div>
+                        <div class="generator__info" data-id="22">
+                            <p>02</p>
+                            <p>Хочу хип-хоп классику в стиле Eminem</p>
+                        </div>
+                        <div class="generator__info" data-id="23">
+                            <p>03</p>
+                            <p>Не важно, подборка должна отвечать моему состоянию</p>
+                        </div>
+                        <div class="generator__info" data-id="24">
+                            <p>04</p>
+                            <p>Давайте сегодня послушаем лидеров чарта</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="generator__buttons d-flex">
+                    <div>
+                        <button class="disable" id="create-compilation">Сделать подборку</button>
+                        <button class="disable" id="reset-all">Пройти опрос заново</button>
+                    </div>
+                    <div>
+                        <button class="d-none" id="preview-question"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="#37E7FF" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                            </svg> Вернуться</button>
+                        <button class="disable" id="next-question">Следующий вопрос <svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#37E7FF"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------- RESULT GENERATOR TRACKS-------------------------->
+
+        <div id="result_generator_track" class="d-none">
+            <p class="desc-compilation">Ваше эмоциональное состояние проанализировано, музыкальные архивы перекопаны —
+                генератор определил, что вам нужно прослушать следующую подборку:</p>
+
+            <div class="compilation">
+                <div class="compilation__info">
+                    <div class="compilation__img">
+                        <img src="./img/rocket.png" alt="">
+                    </div>
+                    <p class="compilation__track-name">Ракета</p>
+                    <p class="compilation__name">Gigs </p>
+                    <p class="compilation__vote">Голоса:<span> 1000</span></p>
+                </div>
+                <div class="compilation__info">
+                    <div class="compilation__img">
+                        <img src="./img/alina.png" alt="">
+                    </div>
+                    <p class="compilation__track-name">Почему все так...</p>
+                    <p class="compilation__name">Алина Найз & Пар...</p>
+                    <p class="compilation__vote">Голоса:<span> 985</span></p>
+                </div>
+                <div class="compilation__info">
+                    <div class="compilation__img">
+                        <img src="./img/cool.png" alt="">
+                    </div>
+                    <p class="compilation__track-name">Cool</p>
+                    <p class="compilation__name">MC Longsliv </p>
+                    <p class="compilation__vote">Голоса:<span> 630</span></p>
+                </div>
+                <div class="compilation__info">
+                    <div class="compilation__img">
+                        <img src="./img/rastafaray.png" alt="">
+                    </div>
+                    <p class="compilation__track-name">Растафарай</p>
+                    <p class="compilation__name">Городские легенды </p>
+                    <p class="compilation__vote">Голоса:<span> 619</span></p>
+                </div>
+                <div class="compilation__info">
+                    <div class="compilation__img">
+                        <img src="./img/kacheli.png" alt="">
+                    </div>
+                    <p class="compilation__track-name">Качели</p>
+                    <p class="compilation__name">Зной & Lil Smitt </p>
+                    <p class="compilation__vote">Голоса:<span> 573</span></p>
+                </div>
+                <div class="compilation__info">
+                    <div class="compilation__img">
+                        <img src="./img/my-capital.png" alt="">
+                    </div>
+                    <p class="compilation__track-name">My capital</p>
+                    <p class="compilation__name">Королина & Макси... </p>
+                    <p class="compilation__vote">Голоса:<span> 490</span></p>
+                </div>
+                <div class="compilation__info">
+                    <div class="compilation__img">
+                        <img src="./img/why.png" alt="">
+                    </div>
+                    <p class="compilation__track-name">А может быть п...</p>
+                    <p class="compilation__name">Рик Хант </p>
+                    <p class="compilation__vote">Голоса:<span> 236</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!--------- TOP LIST TRACKS------------------------------>
+
+        <div class="tops">
+            <h2>Топы</h2>
+            <div>
+                <img src="./img/rings.svg" alt="">
+            </div>
+        </div>
+
+        <div class="top__list_tracks">
+            <div class="top__list_tracks__link">
+                <button>Для спорта</button>
+                <a href="#">Показать все</a>
+            </div>
+            <div class="top__list_tracks__track">
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/rocket2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Ракета</p>
+                        <p class="top__list_tracks__name">Gigs</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>1000</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/alina2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Почему все так...</p>
+                        <p class="top__list_tracks__name">Алина Найз & Пар...</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>985</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/cool2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Cool</p>
+                        <p class="top__list_tracks__name">MC Longsliv </p>
+                        <p class="top__list_tracks__vote">Голоса: <span>630</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/rastafaray2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Растафарай</p>
+                        <p class="top__list_tracks__name">Городские легенды</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>619</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/kacheli2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Качели</p>
+                        <p class="top__list_tracks__name">Качели</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>573</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/my-capital2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">My capital</p>
+                        <p class="top__list_tracks__name">Королина & Макси...</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>490</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/why2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">А может быть п...</p>
+                        <p class="top__list_tracks__name">Рик Хант</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>236</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/alina2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Почему все так...</p>
+                        <p class="top__list_tracks__name">Алина Найз & Пар...</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>985</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/cool2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Cool</p>
+                        <p class="top__list_tracks__name">MC Longsliv </p>
+                        <p class="top__list_tracks__vote">Голоса: <span>630</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/rastafaray2.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Растафарай</p>
+                        <p class="top__list_tracks__name">Городские легенды</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>619</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="top__list_tracks">
+            <div class="top__list_tracks__link">
+                <button>Для сна</button>
+                <a href="">Показать все</a>
+            </div>
+
+            <div class="top__list_tracks__track">
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/rocket3.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Ракета</p>
+                        <p class="top__list_tracks__name">Gigs</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>1000</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/alina3.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Ракета</p>
+                        <p class="top__list_tracks__name">Gigs</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>985</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/cool3.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Ракета</p>
+                        <p class="top__list_tracks__name">Gigs</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>630</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/rastafaray3.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Ракета</p>
+                        <p class="top__list_tracks__name">Gigs</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>619</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/kacheli3.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Ракета</p>
+                        <p class="top__list_tracks__name">Gigs</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>573</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/my-capital3.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Ракета</p>
+                        <p class="top__list_tracks__name">Gigs</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>490</span></p>
+                    </div>
+                </div>
+                <div class="top__list_tracks__tops">
+                    <div class="top__list_tracks__info">
+                        <div class="top__list_tracks__img">
+                            <img src="./img/why3.png" alt="">
+                        </div>
+                        <p class="top__list_tracks__track-name">Ракета</p>
+                        <p class="top__list_tracks__name">Gigs</p>
+                        <p class="top__list_tracks__vote">Голоса: <span>236</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="show__more-btn">
+            <button>Показать еще</button>
+        </div>
+    </div>
+
+    <!-------- CHARTS BLOCK---------------------------------------->
+
+    <section class="charts backgr">
+        <div class="container">
+            <h2 class="charts__title h2-title">Чарты</h2>
+            <section class="charts__tabs tabs">
+                <div class="tabs__list">
+                    <div class="tabs__buttons">
+                        <button href="#" class="tablinks button-tabs active" onclick="openCity(event, 'tracks')" data-id="tracks">По
+                            трекам</button>
+                        <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'authors')" data-id="authors">По
+                            исполнителям</button>
+                        <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'albums')" data-id="albums">По
+                            альбомам</button>
+                    </div>
+                </div>
+                <div id="tracks" class="tabcontent chart-tracks active">
+                    <a href="#" class="charts__link link-blue">Показать все</a>
+                    <div class="chart-tracks__list chart-track__list_main-cont">
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/chart1.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char1.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">Почему всё так</h4>
+                            <span class="tracks__album-author">Алина Найз & Пар</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>985</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char2.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">Cool</h4>
+                            <span class="tracks__album-author">MC Longsliv</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>630</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char3.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">Растафарай</h4>
+                            <span class="tracks__album-author">Городские легенды</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>619</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char4.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">Качели</h4>
+                            <span class="tracks__album-author">Зной & Lil Smitt</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>573</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char5.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">My capital</h4>
+                            <span class="tracks__album-author">Королина & Макси</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>490</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char6.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">А может быть п</h4>
+                            <span class="tracks__album-author">Рик Хант</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>236</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="authors" class="tabcontent chart-authors">
+                    <div class="tabs__buttons charts-buttons">
+                        <button href="#" class="inner-tablinks button-bottom active"
+                            onclick="sortThing(event, 'day')">За
+                            день</button>
+                        <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'week')">За
+                            неделю</button>
+                        <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'month')">За
+                            месяц</button>
+                        <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'year')">За
+                            год</button>
+                    </div>
+                    <div id="day" class="inner-tabcontent charts-authors__date active">
+                        <div class="charts-author__list">
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">1.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Gigs</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">2.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Алина Найз & Пар..</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">3.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">MC Longsliv</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">4.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Городские легенды</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">5.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Зной & Lil Smith</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">6.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Королина & Макси...</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">7.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Рик Хант</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="charts-author__link link-blue">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="week" class="inner-tabcontent charts-authors__date">
+                        <div class="charts-author__list">
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">1.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Gigs</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">2.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Алина Найз & Пар..</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">3.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">MC Longsliv</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">4.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Городские легенды</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">5.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Зной & Lil Smith</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">6.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Королина & Макси...</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">7.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Рик Хант</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="charts-author__link link-blue">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="month" class="inner-tabcontent charts-authors__date">
+                        <div class="charts-author__list">
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">1.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Gigs</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">2.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Алина Найз & Пар..</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">3.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">MC Longsliv</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">4.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Городские легенды</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">5.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Зной & Lil Smith</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">6.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Королина & Макси...</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">7.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Рик Хант</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="charts-author__link link-blue">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="year" class="inner-tabcontent charts-authors__date">
+                        <div class="charts-author__list">
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">1.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Gigs</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">2.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Алина Найз & Пар..</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">3.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">MC Longsliv</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">4.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Городские легенды</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">5.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Зной & Lil Smith</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">6.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Королина & Макси...</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">7.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Рик Хант</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                                </div>
+                            </div>
+                            <a href="#" class="charts-author__link link-blue">Показать все</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="albums" class="tabcontent chart-albums">
+                    <div class="charts-albums__wrapper">
+                        <div class="tabs__buttons charts-buttons">
+                            <button href="#" class="sinner-tablinks button-bottom active"
+                                onclick="sortThingByDate(event, 'sday')" data-id="sday">За день</button>
+                            <button href="#" class="sinner-tablinks button-bottom"
+                                onclick="sortThingByDate(event, 'sweek')" data-id="sweek">За неделю</button>
+                            <button href="#" class="sinner-tablinks button-bottom"
+                                onclick="sortThingByDate(event, 'smonth')" data-id="smonth">За месяц</button>
+                            <button href="#" class="sinner-tablinks button-bottom"
+                                onclick="sortThingByDate(event, 'syear')" data-id="syear">За год</button>
+                        </div>
+                        <a href="#" class="charts-albums__link link-white">Показать все </a>
+                    </div>
+                    <div id="sday" class="sinner-tabcontent charts-albums__date active">
+                        <div class="chart-tracks__list chart-track__list_cont">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album1.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album3.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album2.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album4.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album5.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album6.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album7.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="sweek" class="sinner-tabcontent charts-albums__date">
+                        <div class="chart-tracks__list chart-track__list_cont">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album1.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album3.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album2.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album4.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album5.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album6.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album7.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="smonth" class="sinner-tabcontent charts-albums__date">
+                        <div class="chart-tracks__list chart-track__list_cont">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album1.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album3.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album2.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album4.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album5.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album6.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album7.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="syear" class="sinner-tabcontent charts-albums__date">
+                        <div class="chart-tracks__list chart-track__list_cont">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album1.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album3.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album2.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album4.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album5.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album6.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album7.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- -------------TRACK MODAL-------------------- -->
+
+    <div class="track__overlay" id="modal-tracks">
+
+        <div class="modal-track position-relative">
+            <button class="btn__close close-modal-window" style="top: -50px; right: -50px;">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                            fill="#F70E4D" />
+                </svg>
+            </button>
+            <div class="modal-track__content">
+                <div class="modal-track__info">
+                    <div class="modal-track__img">
+                        <img src="./img/car-track.png" alt="">
+                    </div>
+                    <div class="modal-track__item">
+                        <div class="modal-track__desc">
+                            <h3>Ракета</h3>
+                            <p>Gigs </p>
+                            <span>2021</span>
+                        </div>
+                        <div class="modal-track__voice">
+                            <p>ГОЛОСА: <span> 1000</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-track__line"></div>
+                <div class="modal-track__track-list">
+                    <ul class="modal-track__list">
+                        <li data-time="2:08">
+                            <span>Танцпол</span>
+                        </li>
+                        <li data-time="1:24">
+                            <span>DANCE</span>
+                        </li>
+                        <li data-time="2:43">
+                            <span>Многоэтажки</span>
+                        </li>
+                        <li data-time="3:15">
+                            <span>Неоновый свет</span>
+                        </li>
+                        <li data-time="0:55">
+                            <span>Лампа</span>
+                        </li>
+                        <li data-time="1:24">
+                            <span>Этот мир</span>
+                        </li>
+                        <li data-time="4:34">
+                            <span>Моя семья</span>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="modal-track__end">
+                <p>7 аудиозаписей</p>
+                <span>19574 прослушиваний </span>
+            </div>
+        </div>
+    </div>
+
+    <!--Начало футера-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__column">
+                <div class="footer__row">
+                    <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
+                    <small class="footer__small">2020 &#169; Все права защищены</small>
+                    <a href="#" class="footer__link-underline link-underline">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__row_link">
+                    <div class="footer__row_links">
+                        <a href="#" class="footer__link link">Профиль</a>
+                        <a href="#" class="footer__link link">Трансляции</a>
+                        <a href="#" class="footer__link link">Авторство</a>
+                    </div>
+                    <div class="footer__row_links">
+                        <a href="#" class="footer__link--gray link-gray">Настройки</a>
+                        <a href="#" class="footer__link link">Помощь</a>
+                    </div>
+                </div>
+                <div class="footer__row_end">
+                    <div class="footer__row collumn__reverse">
+                        <span class="footer__text text">
+                            Загрузи демо прямо сейчас
+                        </span>
+                        <div class="footer__list">
+                            <img src="img/phone-call.svg" alt="">
+                            <a href="tel:+79152328018" class="footer__phone phone">+7(915)-232-80-18</a>
+                        </div>
+                    </div>
+                    <div class="footer__row collumn__reverse">
+                        <a href="#" class="footer__button button">
+                            Выйти
+                        </a>
+                        <div class="footer__social">
+                            <a href="#"><img src="img/instagram.svg" alt=""></a>
+                            <a href="#"><img src="img/facebook.svg" alt=""></a>
+                            <a href="#"><img src="img/telegram.svg" alt=""></a>
+                            <a href="#"><img src="img/youtube.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        const buttonGenerate = $('#create-compilation')
+        const buttonReset = $('#reset-all')
+        const buttonNext = $('#next-question')
+        const buttonPreview = $('#preview-question')
+        const questionLists = Array.from($('.generator__info[data-id]'))
+        const questionGroups = Array.from($(`.generator__answer[data-id]`));
+        const questionsText = Array.from($(`.generator__question`))
+
+
+
+        $(document).ready(function () {
+
+            const generator = new GeneratorTracks()
+
+            buttonGenerate[0].addEventListener('click', () => generator.generate())
+            buttonReset[0].addEventListener('click', () => generator.resetAll())
+            buttonNext[0].addEventListener('click', () => generator.nextQuestion())
+            buttonPreview[0].addEventListener('click', () => generator.previewQuestion())
+
+            questionLists.forEach(item => {
+
+                item.addEventListener('click', (e) => {
+                    questionLists.forEach(item => $(item).removeClass('active_item'))
+                    $(item).addClass('active_item')
+                    const id = e.currentTarget.getAttribute('data-id')
+                    generator.selectQuestion(id)
+                })
+            })
+
+            /*--------Slick Carousel----------------*/
+            $('.top__list_tracks__track').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                    {
+                        breakpoint: 460,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    }
+                ]
+            })
+
+            $('.chart-track__list_main-cont').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                    {
+                        breakpoint: 460,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    }
+                ]
+            })
+
+            $('.charts__tabs button').on('click', (e)=>{
+                const id = e.target.getAttribute('data-id')
+                const elem = $(`#${id} .chart-track__list_cont`)[0]
+
+                $(elem).slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    responsive: [{
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    },
+                        {
+                            breakpoint: 460,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                arrows: false,
+                            }
+                        }
+                    ]
+                })
+            })
+
+            /*------Open Modal Track List---------*/
+
+            $('.chart-tracks__buttons a').on('click', (e)=>{
+                e.preventDefault()
+                $('#modal-tracks').addClass('show')
+            })
+
+            $('.btn__close').on('click', (e)=>{
+                $('#modal-tracks').removeClass('show')
+            })
+
+
+        })
+
+        class GeneratorTracks {
+
+            constructor() {
+                this.state = {
+                    index: 1,
+                    totalQuestions: 2,
+                    questionSelected: false,
+                    questionsSelectId: []
+                }
+
+            }
+
+            nextQuestion() {
+                if (this.state.questionSelected) {
+                    if (this.state.index < this.state.totalQuestions) {
+                        this.state.index += 1
+                        this.state.questionSelected = false
+                        this.resetStyles()
+                        this.renderQuestions()
+                    }
+                }
+            }
+
+            previewQuestion() {
+                if (this.state.index > 1) {
+                    this.state.index -= 1
+                    this.state.questionsSelectId.pop()
+                    this.resetStyles()
+                    this.renderQuestions()
+                }
+            }
+
+            resetAll() {
+                this.state.index = 1;
+                this.state.questionSelected = false
+                this.resetStyles()
+                this.renderQuestions()
+            }
+
+            generate() {
+                this.state.index = 1;
+                this.state.questionSelected = false
+                this.state.questionsSelectId = []
+                $('#result_generator_track').removeClass('d-none')
+                $('#result_generator_track .compilation').slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    responsive: [{
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    },
+                        {
+                            breakpoint: 460,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                arrows: false,
+                            }
+                        }
+                    ]
+                })
+                this.resetStyles()
+                this.renderQuestions()
+
+            }
+
+            selectQuestion(id) {
+
+                if (this.state.questionSelected) {
+                    this.state.questionsSelectId.pop()
+                    this.state.questionsSelectId.push(id)
+                } else {
+                    this.state.questionsSelectId.push(id)
+                    this.state.questionSelected = true
+                }
+
+                this.renderQuestions()
+            }
+
+            resetStyles() {
+                questionGroups.forEach(item => $(item).addClass('d-none'))
+                questionsText.forEach(item => $(item).addClass('d-none'))
+            }
+
+            renderQuestions() {
+
+                const questionGroupCurrent = $(`.generator__answer[data-index=${this.state.index}]`);
+                const questionTextCurrent = $(`.generator__question[data-quest-id=${this.state.index}]`)
+
+                if (this.state.index > 1) {
+                    buttonPreview.removeClass('d-none')
+                } else {
+                    buttonPreview.addClass('d-none')
+                }
+
+                if (this.state.questionSelected) {
+                    buttonNext.removeClass('disable')
+                    buttonNext.addClass('active')
+                } else {
+                    buttonNext.addClass('disable')
+                    buttonNext.removeClass('active')
+                }
+
+                if (this.state.questionsSelectId.length === this.state.totalQuestions) {
+
+                    buttonGenerate.removeClass('disable')
+                    buttonGenerate.addClass('active')
+                } else {
+                    buttonGenerate.addClass('disable')
+                    buttonGenerate.removeClass('active')
+                }
+
+                if (this.state.index > 1) {
+                    buttonReset.removeClass('disable')
+                    buttonReset.addClass('active')
+                } else {
+                    buttonReset.addClass('disable')
+                    buttonReset.removeClass('active')
+                }
+                questionGroupCurrent.removeClass('d-none')
+                questionGroupCurrent.addClass('d-flex')
+                questionTextCurrent.removeClass('d-none')
+            }
+
+
+        }
+
+    </script>
+
+    <!--<script src="js/jQuery.js"></script>-->
+    <!--<script src="js/slick.js"></script>-->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

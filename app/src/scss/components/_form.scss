@@ -1,0 +1,28 @@
+.form {
+    margin-top: 103px;
+    background: url(../../img/rings-bg.svg) center right no-repeat;
+    background-size: auto;
+    
+    &__button {
+        background: transparent;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1108px;
+        margin-bottom: 93px;
+    }
+    
+    &__description {
+        margin-top: 28px;
+        margin-bottom: 55px;
+    }
+    
+    &__input {
+        max-width: 243px;
+    }
+}

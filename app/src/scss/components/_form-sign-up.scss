@@ -1,0 +1,297 @@
+.social__img{
+    display: flex;
+  }
+  
+  .social__img > a{
+    display: block;
+  }
+  .social__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  
+  .registor__executor {
+    background: #1D1D27;
+    border: 2px solid #D7E2FF;
+    box-sizing: border-box;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  
+  .registor__main .button__show_password{
+    top: 15px;
+  }
+  
+  .registor__main {
+    padding-left: 55px;
+    width: 60%;
+  }
+  
+  .registor__main form {
+    display: none;
+  }
+  
+  .registor__main .input__group{
+    padding: 10px 0px;
+  }
+  
+  .register__toggle_forms h1 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 25px;
+  }
+  
+  .register__toggle_forms{
+    padding-right: 40px;
+  }
+  
+  .registor__button button{
+    width: 130px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 9px 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease;
+  }
+  
+  .registor__button button:hover{
+    background: #37E7FF;
+    border-color: transparent;
+    color: #000;
+  }
+  
+  .registor__button button:not(active){
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  .registor__button button.active {
+    background: #37E7FF;
+    border-color: transparent;
+    color: #000;
+  }
+  
+  .registor__button {
+    display: flex;
+    padding-top: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .registor__data {
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-bottom: 30px;
+  }
+  
+  
+  
+  
+  .register__right_block{
+    width: 40%;
+  }
+  
+  .register__group_images > div:first-child{
+    width: 267px;
+    height: 170px;
+    border-radius: 5px;
+    overflow: hidden;
+    transform: rotate( 15deg);
+    right: -10%;
+    top: 18%;
+  }
+  
+  .register__group_images > div:nth-child(2){
+    width: 214px;
+    height: 146px;
+    border-radius: 5px;
+    overflow: hidden;
+    transform: rotate( -13deg);
+    top: 20%;
+    left: 0;
+  }
+  
+  .register__group_images > div:last-child{
+    width: 367px;
+    height: 310px;
+    border-radius: 5px;
+    overflow: hidden;
+    bottom: 0;
+    right: 5%;
+  }
+  
+  .register__group_images img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .register__group_images{
+    height: 650px;
+  }
+  
+  .group__privacy{
+    padding-top: 65vh;
+  }
+  
+  @media (max-width: 992px){
+
+    .authentication__group_images{
+      height: 200px;
+    }
+  
+    .check {
+      padding: 30px 20px 30px 25px;
+      flex-direction: column;
+    }
+  
+    .check__main {
+      padding-left: 0px;
+      width: 100%;
+    }
+  
+    .check__title {
+      padding-top: 0px;
+      width: 260px;
+    }
+  
+  
+    #signIn-from .ring__end {
+      left: 70%;
+      bottom: 17%;
+    }
+  
+    #signIn-from .check__social {
+      padding-top: 30px;
+      padding-bottom: 25px;
+    }
+  
+    .emiliano__img {
+      display: none;
+    }
+  
+    .input__data {
+      padding-right: 0;
+    }
+  
+    .taylor__img {
+      right: 0%;
+      top: 0;
+    }
+  
+    .israel__img {
+      top: 0;
+      left: 0;
+    }
+  
+    .check__right_block {
+      width: 100%;
+      padding-bottom: 0;
+    }
+  
+    .check__end {
+      display: flex;
+      padding-top: 20px;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+  
+    .ring__end_1{
+      display: block;
+      position: absolute;
+      left: 65%;
+      top: 17%;
+    }
+  
+    .check__logo{
+      display: none;
+    }
+  
+    .btn__close{
+      top: 50px;
+      right: 10%;
+    }
+    .modal{
+      padding: 15px;
+    }
+    .registor__executor{
+      flex-direction: column;
+    }
+  
+    .registor__main{
+      padding-left: 20px;
+    }
+  
+    .registor__main, .register__right_block{
+      width: 100%;
+    }
+  
+    .register__group_images > div:first-child{
+      right: 10%;
+      top: 18%;
+    }
+  
+    .register__group_images > div:nth-child(2){
+      top: 20%;
+      left: 10%;
+    }
+  
+    .register__group_images > div:last-child{
+      display: none;
+    }
+  
+    .register__group_images{
+      height: 200px;
+    }
+  
+    .register__right_block .check__stars{
+      justify-content: flex-start;
+      padding-top: 60px;
+    }
+  
+    .group__privacy{
+      padding-top: 10vh;
+      padding-left: 20px;
+      padding-bottom: 20px;
+    }
+  
+    #signUp-from .check__social .ring__end{
+      display: block;
+      top: 40px;
+      right: 20px;
+    }
+  
+    #signUp-from .register__right_block .ring__end{
+      display: block;
+      bottom: 120px;
+      right: 20px;
+    }
+  }
+  
+  @media (max-width: 470px){
+    .register__group_images > div:nth-child(2){
+      width: 150px;
+      left: 0;
+    }
+    .register__group_images > div:first-child{
+      width: 200px;
+      right: 0;
+    }
+  
+    .registor__button button{
+      width: 100%;
+    }
+  
+    #signUp-from .ring__end{
+      display: none!important;
+    }
+    .input__data{
+      padding-right: 20px;
+    }
+  }

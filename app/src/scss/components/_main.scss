@@ -1,0 +1,146 @@
+.main {
+    background: url(../../img/main-background.png) center center no-repeat;
+    background-size: cover;
+    padding-top: 45px;
+    padding-bottom: 36px;
+    
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+         &__button--white {
+            margin-right: 52px;
+            margin-left: 16px;
+        }
+        
+        &__burger {
+            vertical-align: middle;
+        }
+    }
+
+    
+    &__button {
+        padding: 18px 60px;
+        text-align: center;
+        margin-bottom: 101px;
+       
+    }
+    
+    &__items {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__subtitle {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 0.17em;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        padding-bottom: 67px;
+        padding-top: 51px;
+    }
+    
+    &__title {
+        font-size: 164px;
+        line-height: 200px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        
+    }
+    
+    &__description {
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 76px;
+        padding-top: 45px;
+    }
+    
+    &__social a:not(:last-child){
+        margin-right: 12px;
+    }
+}
+
+@media screen and (max-width:1231px) {
+    .main {
+        &__title {
+            font-size: 110px;
+        }
+        
+        &__subtitle {
+            padding-top: 55px;
+            padding-bottom: 24px;
+        }
+        
+        &__description {
+            padding-top: 8px;
+            margin-bottom: 40px;
+        }
+    } 
+}
+
+@media screen and (max-width:883px) {
+    .main {
+        &__title {
+            font-size: 60px;
+            line-height: 50px;
+            letter-spacing: 5px;
+        }
+    } 
+}
+
+/* ---------Шапка для авторизованного---------------------- */
+
+.mask {
+    display: flex;
+    align-items: center;
+    
+    &__img {
+        margin-right: 13px;
+    }
+
+    &__img img {
+        border-radius: 50%;
+    }
+
+    &__name {
+        display: flex;
+    }
+
+    &__name p {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #fff;
+        padding-bottom: 7px;
+        padding-right: 9px;
+    }
+
+    &__info span {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    
+    &__bell {
+        padding-left: 30px;
+    }
+}

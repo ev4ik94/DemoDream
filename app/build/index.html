@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <!----- модальное окно: вход в личный кобинет Начало------->
+
+    <div class="cabinet" id="modal-window-auth">
+        <div class="modal" id="signIn-from">
+            <button class="btn__close close-modal-window">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                        fill="#F70E4D" />
+                </svg>
+            </button>
+            <div class="check d-flex justify-content-between">
+                <div class="check__logo position-absolute">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="check__main">
+                    <div class="check__start">
+                        <h1 class="check__title">Вход в личный кабинет</h1>
+
+                    </div>
+                    <div class="check__stars">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star-active.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                    <div class="ring__end_1">
+                        <img src="./img/rings-blue.svg" alt="">
+                    </div>
+
+                    <div class="check__social">
+                        <p>Быстрый вход с помощью:</p>
+                        <div class="social__img">
+                            <a href=""><img src="./img/google.svg" alt=""></a>
+                            <a href=""><img src="./img/apple.svg" alt=""></a>
+                            <a href=""><img src="./img/facebook2.svg" alt=""></a>
+                            <a href=""><img src="./img/vk1.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                    <form class="check__input">
+                        <p>Введите свои данные</p>
+                        <div class="input__data">
+                            <div>
+                                <input placeholder="E-mail" type="text" name="email">
+                                <p class="input__desc">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                            </div>
+                            <div>
+                                <input placeholder="Пароль" type="password" name="password">
+                                <button class="button__show_password">
+                                    <img src="./img/eye.svg" alt="">
+                                </button>
+                                <button id="forget-password" class="open__modalWindow_form"
+                                    data-form="forgot_pass_form">Забыли пароль?</button>
+                            </div>
+                        </div>
+                        <div class="check__form_button">
+                            <div class="check__button">
+                                <div class="check__link">
+                                    <button type="submit">Войти</button>
+                                </div>
+
+                                <div class="check__checkbox">
+                                    <input type="checkbox">
+                                    <p>Запомнить меня</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div class="confidentiality">
+                        <div class="check__confidentiality">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с
+                                <a class="link__confidentiality" href="">условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="position-relative check__right_block">
+                    <div class="position-relative authentication__group_images">
+                        <div class="taylor__img">
+                            <img src="./img/taylor-IuckVlGbnOY-unsplash 1.png" alt="">
+                        </div>
+                        <div class="israel__img">
+                            <img src="./img/israel-palacio-BuiBnE4N31U-unsplash 1.png" alt="">
+                        </div>
+                        <div class="emiliano__img">
+                            <img src="./img/emiliano-vittoriosi-ViYQ4VsAnaw-unsplash 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="check__end">
+                        <div class="social__link">
+                            <a href="#">
+                                <img src="./img/instagram2.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/facebook3.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/telegram2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="check__right">
+                            <p>2020 © Все права защищены</p>
+                            <a href="" class="link-underline">Политика конфиденциальности</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="ring__end">
+                <img src="./img/rings-blue.svg" alt="">
+            </div>
+        </div>
+
+
+        <!------------FORM FORGOT PASSWORD------------------------------>
+
+        <div class="modal" id="forgot_pass_form">
+            <button class="btn__close close-modal-window">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                        fill="#F70E4D" />
+                </svg>
+            </button>
+            <div class="check d-flex justify-content-between">
+                <div class="check__logo position-absolute">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="check__main">
+                    <div class="check__start">
+                        <h1 class="check__title">Восстановление пароля</h1>
+
+                    </div>
+                    <div class="check__stars">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star-active.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                    <div class="ring__end_1">
+                        <img src="./img/rings-blue.svg" alt="">
+                    </div>
+
+
+                    <form class="check__input">
+
+                        <div class="input__data">
+                            <p>На почту привязанную к аккаунту будет выслано письмо с ссылкой для подтверждения смены
+                                пароля</p>
+                            <div>
+                                <input placeholder="E-mail" type="email" name="email">
+                                <p class="input__desc">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                            </div>
+                            <div class="position-relative">
+                                <input placeholder="Пароль" type="password" name="password">
+                                <button class="button__show_password">
+                                    <img src="./img/eye.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="position-relative">
+                                <input placeholder="Повторить пароль" type="password" name="repeat_password">
+                                <button class="button__show_password">
+                                    <img src="./img/eye.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="check__form_button">
+                            <div class="check__button">
+                                <div class="check__link">
+                                    <button type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div class="confidentiality">
+                        <div class="check__confidentiality">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с
+                                <a class="link__confidentiality" href="">условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="position-relative check__right_block">
+                    <div class="taylor__img">
+                        <img src="./img/taylor-IuckVlGbnOY-unsplash 1.png" alt="">
+                    </div>
+                    <div class="israel__img">
+                        <img src="./img/israel-palacio-BuiBnE4N31U-unsplash 1.png" alt="">
+                    </div>
+                    <div class="emiliano__img">
+                        <img src="./img/emiliano-vittoriosi-ViYQ4VsAnaw-unsplash 1.png" alt="">
+                    </div>
+                    <div class="check__end">
+                        <div class="social__link">
+                            <a href="#">
+                                <img src="./img/instagram2.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/facebook3.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/telegram2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="check__right">
+                            <p>2020 © Все права защищены</p>
+                            <a href="" class="link-underline">Политика конфиденциальности</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="ring__end">
+                <img src="./img/rings-blue.svg" alt="">
+            </div>
+        </div>
+
+        <!-----------------FORM SIGN-UP------------------------------->
+
+        <div class="modal" id="signUp-from">
+            <button class="btn__close close-modal-window">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                        fill="#F70E4D" />
+                </svg>
+            </button>
+            <div class="registor__executor d-flex">
+                <div class="check__logo position-absolute">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="registor__main">
+                    <div class="check__start">
+                        <h1 class="check__title">Регистрация в личном кабинете</h1>
+
+                    </div>
+                    <div class="check__stars">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star-active.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                    <div class="register__toggle_forms">
+                        <h1>Создайте собственный аккаунт на платформе и используйте все ее возможности</h1>
+                        <div class="registor__button">
+                            <button class="active" data-button="executor">Исполнитель</button>
+                            <button data-button="label">Лейбл</button>
+                            <button data-button="listener">Слушатель</button>
+                        </div>
+                    </div>
+                    <div class="check__social position-relative">
+                        <p>Быстрый вход с помощью:</p>
+                        <div class="social__img">
+                            <a href="" target="_blank"><img src="./img/google.svg" alt=""></a>
+                            <a href="" target="_blank"><img src="./img/apple.svg" alt=""></a>
+                            <a href="" target="_blank"><img src="./img/facebook2.svg" alt=""></a>
+                            <a href="" target="_blank"><img src="./img/vk1.svg" alt=""></a>
+                        </div>
+                        <div class="ring__end">
+                            <img src="./img/rings-blue.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="registor__data">Введите свои данные</p>
+                    <form action="" class="registor__input input__data d-block" id="executor">
+
+                        <div class="input__group">
+                            <input class="registor__nick" type="text" name="nick_name" placeholder="Ваш Никнейм">
+                        </div>
+                        <div class="input__group">
+                            <input class="registor__name" type="text" name="fio" placeholder="Укажите ваше ФИО">
+                        </div>
+                        <div class="input__group">
+                            <input class="registor__mail" type="email" name="email" placeholder="E-mail">
+                            <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                            <input type="password" class="register__pasword" name="password" placeholder="Пароль">
+                            <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя:
+                                латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                            <input type="password" class="register__pasword-repeat" name="password_repeat"
+                                placeholder="Повторить Пароль">
+
+                        </div>
+
+                        <div class="group__input_date">
+                            <p class="title__input_data">Дата Рождения:</p>
+                            <div class="group__input_selectors d-flex">
+                                <select data-id="pick_date_select">
+                                    <option value="" selected>День</option>
+                                </select>
+                                <select data-id="pick_month_select">
+                                    <option value="" selected>Месяц</option>
+                                </select>
+                                <select data-id="pick_year_select">
+                                    <option value="" selected>Год</option>
+                                </select>
+                            </div>
+                            <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем,
+                                это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения
+                                ваших авторских прав</p>
+                        </div>
+
+                        <div class="check__button">
+                            <div class="check__link">
+                                <button type="submit">Завершить</button>
+                            </div>
+
+                            <div class="check__checkbox">
+                                <input type="checkbox">
+                                <p>Запомнить меня</p>
+                            </div>
+                        </div>
+                        <div class="input__data">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
+
+                    </form>
+
+                    <form action="" class="registor__input input__data" id="label">
+
+                        <div class="input__group">
+                            <input type="text" name="label_name" placeholder="Название лейбла">
+                        </div>
+                        <div class="input__group">
+                            <input type="text" name="fio" placeholder="Укажите ФИО руководителя">
+                        </div>
+                        <div class="input__group">
+                            <input type="email" name="email" placeholder="E-mail">
+                            <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                            <input type="password" name="password" placeholder="Пароль">
+                            <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя:
+                                латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                            <input type="password" name="password_repeat" placeholder="Повторить Пароль">
+
+                        </div>
+
+                        <div class="group__input_date">
+                            <p class="title__input_data">Дата Рождения:</p>
+                            <div class="group__input_selectors d-flex">
+                                <select data-id="pick_date_select">
+                                    <option value="" selected>День</option>
+                                </select>
+                                <select data-id="pick_month_select">
+                                    <option value="" selected>Месяц</option>
+                                </select>
+                                <select data-id="pick_year_select">
+                                    <option value="" selected>Год</option>
+                                </select>
+                            </div>
+                            <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем,
+                                это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения
+                                ваших авторских прав</p>
+                        </div>
+
+                        <div class="check__button">
+                            <div class="check__link">
+                                <button type="submit">Завершить</button>
+                            </div>
+
+                            <div class="check__checkbox">
+                                <input type="checkbox">
+                                <p>Запомнить меня</p>
+                            </div>
+                        </div>
+                        <div class="input__data">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
+
+                    </form>
+
+                    <form action="" class="registor__input input__data" id="listener">
+
+                        <div class="input__group">
+                            <input type="text" name="user_name" placeholder="Укажите ваше имя">
+                        </div>
+                        <div class="input__group">
+                            <input type="email" name="email" placeholder="E-mail">
+                            <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                            <input type="password" name="password" placeholder="Пароль">
+                            <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя:
+                                латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                            <input type="password" name="password_repeat" placeholder="Повторить Пароль">
+
+                        </div>
+
+                        <div class="group__input_date">
+                            <p class="title__input_data">Дата Рождения:</p>
+                            <div class="group__input_selectors d-flex">
+                                <select data-id="pick_date_select">
+                                    <option value="" selected>День</option>
+                                </select>
+                                <select data-id="pick_month_select">
+                                    <option value="" selected>Месяц</option>
+                                </select>
+                                <select data-id="pick_year_select">
+                                    <option value="" selected>Год</option>
+                                </select>
+                            </div>
+                            <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем,
+                                это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения
+                                ваших авторских прав</p>
+                        </div>
+
+                        <div class="check__button">
+                            <div class="check__link">
+                                <button type="submit">Завершить</button>
+                            </div>
+
+                            <div class="check__checkbox">
+                                <input type="checkbox">
+                                <p>Запомнить меня</p>
+                            </div>
+                        </div>
+                        <div class="input__data">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="register__right_block position-relative">
+                    <div class="ring__end">
+                        <img src="./img/rings-blue.svg" alt="">
+                    </div>
+                    <div class="register__group_images position-relative">
+                        <div class="position-absolute">
+                            <img src="./img/taylor-IuckVlGbnOY-unsplash%201.png" alt="">
+                        </div>
+                        <div class="position-absolute">
+                            <img src="./img/israel-palacio-BuiBnE4N31U-unsplash%201.png" alt="">
+                        </div>
+                        <div class="position-absolute">
+                            <img src="./img/pic1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="check__stars">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star-active.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                    <div class="group__privacy">
+                        <div class="social__link">
+                            <a href="#">
+                                <img src="./img/instagram2.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/facebook3.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/telegram2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="check__right">
+                            <p>2020 © Все права защищены</p>
+                            <a href="" class="link-underline">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--   Главный блок: начало-->
+    <header class="main">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="main-nav__logo">
+                    <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
+                </div>
+                <div class="nav__right">
+                    <div class="nav__search">
+                        <label for="">
+                            <input type="text" class="nav__search-input input-bottom"
+                                placeholder="Поиск артистов, лейблов, треков">
+                            <a href="#"><img src="img/search.svg" alt=""></a>
+                        </label>
+                    </div>
+                </div>
+                <div class="mask">
+                    <div class="mask__img">
+                        <img src="./img/Mask Group.jpg" alt="">
+                    </div>
+                    <div class="mask__content">
+                        <div class="mask__info">
+                            <div class="mask__name">
+                                <p>Mike Fliper</p>
+                                <div>
+                                    <img src="./img/online.svg" alt="">
+                                </div>
+                            </div>
+                            <span>Исполнитель</span>
+                        </div>
+                    </div>
+                    <div class="mask__bell">
+                        <img src="./img/bell.svg" alt="">
+                    </div>
+                </div>
+                <div class="main-nav__buttons">
+                    <a href="./account-executor.html" class="main-nav__burger"><img src="img/burger.svg" alt=""></a>
+                </div>
+            </nav>
+            <!--          Начало шапки-->
+            <!-- <nav class="main-nav">
+                <div class="main-nav__logo">
+                    <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
+                </div>
+                <div class="nav__right">
+                    <div class="nav__search">
+                        <label for="">
+                            <input type="text" class="nav__search-input input-bottom"
+                                placeholder="Поиск артистов, лейблов, треков">
+                            <a href="#"><img src="img/search.svg" alt=""></a>
+                        </label>
+                    </div>
+                </div>
+                <div class="main-nav__buttons">
+                    <a href="#" class="main-nav__button button-blue open__modalWindow_form"
+                        data-form="sign-in">Войти</a>
+                    <a href="#" class="main-nav__button--white button-white open__modalWindow_form"
+                        data-form="sign-up">Зарегистрироваться</a>
+                    <a href="./download.html" class="main-nav__burger"><img src="img/burger.svg" alt=""></a>
+                </div>
+            </nav>  -->
+            <!--          Конец шапки-->
+            <span class="main__subtitle">Инновационная музыкальная платформа</span>
+            <h1 class="main__title">DEMODREAM</h1>
+            <p class="main__description description"><b>Создай</b> портфолио в личном кабинете, <b>загружай</b>
+                демо-версии треков, <b>продавай</b> их и общайся с лейблами</p>
+            <div class="main__button">
+                <a href="#" class="main__button button-pink">Загрузить трек бесплатно</a>
+            </div>
+
+            <div class="main__items">
+                <span class="main__text text">Загрузи демо прямо сейчас</span>
+                <div class="main__social social">
+                    <a href="#"><img src="img/instagram.svg" alt=""></a>
+                    <a href="#"><img src="img/facebook.svg" alt=""></a>
+                    <a href="#"><img src="img/telegram.svg" alt=""></a>
+                    <a href="#"><img src="img/youtube.svg" alt=""></a>
+                </div>
+                <span class="main__text text">2021</span>
+            </div>
+        </div>
+    </header>
+    <!--    Главный блок: конец-->
+    <!--Начало блока-меню-->
+    <div class="menu-block">
+        <div class="menu-block__items">
+            <div class="menu-block__item">
+                <a href="/"><img src="img/logo.svg" alt="" class="logo"></a>
+            </div>
+            <div class="menu-block__item">
+                <a href="#" class="close"><img src="img/close.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="menu-block__column">
+            <div class="empty"></div>
+            <div class="menu-block__row">
+                <a href="#" class="menu-block__link link">Чарт</a>
+                <a href="#" class="menu-block__link link">Платформа</a>
+                <a href="#" class="menu-block__link link">Авторство</a>
+            </div>
+            <div class="menu-block__row">
+                <a href="#" class="menu-block__link--gray link-gray">Тарифы</a>
+                <a href="#" class="menu-block__link link">Отзывы</a>
+                <a href="#" class="menu-block__link link">Контакты</a>
+            </div>
+            <div class="empty"></div>
+        </div>
+        <div class="menu-block__column-below">
+            <div class="menu-block__low">
+                <a href="#"><img src="img/instagram.svg" alt=""></a>
+                <a href="#"><img src="img/facebook.svg" alt=""></a>
+                <a href="#"><img src="img/telegram.svg" alt=""></a>
+                <a href="#"><img src="img/youtube.svg" alt=""></a>
+            </div>
+            <div class="menu-block__low">
+                <img src="img/phone-call.svg" alt="">
+                <a href="tel:+79152328018" class="menu-block__phone phone">+7(915)-232-80-18</a>
+            </div>
+            <div class="menu-block__low">
+                <small class="menu-block__small small">2020 &#169; Все права защищены</small>
+            </div>
+            <div class="menu-block__low">
+                <a href="#" class="menu-block__link-underline link-underline">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </div>
+    <!--Конец блока-меню-->
+    <section class="charts container">
+        <h2 class="charts__title h2-title">Чарты</h2>
+        <section class="charts__tabs tabs">
+            <div class="tabs__list">
+                <div class="tabs__buttons">
+                    <button href="#" class="tablinks button-tabs active" onclick="openCity(event, 'tracks')">По
+                        трекам</button>
+                    <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'authors')">По
+                        исполнителям</button>
+                    <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'albums')">По
+                        альбомам</button>
+                </div>
+            </div>
+            <div id="tracks" class="tabcontent chart-tracks active">
+                <a href="#" class="charts__link link-blue">Показать все</a>
+                <div class="chart-tracks__list">
+                    <div class="chart-tracks__item">
+                        <div class="chart-tracks__pic">
+                            <img src="img/chart1.png" alt="">
+                            <div class="chart-tracks__buttons">
+                                <a href="#"><img src="img/voice.svg" alt=""></a>
+                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                <a href="#"><img src="img/user.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <h4 class="tracks__album-name">Ракета</h4>
+                        <span class="tracks__album-author">Gigs</span>
+                        <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                    </div>
+                    <div class="chart-tracks__item">
+                        <div class="chart-tracks__pic">
+                            <img src="img/char1.png" alt="">
+                            <div class="chart-tracks__buttons">
+                                <a href="#"><img src="img/voice.svg" alt=""></a>
+                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                <a href="#"><img src="img/user.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <h4 class="tracks__album-name">Почему всё так</h4>
+                        <span class="tracks__album-author">Алина Найз & Пар</span>
+                        <p class="chart-tracks__text text-uppercase">Голоса: <span>985</span></p>
+                    </div>
+                    <div class="chart-tracks__item">
+                        <div class="chart-tracks__pic">
+                            <img src="img/char2.png" alt="">
+                            <div class="chart-tracks__buttons">
+                                <a href="#"><img src="img/voice.svg" alt=""></a>
+                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                <a href="#"><img src="img/user.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <h4 class="tracks__album-name">Cool</h4>
+                        <span class="tracks__album-author">MC Longsliv</span>
+                        <p class="chart-tracks__text text-uppercase">Голоса: <span>630</span></p>
+                    </div>
+                    <div class="chart-tracks__item">
+                        <div class="chart-tracks__pic">
+                            <img src="img/char3.png" alt="">
+                            <div class="chart-tracks__buttons">
+                                <a href="#"><img src="img/voice.svg" alt=""></a>
+                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                <a href="#"><img src="img/user.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <h4 class="tracks__album-name">Растафарай</h4>
+                        <span class="tracks__album-author">Городские легенды</span>
+                        <p class="chart-tracks__text text-uppercase">Голоса: <span>619</span></p>
+                    </div>
+                    <div class="chart-tracks__item">
+                        <div class="chart-tracks__pic">
+                            <img src="img/char4.png" alt="">
+                            <div class="chart-tracks__buttons">
+                                <a href="#"><img src="img/voice.svg" alt=""></a>
+                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                <a href="#"><img src="img/user.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <h4 class="tracks__album-name">Качели</h4>
+                        <span class="tracks__album-author">Зной & Lil Smitt</span>
+                        <p class="chart-tracks__text text-uppercase">Голоса: <span>573</span></p>
+                    </div>
+                    <div class="chart-tracks__item">
+                        <div class="chart-tracks__pic">
+                            <img src="img/char5.png" alt="">
+                            <div class="chart-tracks__buttons">
+                                <a href="#"><img src="img/voice.svg" alt=""></a>
+                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                <a href="#"><img src="img/user.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <h4 class="tracks__album-name">My capital</h4>
+                        <span class="tracks__album-author">Королина & Макси</span>
+                        <p class="chart-tracks__text text-uppercase">Голоса: <span>490</span></p>
+                    </div>
+                    <div class="chart-tracks__item">
+                        <div class="chart-tracks__pic">
+                            <img src="img/char6.png" alt="">
+                            <div class="chart-tracks__buttons">
+                                <a href="#"><img src="img/voice.svg" alt=""></a>
+                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                <a href="#"><img src="img/user.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <h4 class="tracks__album-name">А может быть п</h4>
+                        <span class="tracks__album-author">Рик Хант</span>
+                        <p class="chart-tracks__text text-uppercase">Голоса: <span>236</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="authors" class="tabcontent chart-authors">
+                <div class="tabs__buttons charts-buttons">
+                    <button href="#" class="inner-tablinks button-bottom active" onclick="sortThing(event, 'day')">За
+                        день</button>
+                    <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'week')">За
+                        неделю</button>
+                    <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'month')">За
+                        месяц</button>
+                    <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'year')">За
+                        год</button>
+                </div>
+                <div id="day" class="inner-tabcontent charts-authors__date active">
+                    <div class="charts-author__list">
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">1.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Gigs</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">2.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Алина Найз & Пар..</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">3.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">MC Longsliv</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">4.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Городские легенды</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">5.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Зной & Lil Smith</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">6.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Королина & Макси...</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">7.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Рик Хант</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="charts-author__link link-blue">Показать все</a>
+                    </div>
+                </div>
+                <div id="week" class="inner-tabcontent charts-authors__date">
+                    <div class="charts-author__list">
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">1.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Gigs</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">2.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Алина Найз & Пар..</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">3.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">MC Longsliv</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">4.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Городские легенды</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">5.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Зной & Lil Smith</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">6.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Королина & Макси...</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">7.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Рик Хант</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="charts-author__link link-blue">Показать все</a>
+                    </div>
+                </div>
+                <div id="month" class="inner-tabcontent charts-authors__date">
+                    <div class="charts-author__list">
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">1.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Gigs</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">2.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Алина Найз & Пар..</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">3.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">MC Longsliv</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">4.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Городские легенды</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">5.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Зной & Lil Smith</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">6.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Королина & Макси...</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">7.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Рик Хант</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="charts-author__link link-blue">Показать все</a>
+                    </div>
+                </div>
+                <div id="year" class="inner-tabcontent charts-authors__date">
+                    <div class="charts-author__list">
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">1.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Gigs</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">2.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Алина Найз & Пар..</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">3.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">MC Longsliv</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">4.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Городские легенды</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">5.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Зной & Lil Smith</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">6.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Королина & Макси...</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                            </div>
+                        </div>
+                        <div class="charts-author__item">
+                            <div class="charts-author__left-side">
+                                <p class="charts-author__count">7.</p>
+                                <img src="img/author-icon.png" class="charts-author__image">
+                            </div>
+                            <div class="charts-author__right-side">
+                                <p class="charts-author__name">Рик Хант</p>
+                                <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                            </div>
+                        </div>
+                        <a href="#" class="charts-author__link link-blue">Показать все</a>
+                    </div>
+                </div>
+            </div>
+            <div id="albums" class="tabcontent chart-albums">
+                <div class="charts-albums__wrapper">
+                    <div class="tabs__buttons charts-buttons">
+                        <button href="#" class="sinner-tablinks button-bottom active"
+                            onclick="sortThingByDate(event, 'sday')">За день</button>
+                        <button href="#" class="sinner-tablinks button-bottom"
+                            onclick="sortThingByDate(event, 'sweek')">За неделю</button>
+                        <button href="#" class="sinner-tablinks button-bottom"
+                            onclick="sortThingByDate(event, 'smonth')">За месяц</button>
+                        <button href="#" class="sinner-tablinks button-bottom"
+                            onclick="sortThingByDate(event, 'syear')">За год</button>
+                    </div>
+                    <a href="#" class="charts-albums__link link-white">Показать все </a>
+                </div>
+                <div id="sday" class="sinner-tabcontent charts-albums__date active">
+                    <div class="chart-tracks__list">
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album1.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album3.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album2.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album4.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album5.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album6.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album7.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="sweek" class="sinner-tabcontent charts-albums__date">
+                    <div class="chart-tracks__list">
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album1.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album3.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album2.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album4.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album5.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album6.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album7.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="smonth" class="sinner-tabcontent charts-albums__date">
+                    <div class="chart-tracks__list">
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album1.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album3.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album2.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album4.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album5.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album6.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album7.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="syear" class="sinner-tabcontent charts-albums__date">
+                    <div class="chart-tracks__list">
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album1.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album3.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album2.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album4.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album5.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album6.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/album7.png" alt="">
+                            </div>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+    </section>
+    <section class="revolution container">
+        <div class="revolution__items">
+            <h2 class="revolution__title h2-title">Прорыв в музыкальной индустрии?</h2>
+            <img src="img/circle.svg" alt="" class="revolution__circle">
+        </div>
+        <div class="revolution__list">
+            <div class="revolution__image">
+                <img src="img/macbook.png" alt="">
+            </div>
+            <div class="revolution__text">
+                <p class="revolution__description description">Воспользуйтесь нашим <b>бесплатным уникальным
+                        генератором</b> подбора треков и демо по индивидуальным вкусам и особым жизненным ситуациям</p>
+                <p class="revolution__description--gray description-gray">Конструктор сделает для вас лучшую подборку из
+                    топовых треков различных жанров</p>
+                <a href="#" class="revolution__button-pink button-pink">Протестировать бесплатно</a>
+            </div>
+        </div>
+    </section>
+    <a href="#" class="scrollTop"><img src="img/arrowTop.svg" alt=""></a>
+    <section class="unique container">
+        <div class="unique__list">
+            <div class="unique__item">
+                <h2 class="unique__title h2-title">В чем <br><img src="img/play.svg" alt=""> уникальность платформы?
+                </h2>
+                <div class="unique__buttons-wrapper">
+                    <div class="unique__button-wrapper">
+                        <span class="unique__number">01</span>
+                        <p class="unique__text">Общение с лейблами внутри платформы</p>
+                    </div>
+                    <div class="unique__button-wrapper">
+                        <span class="unique__number">02</span>
+                        <p class="unique__text">Регистрация от имени любой стороны</p>
+                    </div>
+                    <div class="unique__button-wrapper">
+                        <span class="unique__number">03</span>
+                        <p class="unique__text">Удобная рейтинговая система</p>
+                    </div>
+                    <div class="unique__button-wrapper">
+                        <span class="unique__number">04</span>
+                        <p class="unique__text">Уникальный генератор подбора треков</p>
+                    </div>
+                    <div class="unique__button-wrapper">
+                        <span class="unique__number">05</span>
+                        <p class="unique__text">Полная защита авторских прав исполнителя</p>
+                    </div>
+                    <div class="unique__button-wrapper--pink">
+                        <a href="#" class="unique__button-pink">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="unique__item">
+                <div class="unique__picture">
+                    <img src="img/bg-below.png" alt="">
+                </div>
+                <div class="unique__picture-above">
+                    <img src="img/%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%B0.svg" alt="" class="unique__picture--sm">
+                    <img src="img/bg-above.png" alt="" class="unique__picture--bg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="platform container">
+        <div class="platform__box-list">
+            <div class="platform__box-item">
+                <h2 class="platform__title h2-title"><img src="img/check.svg" alt="">Платформа одинаково удобна в
+                    использовании на всех девайсах</h2>
+                <div class="platform__box-wrapper">
+                    <span class="platform__text-sm description-gray">С любого ракурса...</span>
+                    <div class="platform__inner-wrapper">
+                        <img src="img/mob-hor.png" alt="" class="platform__pic-above--horiz">
+                        <img src="img/mob-ver.png" alt="" class="platform__pic-above--vertic">
+                    </div>
+
+                </div>
+            </div>
+            <div class="platform__box-item">
+                <span class="platform__description-gray description-gray">DEMODREAM доступна для iOS и Android</span>
+                <p class="platform__description-bold description-bold">Продвинь свое демо в топ с удобной системой
+                    рейтингов и начни сотрудничать с лейблами! Оформи портфолио, выложи бит и с тобой обязательно
+                    свяжутся.</p>
+                <span class="platform__text-gray text-gray">Воспользуйся бесплатной регистрацией и последующим выгодным
+                    ежемесячным обслуживанием платформы.</span>
+                <div class="platform__button-wrapper">
+                    <a href="#" class="platform__button-pink button-pink">Начать бесплатно</a>
+                </div>
+                <div class="platform__pic-above">
+                    <img src="img/joshua-fuller-ta7rN3NcWyM-unsplash%201.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="afraid container">
+        <div class="afraid__items">
+            <h2 class="afraid__title h2-title">Беспокоитесь о том, что ваши труды может кто-то себе присвоить?</h2>
+            <img src="img/circle.svg" alt="" class="afraid__pic revolution__circle">
+        </div>
+    </section>
+    <section class="sides container">
+        <h2 class="sides__title h2-title">Перейди на нужную сторону</h2>
+        <div class="sides__list">
+            <div class="sides__item">
+                <div class="sides__wrapper">
+                    <span class="sides__text">Вы</span>
+                    <div class="sides__dots">
+
+                    </div>
+                    <img src="img/rings-gray.svg" alt="">
+                </div>
+                <h3 class="sides__title-content title-content">Исполнитель</h3>
+                <div class="sides__slider--three">
+                    <div class="sides__slider-item">
+                        <img src="img/content1.png" alt="" class="sides__pic sides__pic--st sides__pic--trio">
+                    </div>
+                    <div class="sides__slider-item">
+                        <img src="img/content2.png" alt="" class="sides__pic sides__pic--trio">
+                    </div>
+                    <div class="sides__slider-item">
+                        <img src="img/content3.png" alt="" class="sides__pic sides__pic--rd sides__pic--trio">
+                    </div>
+                    <div class="sides__slider-item">
+                        <img src="img/content1.png" alt="" class="sides__pic sides__pic--trio">
+                    </div>
+                    <div class="sides__slider-item">
+                        <img src="img/content2.png" alt="" class="sides__pic sides__pic--trio">
+                    </div>
+                    <div class="sides__slider-item">
+                        <img src="img/content3.png" alt="" class="sides__pic sides__pic--trio">
+                    </div>
+                    <div class="sides__slider-item">
+                        <img src="img/content1.png" alt="" class="sides__pic sides__pic--trio">
+                    </div>
+                    <div class="sides__slider-item">
+                        <img src="img/content2.png" alt="" class="sides__pic sides__pic--trio">
+                    </div>
+                    <div class="sides__slider-item">
+                        <img src="img/content3.png" alt="" class="sides__pic sides__pic--trio">
+                    </div>
+                </div>
+                <div class="sides__button-wrapper">
+                    <a href="#" class="sides__button-pink button-pink">Узнать подробнее</a>
+                </div>
+
+            </div>
+            <div class="sides__item">
+                <div class="sides__wrapper">
+                    <span class="sides__text">Вы</span>
+                    <img src="img/rings-gray.svg" alt="">
+                </div>
+                <h3 class="sides__title-content title-content">Лейбл</h3>
+                <div class="sides__content-list">
+                    <div class="sides__content-dots">
+
+                    </div>
+                    <div class="sides__slider-one">
+                        <div class="sides__slider-chart">
+                            <img src="img/sides-lable.png" alt="" class="sides__pic sides__pic--label">
+                        </div>
+                        <div class="sides__slider-chart">
+                            <img src="img/sides-lable.png" alt="" class="sides__pic sides__pic--label">
+                        </div>
+                        <div class="sides__slider-chart">
+                            <img src="img/sides-lable.png" alt="" class="sides__pic sides__pic--label">
+                        </div>
+                    </div>
+                </div>
+                <div class="sides__button-wrapper">
+                    <a href="#" class="sides__button-pink button-pink">Узнать подробнее</a>
+                </div>
+
+            </div>
+            <div class="sides__item">
+                <div class="sides__wrapper">
+                    <span class="sides__text">Вы</span>
+                    <img src="img/rings-gray.svg" alt="">
+                </div>
+                <h3 class="sides__title-content title-content">Слушатель</h3>
+                <div class="sides__slider-one">
+                    <div class="slides__slider-chart">
+                        <img src="img/content4.png" alt="" class="sides__pic sides__pic--listener">
+                    </div>
+                    <div class="slides__slider-chart">
+                        <img src="img/content4.png" alt="" class="sides__pic sides__pic--listener">
+                    </div>
+                    <div class="slides__slider-chart">
+                        <img src="img/content4.png" alt="" class="sides__pic sides__pic--listener">
+                    </div>
+                </div>
+
+                <div class="sides__button-wrapper">
+                    <a href="#" class="sides__button-pink button-pink">Узнать подробнее</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="about-us container">
+        <h2 class="about-us__title h2-title">О нас говорят</h2>
+        <a href="#" class="about-us__link link-blue">Показать все </a>
+        <div class="about-us__items">
+            <div class="about-us__item">
+                <div class="about-us__about-person">
+                    <img src="img/person-photo.png" alt="">
+                    <span class="about-us__name">Kris Jons</span>
+                    <span class="about-us__type">(Слушатель)</span>
+                </div>
+                <div class="about-uss__about-text">
+                    <time class="about-us__date">5.07.2020</time>
+                    <p class="about-us__text-box">Пока что это лучшее, что я видела в данной категории. Платформа
+                        предоставляет много преимущества и удобна в использовании. Не пожелела, что зарегистрировалась.
+                    </p>
+                    <p class="about-us__text-box">В будущем думаю изучить несколько инструментов и перебираться на тариф
+                        "исполни...</p>
+                </div>
+                <a href="#" class="about-us__link-below">Развернуть</a>
+            </div>
+            <div class="about-us__item">
+                <div class="about-us__about-person">
+                    <img src="img/person-photo.png" alt="">
+                    <span class="about-us__name">Kris Jons</span>
+                    <span class="about-us__type">(Слушатель)</span>
+                </div>
+                <div class="about-uss__about-text">
+                    <time class="about-us__date">5.07.2020</time>
+                    <p class="about-us__text-box">Пока что это лучшее, что я видела в данной категории. Платформа
+                        предоставляет много преимущества и удобна в использовании. Не пожелела, что зарегистрировалась.
+                    </p>
+                    <p class="about-us__text-box">В будущем думаю изучить несколько инструментов и перебираться на тариф
+                        "исполни...</p>
+                </div>
+                <a href="#" class="about-us__link-below">Развернуть</a>
+            </div>
+            <div class="about-us__item">
+                <div class="about-us__about-person">
+                    <img src="img/person-photo.png" alt="">
+                    <span class="about-us__name">Kris Jons</span>
+                    <span class="about-us__type">(Слушатель)</span>
+                </div>
+                <div class="about-uss__about-text">
+                    <time class="about-us__date">5.07.2020</time>
+                    <p class="about-us__text-box">Пока что это лучшее, что я видела в данной категории. Платформа
+                        предоставляет много преимущества и удобна в использовании. Не пожелела, что зарегистрировалась.
+                    </p>
+                    <p class="about-us__text-box">В будущем думаю изучить несколько инструментов и перебираться на тариф
+                        "исполни...</p>
+                </div>
+                <a href="#" class="about-us__link-below">Развернуть</a>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <div class="container">
+            <h2 class="form__title h2-title">Остались вопросы? Готовы развеять...</h2>
+            <p class="form__description description-bold">Напишите вопрос, укажите номер телефона и свое имя. Мы
+                обязательно с вами свяжемся в ближайшее время!</p>
+            <form action="/" class="form__form">
+                <input type="text" class="form__input input-bottom" placeholder="Имя">
+                <input type="tel" class="form__input input-bottom" placeholder="Телефон">
+                <input type="text" class="form__input input-bottom" placeholder="Ваш вопрос">
+                <button class="form__button button-blue">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <section class="thank-you container">
+        <div class="thank-you__items">
+            <div class="thank-you__item">
+                <h2 class="thank-you__title h2-title">Спасибо, что доверились!</h2>
+                <p class="thank-you__description description-bold">У вас еще нет бесплатной учетной записи?</p>
+                <div class="thank-you__list">
+                    <a href="#" class="thank-you__button-pink button-pink">Зарегистрироваться бесплатно</a>
+                    <span class="thank-you__text-gray text-gray">У вас уже есть аккаунт?</span>
+                    <a href="#" class="thank-you__link">Войти</a>
+                </div>
+            </div>
+            <div class="thank-you__item">
+                <img src="img/piano.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--
+ <section class="sign-in">
+     hey
+ </section>
+-->
+    <!--Начало футера-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__column">
+                <div class="footer__row">
+                    <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
+                    <small class="footer__small">2020 &#169; Все права защищены</small>
+                    <a href="#" class="footer__link-underline link-underline">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__row">
+                    <a href="#" class="footer__link link">Чарт</a>
+                    <a href="#" class="footer__link link">Платформа</a>
+                    <a href="#" class="footer__link link">Авторство</a>
+                </div>
+                <div class="footer__row">
+                    <a href="#" class="footer__link--gray link-gray">Тарифы</a>
+                    <a href="#" class="footer__link link">Отзывы</a>
+                    <a href="#" class="footer__link link">Контакты</a>
+                </div>
+                <div class="footer__row">
+                    <span class="footer__text text">
+                        Загрузи демо прямо сейчас
+                    </span>
+                    <div class="footer__list">
+                        <img src="img/phone-call.svg" alt="">
+                        <a href="tel:+79152328018" class="footer__phone phone">+7(915)-232-80-18</a>
+                    </div>
+                </div>
+                <div class="footer__row">
+                    <a href="#" class="footer__button button">
+                        Выйти
+                    </a>
+                    <div class="footer__social">
+                        <a href="#"><img src="img/instagram.svg" alt=""></a>
+                        <a href="#"><img src="img/facebook.svg" alt=""></a>
+                        <a href="#"><img src="img/telegram.svg" alt=""></a>
+                        <a href="#"><img src="img/youtube.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Конец футера-->
+    <script src="js/jQuery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        /*-----Create data options for select-----*/
+        const selectDate = Array.from(document.querySelectorAll('select[data-id="pick_date_select"]'));
+        const selectMonth = Array.from(document.querySelectorAll('select[data-id="pick_month_select"]'));
+        const selectYear = Array.from(document.querySelectorAll('select[data-id="pick_year_select"]'));
+
+        const arrDate = [];
+        const arrMonth = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь',
+            'Ноябрь', 'Декабрь'
+        ];
+        const arrYear = [];
+
+        for (let d = 1; d <= 31; d++) {
+            arrDate.push(d);
+        }
+        for (let d = 2007; d >= 1956; d--) {
+            arrYear.push(d);
+        }
+
+        selectDate.forEach(item => createOptions(arrDate, item));
+        selectMonth.forEach(item => createOptions(arrMonth, item));
+        selectYear.forEach(item => createOptions(arrYear, item));
+
+
+        function createOptions(arr, elem) {
+            const option = arr.map(item => {
+                const optionItem = document.createElement('option');
+                optionItem.setAttribute('value', item);
+                optionItem.innerText = item;
+                return optionItem;
+            })
+            option.forEach(opt => {
+                elem.appendChild(opt)
+            })
+        }
+
+
+        /*------ Toggle Buttons Forms-----*/
+        const registerForm = document.getElementById('signUp-from');
+        const registerFormArr = registerForm.querySelectorAll('form')
+        const btnsArr = registerForm.querySelectorAll('button[data-button]');
+
+        btnsArr.forEach(btn => btn.addEventListener('click', ToggleForms))
+
+        function ToggleForms(e) {
+            const buttonClick = e.target;
+            btnsArr.forEach(btn => {
+                btn.classList.remove('active')
+            })
+            registerFormArr.forEach(form => form.classList.remove('d-block'))
+            buttonClick.classList.add('active')
+            const btnId = buttonClick.getAttribute('data-button')
+            const form = document.getElementById(btnId)
+            form.classList.add('d-block')
+        }
+
+
+        /*-----Show Password--------*/
+
+        const btnsShowPass = document.querySelectorAll('.button__show_password');
+        btnsShowPass.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const btn = e.currentTarget;
+                const input = btn.parentElement.querySelector('input');
+                if (input.getAttribute('type') === 'password') {
+                    input.setAttribute('type', 'text')
+                } else {
+                    input.setAttribute('type', 'password')
+                }
+
+            })
+        })
+
+
+        /*------Open modal window Authentication-----*/
+
+        const buttonsAuth = Array.from(document.getElementsByClassName('open__modalWindow_form'));
+        const modalWindow = document.getElementById('modal-window-auth');
+        const btnClose = Array.from(document.getElementsByClassName('btn__close'));
+
+        buttonsAuth.forEach(item => {
+            item.addEventListener('click', (e) => {
+
+                e.preventDefault();
+                const typeForm = item.getAttribute('data-form');
+                modalWindow.classList.add('show');
+                const form1 = document.getElementById('signIn-from');
+                const form2 = document.getElementById('signUp-from');
+                const form3 = document.getElementById('forgot_pass_form');
+
+                if (typeForm === 'sign-in') {
+                    form1.classList.add('show');
+                    form3.classList.remove('show');
+                    form2.classList.remove('show');
+                } else if (typeForm === 'sign-up') {
+                    form2.classList.add('show');
+                    form3.classList.remove('show');
+                    form1.classList.remove('show');
+                } else if (typeForm === 'forgot_pass_form') {
+                    form2.classList.remove('show');
+                    form1.classList.remove('show');
+                    form3.classList.add('show');
+                }
+
+            });
+        });
+
+        btnClose.forEach(item => item.addEventListener('click', closeModal))
+
+
+        function closeModal() {
+            console.log('click')
+            modalWindow.classList.remove('show');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+.slider-track {
+    display: flex;
+    width: 100%;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+.slider .slick-dots {
+    padding-left: 200px;
+    display: flex;
+    text-align: left;
+    z-index: 100;
+}
+
+.slider-listener .slick-dots {
+    padding-left: 200px;
+    display: flex;
+    text-align: left;
+    z-index: 100;
+}
+
+.slider .slick-dots button {
+   width: 19px;
+   height: 19px;
+   font-size: 0;
+   background: url("../../img/star.svg") center center / 100% no-repeat;
+}
+
+.slider-listener .slick-dots button {
+   width: 19px;
+   height: 19px;
+   font-size: 0;
+   background: url("../../img/star.svg") center center / 100% no-repeat;
+}
+
+.slider .slick-dots li button:before {
+    content: "";
+}
+
+.slider-listener .slick-dots li button:before {
+    content: "";
+}
+
+.slider .slick-dots li.slick-active {
+    width: 19px;
+    height: 19px;
+    font-size: 0;
+    background: url("../../img/star-active.svg") center center / 100% no-repeat;
+
+}
+
+.slider-listener .slick-dots li.slick-active {
+    width: 19px;
+    height: 19px;
+    font-size: 0;
+    background: url("../../img/star-active.svg") center center / 100% no-repeat;
+}
+
+.slider .slider-item img {
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.slider-listener .slider-item img {
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.main-page {
+    padding-bottom: 83px;
+}
+.main-page__wrapper {
+    position: relative;
+    padding-bottom: 83px;
+}
+
+.main-page__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px 20px;
+    
+    }
+.main-page__top {
+    display: flex;
+    justify-content: space-between;
+}
+.main-page__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+    z-index: 99;
+}
+
+.main__page--avatar {
+        max-width: 164px;
+        height: auto;
+        max-width: 100%;
+        position: relative;
+        bottom: 25px;
+        border-radius: 100%;
+        padding-right: 25px;
+    }

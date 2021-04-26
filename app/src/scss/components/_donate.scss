@@ -1,0 +1,113 @@
+.donate {
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+        width: 50%;
+        min-width: 0;
+    }
+    &__item > img{
+        width: 600px;
+        max-width: 100%;
+        height: auto;
+    }
+    &__title {
+        color: rgba(255, 255, 255, 1);
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 42px;
+    }
+    &__descr {
+        line-height: 24px;
+        color: rgba(187, 187, 187, 1);
+        font-size: 20px;
+        font-weight: 400;
+        width: 100%;
+        margin-bottom: 32px;
+
+    }
+    
+    &__text-below {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    
+    &__cost {
+        color: #37E7FF;
+        font-size: 49px;
+        line-height: 61px;
+        background-color: #141414;
+        border-radius: 6.9px;
+        padding: 1px 9px 6px 8px;
+    }
+    
+    &__dollar {
+        color: rgba(49, 49, 49, 1);
+        font-size: 36px;
+        line-height: 44px;
+        vertical-align: 16px;
+    }
+    
+    
+}
+.donate-slider .slick-track {
+    transform: translate3d(-754px, 0px, 0px);
+    width: 2639px;
+    opacity: 1;
+}
+
+.donate-slider .slick-slide {
+    width: 100%;
+    
+}
+.donate-slider .slick-dots {
+    
+    display: flex;
+    text-align: left;
+    z-index: 100;
+}
+.donate-slider .slick-dots button{
+   width: 19px;
+   height: 19px;
+   font-size: 0;
+   background: url("../../img/star.svg") center center / 100% no-repeat;
+   
+}
+ 
+.donate-slider .slick-dots li {
+    margin-right: 15px;
+    margin-left: 15px;
+    
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+.donate-slider .slick-dots li button:before {
+    content: "";
+    margin-left: 68px;
+    margin-right: 68px;
+}
+
+.donate-slider .slick-dots li.slick-active {
+    width: 19px;
+    height: 19px;
+    font-size: 0;
+    background: url("../../img/star-active.svg") center center / 100% no-repeat;
+
+}
+
+.donate__parts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 427px;
+    margin-top: 20px;
+}
+

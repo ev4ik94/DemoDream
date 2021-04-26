@@ -1,0 +1,48 @@
+.thank-you {
+    background-color: #000;
+    padding: 30px 0 35px 39px;
+    border-radius: 10px;
+    height: auto;
+    overflow-x: hidden;
+    
+    &__items,
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__item {
+        width: 50%;
+        
+        & img {
+            max-width: 100%;
+            margin-left: 113px;
+            z-index: 100;
+        }
+    }
+    
+    &__button-pink {
+        padding: 15px 20px;
+        white-space: nowrap;
+    }
+    
+    &__link {
+        font-size: 16px;
+        line-height: 19px;
+        color: #BCBCBC;
+        z-index: 101;
+    }
+    
+    &__description {
+        margin-top: 26px;
+        margin-bottom: 60px;
+    }
+    
+    &__text-gray {
+        margin-left: 42px;
+        margin-right: 33px;
+        white-space: nowrap;
+    }
+    
+}

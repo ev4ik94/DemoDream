@@ -1,0 +1,11 @@
+.afraid {
+    padding-bottom: 230px;
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__title {
+        max-width: 660px;
+    }
+}

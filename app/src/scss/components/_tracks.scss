@@ -1,0 +1,148 @@
+.tracks {
+    
+    &__text-wrapper {
+        width: 50%;
+        display: flex;
+    }
+    
+    &__text:first-child {
+        margin-right: 42px;
+    }
+    
+    &__tracks,
+    &__albums {
+        width: 50%;
+    }
+    
+    &__tracks {
+        margin-right: 72px;
+        
+    }
+    
+    &__albums {
+        padding-left: 71px;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        
+    }
+    
+    &__wrapper {
+        display: flex;
+        margin-top: 41px;
+    }
+    &__subtitle {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        
+        &-album {
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+    }
+    
+    
+    
+    &__melodies {
+        color: #fff;
+        overflow-y: scroll;
+        max-height: 236px;
+    }
+    
+    &__melody-static {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 9px 20px;
+        border-radius: 4px;
+        margin-right: 10px;
+        
+        &:hover {
+            background-color:rgba(255, 255, 255, 0.2);
+            
+ 
+        }
+        
+       
+    }
+    &__melody-static:hover &__melody-left &__melody-number {
+        display: none;
+    }
+    
+    &__melody-static:hover &__melody-left &__melody-icon--play,
+    &__melody-static:hover &__melody-right &__melody-icon{
+        display: inline;
+    }
+    
+    
+    &__melody-icon {
+       display: none;
+        
+        &--play {
+            display: none;
+        }
+    }
+    
+    &__melody-number {
+        font-size: 17px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 400;
+        display: inline;
+    }
+    
+    &__melody-time {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        padding-left: 15px;
+    }
+    
+    &__melody-name {
+        color: #fff;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        margin-left: 19px;
+    }
+    
+    &__album-list {
+        overflow-y: scroll;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        max-height: 236px;
+    }
+    
+    &__album-item {
+        margin-right: 15px;
+    }
+    
+    &__album-list img {
+        border-radius: 8px;
+        height: 172px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+    
+    &__album-name {
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-top: 14px;
+        margin-bottom: 3px;
+    }
+    
+    &__album-author {
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(255, 255, 255, 0.5);
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-bottom: 10px;
+
+    }
+}
+

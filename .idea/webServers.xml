@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c9dfae2a-f16d-4780-8324-fdfb3c42d6a1" name="Рауф" url="http://demo-dream.xenlp.ru/">
+        <fileTransfer rootFolder="/httpdocs/layout_1" host="a236252.ftp.mchost.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

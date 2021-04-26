@@ -1,0 +1,44 @@
+.menu-block {
+    background: url(../../img/menu-bg.png) center center no-repeat;
+    background-size: cover;
+    padding: 46px 81px 42px 76px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 800;
+    width: 100%;
+    display: none;
+    min-height: 100%;
+    
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__column {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding-top: 110px;
+        padding-bottom: 130px;
+    }
+    
+    &__column-below {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    
+    &__row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__link {
+        margin-bottom: 25px;
+        
+        &--gray {
+            margin-bottom: 25px;
+        }
+    }
+}

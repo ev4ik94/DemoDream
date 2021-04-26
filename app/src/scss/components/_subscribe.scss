@@ -1,0 +1,28 @@
+.subscribe {
+   
+    
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 33px;
+    }
+    
+    &__text {
+        color: #fff;
+        
+    }
+    
+    
+    &__slider .slider-item img{
+        max-width: 100%;
+    }
+    
+    &__slider .slick-arrow .slick-prev {
+        background-image: url(../../img/left-arrow.svg);
+    }
+    
+    &__slider .slick-arrow .slick-next {
+        background-image: url(../../img/right-arrow.svg);
+    }
+}
+

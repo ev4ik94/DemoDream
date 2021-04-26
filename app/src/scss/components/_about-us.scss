@@ -1,0 +1,83 @@
+.about-us {
+    
+    &__title {
+        margin-bottom: 35px;
+    }
+    
+    &__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__item {
+        height: auto;
+        background-color: #000;
+        padding: 26px 35px 23px 36px;
+        border-radius: 10px;
+        
+        &:not(:last-child) {
+            margin-right: 56px;
+        }
+    }
+    
+    &__link {
+        display: block;
+        text-align: right;
+        margin-bottom: 30px;
+    }
+    
+    &__about-person {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__about-person img {
+        width: 57px;
+        height: 57px;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    
+    &__name {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #fff;
+    }
+    
+    &__type {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    
+    &__date {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.05em;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 21px;
+        margin-top: 26px;
+        display: block;
+    }
+    
+    &__text-box {
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    
+    &__link-below {
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 46px;
+        display: block;
+        text-align: right;
+    }
+}
