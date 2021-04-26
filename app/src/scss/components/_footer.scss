@@ -2,58 +2,63 @@
     background-color: $footerBackground;
     padding-top: 58px;
     padding-bottom: 63px;
+
     &__column {
         display: flex;
         justify-content: space-between;
         align-content: center;
         flex-wrap: wrap;
     }
-    
+
     &__row_link {
         display: flex;
         flex-grow: 1;
         justify-content: space-evenly;
     }
-    
+
     &__row_links {
         display: flex;
         flex-direction: column;
     }
-    
-    
+
+
     &__row {
         display: flex;
         flex-direction: column;
-        
-        & > img {
+
+        &>img {
             margin-bottom: 39px;
         }
     }
-    
+
     &__small {
         margin-bottom: 10px;
         margin-top: 37px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.7);
     }
-    
+
     &__row_end {
         display: flex;
     }
-    
+
     &__link {
-        
+
         margin-bottom: 20px;
-        
+
         &--gray {
             margin-bottom: 20px;
 
         }
     }
-    
+
     &__text {
         margin-bottom: 48px;
         width: 150px;
     }
-    
+
     &__button {
         margin-bottom: 49px;
     }
@@ -72,43 +77,55 @@
     .footer__column {
         display: block;
     }
-    
+
     .footer__text {
         margin-bottom: auto;
+        
     }
-    
+
     .footer__button {
         margin-bottom: auto;
+        max-width: 95px;
     }
-    
+
     .footer__row {
         margin-right: 35px;
     }
-    
+
     .collumn__reverse {
         flex-direction: column-reverse;
         margin-left: 0;
+        width: 40%;
     }
-    
+
     .footer__row_link {
         margin-top: 65px;
         justify-content: flex-start;
         margin-right: 35px;
+        
     }
+
     .footer__row_links {
         margin-right: 50px;
+        width: 50%;
     }
-    
+
     .footer__row_end {
         display: flex;
         margin-top: 40px;
     }
-    
+
     .footer__list {
         margin-bottom: 80px;
     }
-    
+
     .footer__social {
         margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 426px) {
+    .generator__title {
+        font-size: 50px;
     }
 }
