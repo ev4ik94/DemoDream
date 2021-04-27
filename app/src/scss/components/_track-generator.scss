@@ -252,6 +252,7 @@
     padding: 40px 50px;
     overflow: hidden;
     margin-top: 70px;
+    margin-bottom: 30px;
 
     & .banner_image {
         width: 100%;
@@ -377,7 +378,9 @@
 }
 
 
-
+.button-tabs{
+    margin-bottom: 10px;
+}
 
 
 /* ------------------TRACK MODAL-------------------- */
@@ -572,7 +575,7 @@
     }
 
     .generator {
-
+        padding: 40px 20px;
         &__title {
             font-size: 64px;
         }
@@ -606,6 +609,26 @@
         }
     }
 
+    .tabs__main_charts{
+        overflow: hidden;
+        & .tabs__buttons{
+            width: 400px;
+            height: 80px;
+            & .slick-track{
+                display: flex;
+                align-items: flex-end;
+            }
+            & .button__wrap_slide{
+                padding-right: 10px;
+                & > button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+
     .top__list_tracks__track {
         flex-wrap: wrap;
     }
@@ -622,6 +645,10 @@
 
         &__list {
             flex-wrap: wrap;
+        }
+
+        &__pic{
+            max-width: 100%;
         }
     }
 
@@ -665,6 +692,7 @@
 
     .desc-compilation {
         margin-top: 45px;
+        font-size: 20px;
         margin-bottom: 50px;
     }
     
@@ -679,4 +707,65 @@
     .show__more-btn {
         width: 100%;
     }
+
+    .chart-albums{
+        .charts-albums__wrapper{
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            & .tabs__buttons{
+                margin-bottom: 15px;
+                height: auto;
+            }
+        }
+    }
 }
+
+@media (max-width: 426px){
+    .generator{
+        &__title{
+            font-size: 40px;
+        }
+        &__question, &__desc{
+            font-size: 16px;
+        }
+    }
+
+    .sub__buttons_chart{
+        .tabs__buttons{
+            height: 50px;
+            & .button-bottom{
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px){
+
+    .sub__buttons_chart{
+        .tabs__buttons{
+            height: 50px;
+            & .button-bottom{
+                padding-right: 10px;
+                padding-left: 10px;
+                font-size: .9rem;
+            }
+        }
+    }
+
+    .chart-albums{
+        .charts-albums__wrapper{
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            & .tabs__buttons{
+                margin-bottom: 15px;
+                height: auto;
+            }
+        }
+    }
+
+
+}
+
+
