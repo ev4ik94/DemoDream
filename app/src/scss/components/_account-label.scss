@@ -615,6 +615,8 @@
   &__all {
     display: flex;
     flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-evenly;
   }
 
   &__desc {
@@ -631,14 +633,14 @@
   }
 
   &__content {
-    margin: 30px 0 0 85px;
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
   }
 
   &__info {
     width: 217px;
-    margin-right: 55px;
     & button {
       font-weight: 400;
       font-size: 16px;
@@ -750,7 +752,6 @@
   }
 
   &__check {
-    margin-top: 30px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -760,7 +761,7 @@
   &__save {
     font-size: 16px;
     line-height: 20px;
-    padding: 10px 45px;
+    padding: 13px 45px;
     background: #F70E4D;
     color: #fff;
     border: none;
@@ -770,8 +771,8 @@
   }
 
   &__cool {
-    top: 200px;
-    left: 250px;
+    top: 180px;
+    left: 230px;
 
     &_btn {
       font-weight: 700;
@@ -1099,5 +1100,36 @@
     
     &__margin {
       margin-left: 85px; }
+  }
+}
+
+@media (max-width: 472px) {
+  .label-menegment__content {
+    margin-left: 0;
+  }
+  
+  .label-menegment__margin {
+    margin-left: 0;
+    margin-bottom: 90px;
+  }
+  
+  .label-menegment__check {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .label-menegment__margin {
+    margin-bottom: 90px;
+  }
+  
+  .label-menegment__cool {
+    bottom: -65px!important;
+    left: 95px!important;
+    top: auto;
+  }
+  
+  .label-menegment__all {
+    width: auto;
   }
 }
