@@ -13,6 +13,10 @@
     &__more {
         display: flex;
     }
+    
+    &__all {
+        display: flex;
+    }
 
     &__logo {
 
@@ -92,7 +96,7 @@
         display: flex;
 
         & p {
-            max-width: 150px;
+            max-width: 180px;
             width: 100%;
             font-weight: 300;
             font-size: 16px;
@@ -138,10 +142,12 @@
             text-decoration: none;
         }
     }
+    
+    
 
     &__tel_img {
-        width: 21px;
-        height: 21px;
+        width: 18px;
+        height: 18px;
         margin-right: 13px;
 
         & img {
@@ -152,12 +158,109 @@
     }
     
     &__social {
-        
+        display: flex;
+        align-items: center;
         & a {
-            padding-left: 6px;
+            margin-left: 6px;
+            display: block;
+            & > img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
         }
     }
 }
 
 
 /*-------------Media-------------------- */
+
+@media (max-width: 1041px) {
+    .footer {
+        
+        &__menu {
+            margin-left: 20px;
+        }
+        
+        &__link {
+            margin-left: 30px;
+        }
+    }
+}
+
+@media (max-width: 892px) {
+    .footer {
+        
+        &__menu {
+            margin-left: 40px;
+        }
+        
+        &__link {
+            margin-left: 50px;
+        }
+        
+        &__more {
+            margin-bottom: 40px;
+        }
+        
+        &__end {
+            flex-direction: column-reverse;
+        }
+        
+        &__raw {
+            margin-bottom: 30px;
+        } 
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        &__more {
+            flex-direction: column;
+        }
+        
+        &__menu {
+            margin-left: 0;
+            width: 180px;
+            & a {
+                margin-bottom: 20px;
+            }
+        }
+        
+        &__all {
+            margin-top: 65px;
+        }
+        
+        &__link {
+            margin-left: 0;
+            & a {
+                margin-bottom: 20px;
+            }
+        }
+        
+        &__tel {
+            margin-left: 50px;
+        }
+        
+        &__end {
+            flex-direction: column-reverse;
+            margin-top: 45px;
+        }
+        
+        &__raw {
+            flex-direction: row-reverse;
+            margin-bottom: 80px;
+        }
+        
+        &__social {
+            & a {
+               width: 20px;
+               height: 20px;
+            }
+        }
+    }
+    
+    .footer__button p {
+        margin-right: 0;
+    }
+}
