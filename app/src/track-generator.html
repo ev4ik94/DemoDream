@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="css/slick/slick.css">
-    <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -556,6 +556,93 @@
                             <p class="chart-tracks__text text-uppercase">Голоса: <span>236</span></p>
                         </div>
                     </div>
+
+                    <!------PLAYER-------------->
+                    <div class="player__charts d-flex">
+
+                        <div class="player__charts__player_block">
+                            <div class="player__charts__buttons_player d-flex">
+                               <div class="player__charts__track_name">
+                                   <p>Ракета</p>
+                                   <p>Gigs</p>
+                               </div>
+                                <div class="d-flex">
+                                    <button>
+                                        <svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                    d="M24.6033 12.0408C26.1023 12.9063 26.1023 15.0699 24.6033 15.9354L4.3667 27.619C2.86769 28.4844 0.993931 27.4026 0.993931 25.6717V2.30448C0.993931 0.573578 2.86769 -0.508236 4.3667 0.357217L24.6033 12.0408Z" />
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                        d="M7.49451 0.878906H3.48582C2.82276 0.878906 2.2832 1.41847 2.2832 2.08152V18.9181C2.2832 19.5812 2.82276 20.1207 3.48582 20.1207H7.49454C8.1576 20.1207 8.69716 19.5812 8.69716 18.9181V2.08152C8.69712 1.41847 8.15756 0.878906 7.49451 0.878906Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                                <path
+                                                        d="M17.1154 0.878906H13.1067C12.4436 0.878906 11.9041 1.41847 11.9041 2.08152V18.9181C11.9041 19.5812 12.4436 20.1207 13.1067 20.1207H17.1154C17.7784 20.1207 18.318 19.5812 18.318 18.9181V2.08152C18.318 1.41847 17.7784 0.878906 17.1154 0.878906Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="19.2418" height="19.2418" fill="white"
+                                                          transform="translate(0.679688 0.878906)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </button>
+
+                                    <button>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                        d="M11.6723 1.58363C11.4491 1.47715 11.1861 1.50538 10.9937 1.66059L4.75422 6.65192H1.77302C1.06621 6.65192 0.490234 7.2279 0.490234 7.93471V13.0659C0.490234 13.774 1.06621 14.3487 1.77302 14.3487H4.75422L10.9924 19.34C11.1092 19.4323 11.2515 19.4798 11.3939 19.4798C11.4889 19.4798 11.5838 19.458 11.6723 19.4157C11.8942 19.3092 12.0353 19.0847 12.0353 18.8384V2.16216C12.0353 1.91587 11.8942 1.69138 11.6723 1.58363Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                                <path
+                                                        d="M15.2819 5.96436C15.0292 5.7155 14.6239 5.71935 14.375 5.96949C14.1261 6.2222 14.1287 6.62756 14.3801 6.87771C15.3499 7.83467 15.8836 9.1213 15.8836 10.5003C15.8836 11.8793 15.3499 13.1659 14.3801 14.1229C14.1287 14.3705 14.1261 14.7771 14.375 15.0298C14.5007 15.1568 14.6662 15.2197 14.8304 15.2197C14.9933 15.2197 15.1562 15.1581 15.2819 15.0337C16.498 13.8368 17.1663 12.2257 17.1663 10.5003C17.1663 8.77495 16.498 7.16377 15.2819 5.96436Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                                <path
+                                                        d="M17.092 4.15688C16.8393 3.90673 16.4339 3.9093 16.1837 4.16072C15.9349 4.41215 15.9375 4.81879 16.1876 5.06766C17.6461 6.51336 18.4491 8.44267 18.4491 10.5003C18.4491 12.5579 17.6461 14.4859 16.1876 15.9316C15.9375 16.1817 15.9349 16.5884 16.1837 16.8398C16.3107 16.9655 16.4749 17.0284 16.6391 17.0284C16.802 17.0284 16.9662 16.9668 17.092 16.8424C18.7955 15.1555 19.7319 12.9029 19.7319 10.5003C19.7319 8.0976 18.7955 5.84503 17.092 4.15688Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="19.2418" height="19.2418" fill="white"
+                                                          transform="translate(0.490234 0.878906)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                    <div>
+                                        <input type="range" min="0" max="100" value="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time_line">
+                                <div>
+                                    <input type="range" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="player__charts__stars">
+                            <ul class="d-flex">
+                                <li>
+                                    <button><img src="./img/star.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button><img src="./img/star-active.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button><img src="./img/star.svg" alt=""></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!---------PLAYER-END------->
                 </div>
                 <div id="authors" class="tabcontent chart-authors sub__buttons_chart">
                     <div class="tabs__buttons charts-buttons">
@@ -1151,6 +1238,92 @@
 
                         </div>
                     </div>
+                    <!------PLAYER-------------->
+                    <div class="player__charts d-flex">
+
+                        <div class="player__charts__player_block">
+                            <div class="player__charts__buttons_player d-flex">
+                                <div class="player__charts__track_name">
+                                    <p>Ракета</p>
+                                    <p>Gigs</p>
+                                </div>
+                                <div class="d-flex">
+                                    <button>
+                                        <svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                    d="M24.6033 12.0408C26.1023 12.9063 26.1023 15.0699 24.6033 15.9354L4.3667 27.619C2.86769 28.4844 0.993931 27.4026 0.993931 25.6717V2.30448C0.993931 0.573578 2.86769 -0.508236 4.3667 0.357217L24.6033 12.0408Z" />
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                        d="M7.49451 0.878906H3.48582C2.82276 0.878906 2.2832 1.41847 2.2832 2.08152V18.9181C2.2832 19.5812 2.82276 20.1207 3.48582 20.1207H7.49454C8.1576 20.1207 8.69716 19.5812 8.69716 18.9181V2.08152C8.69712 1.41847 8.15756 0.878906 7.49451 0.878906Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                                <path
+                                                        d="M17.1154 0.878906H13.1067C12.4436 0.878906 11.9041 1.41847 11.9041 2.08152V18.9181C11.9041 19.5812 12.4436 20.1207 13.1067 20.1207H17.1154C17.7784 20.1207 18.318 19.5812 18.318 18.9181V2.08152C18.318 1.41847 17.7784 0.878906 17.1154 0.878906Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="19.2418" height="19.2418" fill="white"
+                                                          transform="translate(0.679688 0.878906)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </button>
+
+                                    <button>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                        d="M11.6723 1.58363C11.4491 1.47715 11.1861 1.50538 10.9937 1.66059L4.75422 6.65192H1.77302C1.06621 6.65192 0.490234 7.2279 0.490234 7.93471V13.0659C0.490234 13.774 1.06621 14.3487 1.77302 14.3487H4.75422L10.9924 19.34C11.1092 19.4323 11.2515 19.4798 11.3939 19.4798C11.4889 19.4798 11.5838 19.458 11.6723 19.4157C11.8942 19.3092 12.0353 19.0847 12.0353 18.8384V2.16216C12.0353 1.91587 11.8942 1.69138 11.6723 1.58363Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                                <path
+                                                        d="M15.2819 5.96436C15.0292 5.7155 14.6239 5.71935 14.375 5.96949C14.1261 6.2222 14.1287 6.62756 14.3801 6.87771C15.3499 7.83467 15.8836 9.1213 15.8836 10.5003C15.8836 11.8793 15.3499 13.1659 14.3801 14.1229C14.1287 14.3705 14.1261 14.7771 14.375 15.0298C14.5007 15.1568 14.6662 15.2197 14.8304 15.2197C14.9933 15.2197 15.1562 15.1581 15.2819 15.0337C16.498 13.8368 17.1663 12.2257 17.1663 10.5003C17.1663 8.77495 16.498 7.16377 15.2819 5.96436Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                                <path
+                                                        d="M17.092 4.15688C16.8393 3.90673 16.4339 3.9093 16.1837 4.16072C15.9349 4.41215 15.9375 4.81879 16.1876 5.06766C17.6461 6.51336 18.4491 8.44267 18.4491 10.5003C18.4491 12.5579 17.6461 14.4859 16.1876 15.9316C15.9375 16.1817 15.9349 16.5884 16.1837 16.8398C16.3107 16.9655 16.4749 17.0284 16.6391 17.0284C16.802 17.0284 16.9662 16.9668 17.092 16.8424C18.7955 15.1555 19.7319 12.9029 19.7319 10.5003C19.7319 8.0976 18.7955 5.84503 17.092 4.15688Z"
+                                                        fill="white" fill-opacity="0.3" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="19.2418" height="19.2418" fill="white"
+                                                          transform="translate(0.490234 0.878906)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                    <div>
+                                        <input type="range" min="0" max="100" value="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time_line">
+                                <div>
+                                    <input type="range" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="player__charts__stars">
+                            <ul class="d-flex">
+                                <li>
+                                    <button><img src="./img/star.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button><img src="./img/star-active.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button><img src="./img/star.svg" alt=""></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!---------PLAYER-END------->
                 </div>
             </section>
         </div>
@@ -1373,6 +1546,7 @@
 
 
             $('.charts__tabs button').on('click', (e) => {
+                console.log('click')
                 const id = e.target.getAttribute('data-id')
                 const elem = $(`#${id} .chart-track__list_cont`)[0]
 
@@ -1424,76 +1598,92 @@
 
         })
 
+        /*---------Input Range---------*/
+        const inputs = Array.from($('input[type="range"]'))
+        inputs.forEach(item => {
+            item.addEventListener('input', (e) => {
+                var value = ((e.currentTarget.value - e.currentTarget.min) / (e.currentTarget.max - e
+                    .currentTarget.min)) * 100;
 
-        /*-----Swipe-----*/
+                e.currentTarget.style.background = "linear-gradient(to right, #37E7FF 0%, #37E7FF " +
+                    value +
+                    "%, rgba(255,255,255,.1) " +
+                    value +
+                    "%, rgba(255,255,255,.1) 100%)"
 
-        class Swipe {
-
-            constructor(element, sliders) {
-                this.xDown = null;
-                this.yDown = null;
-                this.sliders = sliders
-                this.slide = 1
-                this.element = typeof (element) === 'string' ? document.querySelector(element) : element;
-
-                this.element.addEventListener('touchstart', function (evt) {
-                    this.xDown = evt.touches[0].clientX;
-                    this.yDown = evt.touches[0].clientY;
-                }.bind(this), false);
-
-            }
-
-            onLeft(callback) {
-                this.onLeft = callback;
-                if (this.slide < this.sliders) {
-                    this.slide += 1
-                    return this;
-                }
-
-            }
-
-            onRight(callback) {
-                this.onRight = callback;
-                if (this.slide > 1) {
-                    this.slide -= 1
-                    return this;
-                }
-
-            }
+            })
+        })
 
 
-            handleTouchMove(evt) {
-                if (!this.xDown || !this.yDown) {
-                    return;
-                }
-
-                var xUp = evt.touches[0].clientX;
-                var yUp = evt.touches[0].clientY;
-
-                this.xDiff = this.xDown - xUp;
-                this.yDiff = this.yDown - yUp;
-
-                if (Math.abs(this.xDiff) > Math.abs(this.yDiff)) { // Most significant.
-                    if (this.xDiff > 0) {
-                        this.onLeft();
-                    } else {
-                        this.onRight();
-                    }
-                } else {
-
-                }
-
-                // Reset values.
-                this.xDown = null;
-                this.yDown = null;
-            }
-
-            run() {
-                this.element.addEventListener('touchmove', function (evt) {
-                    this.handleTouchMove(evt).bind(this);
-                }.bind(this), false);
-            }
-        }
+        // /*-----Swipe-----*/
+        //
+        // class Swipe {
+        //
+        //     constructor(element, sliders) {
+        //         this.xDown = null;
+        //         this.yDown = null;
+        //         this.sliders = sliders
+        //         this.slide = 1
+        //         this.element = typeof (element) === 'string' ? document.querySelector(element) : element;
+        //
+        //         this.element.addEventListener('touchstart', function (evt) {
+        //             this.xDown = evt.touches[0].clientX;
+        //             this.yDown = evt.touches[0].clientY;
+        //         }.bind(this), false);
+        //
+        //     }
+        //
+        //     onLeft(callback) {
+        //         this.onLeft = callback;
+        //         if (this.slide < this.sliders) {
+        //             this.slide += 1
+        //             return this;
+        //         }
+        //
+        //     }
+        //
+        //     onRight(callback) {
+        //         this.onRight = callback;
+        //         if (this.slide > 1) {
+        //             this.slide -= 1
+        //             return this;
+        //         }
+        //
+        //     }
+        //
+        //
+        //     handleTouchMove(evt) {
+        //         if (!this.xDown || !this.yDown) {
+        //             return;
+        //         }
+        //
+        //         var xUp = evt.touches[0].clientX;
+        //         var yUp = evt.touches[0].clientY;
+        //
+        //         this.xDiff = this.xDown - xUp;
+        //         this.yDiff = this.yDown - yUp;
+        //
+        //         if (Math.abs(this.xDiff) > Math.abs(this.yDiff)) { // Most significant.
+        //             if (this.xDiff > 0) {
+        //                 this.onLeft();
+        //             } else {
+        //                 this.onRight();
+        //             }
+        //         } else {
+        //
+        //         }
+        //
+        //         // Reset values.
+        //         this.xDown = null;
+        //         this.yDown = null;
+        //     }
+        //
+        //     run() {
+        //         this.element.addEventListener('touchmove', function (evt) {
+        //             this.handleTouchMove(evt).bind(this);
+        //         }.bind(this), false);
+        //     }
+        // }
 
         class GeneratorTracks {
 
