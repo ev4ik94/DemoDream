@@ -114,7 +114,7 @@ function sortThingByDate(sevent, sthing) {
   }
 
 // menu 
-
+console.log('script work')
 const closeMenuBtn = document.querySelector(".close"),
       openMenuBtn = document.querySelector(".main-nav__burger"),
       menu = document.querySelector(".menu-block");
