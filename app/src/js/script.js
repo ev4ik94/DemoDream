@@ -127,7 +127,7 @@ closeMenuBtn.addEventListener("click", function(e) {
 
 openMenuBtn.addEventListener("click", function(e) {
    e.preventDefault();
-   menu.style.display = "block";
+   menu.style.display = "flex";
    document.body.style.overflowY = "hidden";
 });
 
