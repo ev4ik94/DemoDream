@@ -1065,11 +1065,11 @@
             height: 100%;
             background-color: rgba(29, 29, 39, 1);
             border-radius: 5px;
-
+            padding: 10px;
             &>img {
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
     }
@@ -1817,7 +1817,6 @@
         margin-left: 20px;
     }
 
-<<<<<<< HEAD
     .info__reatings{
         display: none;
     }
@@ -1830,9 +1829,7 @@
         width: 70px;
         height: 70px;
     }
-    
-=======
->>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d
+
     .account__service {
         padding-bottom: 20px;
     }
@@ -1885,13 +1882,13 @@
         margin-bottom: 35px;
         margin-top: 20px;
     }
-<<<<<<< HEAD
+
 
     .form__track_upload, .wrap_chat_block{
         margin-top: 180px;
     }
 
-=======
+
     
     .button_group__add__track button {
         margin-right: 0;
@@ -1905,6 +1902,11 @@
 
 
 @media (max-width: 491px) {
+
+    .form__track_upload, .wrap_chat_block{
+        margin-top: 220px;
+    }
+
     .form__add_track__most {
         flex-wrap: wrap;
         justify-content: center;
@@ -1918,7 +1920,7 @@
     .button_group__add__track button {
         margin-right: 30px;
     }
->>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d
+
 }
 
 @media (max-width: 472px) {
@@ -1934,13 +1936,11 @@
         }
     }
 
-<<<<<<< HEAD
+
     .account__name_rename_block{
         flex-wrap: wrap;
     }
-    
-=======
->>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d
+
     .slick-list {
         height: 185px;
     }
@@ -1964,7 +1964,7 @@
     .account__rename{
         flex-direction: column;
         & .account__input{
-            width: 100%;
+            width: 90%;
         }
 
     }
@@ -1984,17 +1984,15 @@
     }
 
     .account__edit_button {
-        width: 100%;
+        width: 90%;
         padding: 5px;
     }
 
-<<<<<<< HEAD
+
     .account__rename_btn{
         margin-top: 15px;
     }
-    
-=======
->>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d
+
     .account__profile_img {
         min-width: 80px;
         height: 80px;
@@ -2006,16 +2004,13 @@
     }
 }
 
-<<<<<<< HEAD
+
 @media (max-width: 400px) {
     .wrap_chat_block .chat_block_messages .chats_window .chat_balloon{
         width: 200px;
     }
 }
 
-
-
-=======
 
 @media (max-width: 377px) {
     .form__add_track p {
@@ -2071,4 +2066,4 @@
         justify-content: center;
     }
 }
->>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d
+
