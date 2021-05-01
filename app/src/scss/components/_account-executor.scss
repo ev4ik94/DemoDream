@@ -187,7 +187,7 @@
     &__bg img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
     }
 
     &__info {
@@ -515,14 +515,16 @@
     }
 
     &__tools_bottom {
-        margin-top: 25px;
+        margin-top: 15px;
         justify-content: space-between;
     }
 
-    &__tools_bottom>button {
+    &__tools_bottom_buttons>button {
         background-color: transparent;
         border: none;
         outline: none;
+        width: 40px;
+        height: 40px;
     }
 
     &__reatings {
@@ -1686,7 +1688,6 @@
 
     .account__profile_img {
         width: 100px;
-        min-width: 100px;
         height: 100px;
     }
 
@@ -1783,6 +1784,19 @@
     .account__name_rename_block {
         margin-left: 20px;
     }
+
+    .info__reatings{
+        display: none;
+    }
+
+    .info__tools_bottom{
+        justify-content: flex-end;
+    }
+
+    .account__profile_img {
+        width: 70px;
+        height: 70px;
+    }
     
     .account__service {
         padding-bottom: 20px;
@@ -1820,13 +1834,27 @@
     }
     
     .account .slick-list .slick-slide {
-        height: 185px;
+        height: 125px;
+    }
+
+    .account__service p{
+        font-size: 25px;
+    }
+
+    .account__service button{
+        width: 18px;
+        height: 18px;
     }
     
     .account__upload_image {
         margin-bottom: 35px;
         margin-top: 20px;
     }
+
+    .form__track_upload, .wrap_chat_block{
+        margin-top: 180px;
+    }
+
 }
 
 @media (max-width: 472px) {
@@ -1841,13 +1869,22 @@
             height: 20px;
         }
     }
+
+    .account__name_rename_block{
+        flex-wrap: wrap;
+    }
     
     .slick-list {
         height: 185px;
     }
     
     .account .slick-list .slick-slide {
-        height: 175px;
+        height: 135px;
+    }
+
+    .account__social{
+        flex-direction: row;
+        padding-top: 20px;
     }
     
     .account__link {
@@ -1855,6 +1892,14 @@
         & a {
             padding-left: 5px;
         }
+    }
+
+    .account__rename{
+        flex-direction: column;
+        & .account__input{
+            width: 100%;
+        }
+
     }
     
     .account__input_name {
@@ -1868,8 +1913,12 @@
     }
     
     .account__edit_button {
-        width: 130px;
+        width: 100%;
         padding: 5px;
+    }
+
+    .account__rename_btn{
+        margin-top: 15px;
     }
     
     .account__profile_img {
@@ -1882,3 +1931,12 @@
         height: 40px;
     }
 }
+
+@media (max-width: 400px) {
+    .wrap_chat_block .chat_block_messages .chats_window .chat_balloon{
+        width: 200px;
+    }
+}
+
+
+
