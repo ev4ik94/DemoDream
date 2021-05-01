@@ -954,6 +954,7 @@
 .modal_overlay.show {
     opacity: 1;
     visibility: visible;
+    overflow-y: scroll;
 }
 
 .modal_overlay:not(show) {
@@ -972,15 +973,28 @@
     & p {
         color: #fff;
     }
-
+    
+    &__wrap {
+        flex-wrap: wrap;
+    }
+    
+    &__most {
+        display: flex;
+        align-items: center;
+    }
+    
     &__forms {
-        width: var(--col-8);
+        flex-grow: 1;
         overflow-X: scroll;
     }
 
     &__item_form {
         width: 350px;
         padding: 10px;
+        
+        &:last-child{
+            margin-left: 40px;
+        }
 
         & input {
             background-color: rgba(29, 29, 39, 1);
@@ -1014,12 +1028,12 @@
         }
     }
 
-    &__enter {
-        width: 9999px;
-    }
-
     &__track_list {
-        width: var(--col-4);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        max-width: 300px;
+        width: 100%;
 
 
         & ol {
@@ -1081,7 +1095,8 @@
     }
 
     & .add-new-label {
-        right: 15px;
+        margin-left: 30px;
+        right: 47px;
         width: 35px;
         top: 50%;
         height: 35px;
@@ -1671,6 +1686,12 @@
 }
 
 /*---------Media Queries-------------*/
+@media (max-width: 1241px) {
+    .form__add_track__item_form:last-child {
+        display: none;
+    }
+}
+
 
 @media (max-width: 900px) {
     .account__upload_image {
@@ -1780,11 +1801,23 @@
     }
 }
 
+@media (max-width: 624px) {
+    .button_group__add__track {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .button_group__add__track button {
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 600px) {
     .account__name_rename_block {
         margin-left: 20px;
     }
 
+<<<<<<< HEAD
     .info__reatings{
         display: none;
     }
@@ -1798,41 +1831,43 @@
         height: 70px;
     }
     
+=======
+>>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d
     .account__service {
         padding-bottom: 20px;
-    } 
-    
+    }
+
     .mask__bells {
-        display: block!important;
-        
-         & button {
+        display: block !important;
+
+        & button {
             background: transparent;
             border: none;
             margin-left: 10px;
-         }
+        }
     }
-    
+
     .account__social {
         justify-content: space-between;
     }
-    
+
     .account__button_mobile {
         margin-top: 50px;
     }
-    
+
     .section_two {
         margin-top: 45px;
     }
-    
+
     .account__rename_btn {
         display: flex;
         flex-direction: column;
     }
-    
+
     .account__edit_button {
         margin-bottom: 10px;
     }
-    
+
     .account .slick-list .slick-slide {
         height: 125px;
     }
@@ -1845,39 +1880,71 @@
         width: 18px;
         height: 18px;
     }
-    
+
     .account__upload_image {
         margin-bottom: 35px;
         margin-top: 20px;
     }
+<<<<<<< HEAD
 
     .form__track_upload, .wrap_chat_block{
         margin-top: 180px;
     }
 
+=======
+    
+    .button_group__add__track button {
+        margin-right: 0;
+    }
+    
+    .button_group__add__track {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media (max-width: 491px) {
+    .form__add_track__most {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .form__add_track .add-new-label {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    
+    .button_group__add__track button {
+        margin-right: 30px;
+    }
+>>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d
 }
 
 @media (max-width: 472px) {
-    .account__service  {
-        
+    .account__service {
+
         & p {
             font-size: 23px;
         }
-        
+
         & button {
             width: 20px;
             height: 20px;
         }
     }
 
+<<<<<<< HEAD
     .account__name_rename_block{
         flex-wrap: wrap;
     }
     
+=======
+>>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d
     .slick-list {
         height: 185px;
     }
-    
+
     .account .slick-list .slick-slide {
         height: 135px;
     }
@@ -1886,9 +1953,9 @@
         flex-direction: row;
         padding-top: 20px;
     }
-    
+
     .account__link {
-        
+
         & a {
             padding-left: 5px;
         }
@@ -1902,36 +1969,44 @@
 
     }
     
+    .form__add_track .add-new-label {
+        margin-bottom: 20px;
+    }
+
     .account__input_name {
         font-size: 16px;
         line-height: 0;
         padding: 5px 0 5px 5px;
     }
-    
+
     .account__status_re {
         font-size: 14px;
     }
-    
+
     .account__edit_button {
         width: 100%;
         padding: 5px;
     }
 
+<<<<<<< HEAD
     .account__rename_btn{
         margin-top: 15px;
     }
     
+=======
+>>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d
     .account__profile_img {
         min-width: 80px;
         height: 80px;
     }
-    
+
     .account__profile_img button {
         width: 40px;
         height: 40px;
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 400px) {
     .wrap_chat_block .chat_block_messages .chats_window .chat_balloon{
         width: 200px;
@@ -1940,3 +2015,60 @@
 
 
 
+=======
+
+@media (max-width: 377px) {
+    .form__add_track p {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 361px) {
+    
+    
+    .form__add_track__most {
+        flex-wrap: wrap;
+    }
+    
+    .form__add_track .add-new-label {
+        margin-bottom: 25px;
+    }
+    
+    .form__add_track__item_form input {
+        width: 82%;
+        margin-left: 32px;
+    }
+    
+    .form__add_track__justify {
+        justify-content: center;
+    }
+    
+    .form__add_track__upload_image {
+        width: 40%;
+    }
+    
+    .form__add_track__upload_track > div div {
+        width: 140px;
+    }
+    
+    .form__add_track__upload_track {
+        width: 130px;
+    }
+    
+    .button_group__add__track {
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    
+    .button_group__add__track button {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    
+    .form__add_track p {
+        display: flex;
+        justify-content: center;
+    }
+}
+>>>>>>> 0d4e75720cc3d95c69a337b3e1a8246fc0ada76d

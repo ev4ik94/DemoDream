@@ -3,6 +3,6 @@ module.exports = function () {
         $.gulp.src($.path.src.js)
         .pipe($.gp.include())
         .pipe($.gp.babel())
-        .pipe($.gulp.dest($.path.build.js)).on("change", $.bs.reload)
+        .pipe($.gulp.dest($.path.build.js)).on("end", $.bs.reload)
     )
 }

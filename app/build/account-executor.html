@@ -720,88 +720,85 @@
             </button>
             <div class="form__add_track">
 
-                <div class="d-flex">
+                <div class="d-flex form__add_track__wrap">
                     <div class="form__add_track__forms position-relative">
                         <p>Мои треки: 6</p>
-                        <div class="form__add_track__enter d-flex">
-                            <div class="form__add_track__item_form">
-                                <p>Альбом №1</p>
-
-
-                                <form action="">
-                                    <input type="text" placeholder="Название альбома">
-                                    <div class="d-flex">
-                                        <div class="form__add_track__upload_image">
-                                            <div>
-                                                <img src="/img/upload-image-default.svg" alt=""
-                                                    class="position-absolute">
-                                            </div>
-                                        </div>
-                                        <div class="form__add_track__upload_track">
-                                            <div>
+                        <div class="form__add_track__most">
+                            <div class="form__add_track__enter d-flex">
+                                <div class="form__add_track__item_form">
+                                    <p>Альбом №1</p>
+                                    <form action="">
+                                        <input type="text" placeholder="Название альбома">
+                                        <div class="d-flex form__add_track__justify">
+                                            <div class="form__add_track__upload_image">
                                                 <div>
-                                                    <p>Трек1</p>
-                                                </div>
-                                                <div>
-                                                    <p>Трек1</p>
-                                                </div>
-                                                <div>
-                                                    <p>Трек1</p>
-                                                </div>
-                                                <div>
-                                                    <p>Трек1</p>
+                                                    <img src="/img/upload-image-default.svg" alt=""
+                                                        class="position-absolute">
                                                 </div>
                                             </div>
+                                            <div class="form__add_track__upload_track">
+                                                <div>
+                                                    <div>
+                                                        <p>Трек1</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Трек1</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Трек1</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Трек1</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form__add_track__buttons_upload d-flex">
-                                        <button>Загрузить обложку</button>
-                                        <button>Загрузить трек</button>
-                                    </div>
-                                    <input type="text" placeholder="Пропиши хештеги">
-                                </form>
+                                        <div class="form__add_track__buttons_upload d-flex">
+                                            <button>Загрузить обложку</button>
+                                            <button>Загрузить трек</button>
+                                        </div>
+                                        <input type="text" placeholder="Пропиши хештеги">
+                                    </form>
+                                </div>
+
+                                <div class="form__add_track__item_form position-relative">
+                                    <p>Альбом №1</p>
+                                    <form action="">
+                                        <input type="text" placeholder="Название альбома">
+                                        <div class="d-flex ">
+                                            <div class="form__add_track__upload_image">
+                                                <div>
+                                                    <img src="/img/upload-image-default.svg" alt=""
+                                                        class="position-absolute">
+                                                </div>
+                                            </div>
+                                            <div class="form__add_track__upload_track">
+                                                <div>
+                                                    <div>
+                                                        <p>Трек1</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Трек1</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Трек1</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>Трек1</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form__add_track__buttons_upload d-flex">
+                                            <button>Загрузить обложку</button>
+                                            <button>Загрузить трек</button>
+                                        </div>
+                                        <input type="text" placeholder="Пропиши хештеги">
+                                    </form>
+                                </div>
                             </div>
-
-                            <div class="form__add_track__item_form position-relative">
-                                <p>Альбом №1</p>
-                                <form action="">
-                                    <input type="text" placeholder="Название альбома">
-                                    <div class="d-flex">
-                                        <div class="form__add_track__upload_image">
-                                            <div>
-                                                <img src="/img/upload-image-default.svg" alt=""
-                                                    class="position-absolute">
-                                            </div>
-                                        </div>
-                                        <div class="form__add_track__upload_track">
-                                            <div>
-                                                <div>
-                                                    <p>Трек1</p>
-                                                </div>
-                                                <div>
-                                                    <p>Трек1</p>
-                                                </div>
-                                                <div>
-                                                    <p>Трек1</p>
-                                                </div>
-                                                <div>
-                                                    <p>Трек1</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form__add_track__buttons_upload d-flex">
-                                        <button>Загрузить обложку</button>
-                                        <button>Загрузить трек</button>
-                                    </div>
-                                    <input type="text" placeholder="Пропиши хештеги">
-                                </form>
-
-
-                            </div>
-
+                            <button class="add-new-label" id="add-new-label">+</button>
                         </div>
-                        <button class="position-absolute add-new-label" id="add-new-label">+</button>
                     </div>
 
                     <div class="form__add_track__track_list">
@@ -826,6 +823,18 @@
                             </li>
                             <li>
                                 <p>Моя семья</p>
+                            </li>
+                            <li>
+                                <p>Танцпол</p>
+                            </li>
+                            <li>
+                                <p>DANCE</p>
+                            </li>
+                            <li>
+                                <p>Многоэтажки</p>
+                            </li>
+                            <li>
+                                <p>Неоновый свет</p>
                             </li>
                         </ol>
                     </div>

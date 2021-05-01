@@ -1076,6 +1076,12 @@
 
 /* ==================MEDIA================= */
 
+@media (max-width: 944px) {
+  .label-menegment__margin {
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 600px) {
   .liric {
     flex-direction: column;
@@ -1096,10 +1102,8 @@
     
     &__all {
       flex-wrap: wrap;
+      width: 100%;
     }
-    
-    &__margin {
-      margin-left: 85px; }
   }
 }
 
