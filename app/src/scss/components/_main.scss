@@ -3,36 +3,36 @@
     background-size: cover;
     padding-top: 45px;
     padding-bottom: 36px;
-    
+
     &-nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        
-         &__button--white {
+
+        &__button--white {
             margin-right: 52px;
             margin-left: 16px;
         }
-        
+
         &__burger {
             vertical-align: middle;
         }
     }
 
-    
+
     &__button {
         padding: 18px 60px;
         text-align: center;
         margin-bottom: 101px;
-       
+
     }
-    
+
     &__items {
         display: flex;
         justify-content: space-around;
     }
-    
+
     &__subtitle {
         font-weight: 300;
         font-size: 20px;
@@ -45,7 +45,7 @@
         padding-bottom: 67px;
         padding-top: 51px;
     }
-    
+
     &__title {
         font-size: 164px;
         line-height: 200px;
@@ -54,55 +54,64 @@
         color: #fff;
         text-align: center;
         white-space: nowrap;
-        
+
     }
-    
+
     &__description {
         text-align: center;
         margin: 0 auto;
         padding-bottom: 76px;
         padding-top: 45px;
     }
-    
-    &__social a:not(:last-child){
+
+    &__social a:not(:last-child) {
         margin-right: 12px;
     }
+
+    &__desc_mob {
+        font-weight: 700;
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+
+        & span {
+            font-weight: 400;
+            color: #fff;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+
 }
 
 @media screen and (max-width:1231px) {
     .main {
+
+
         &__title {
             font-size: 110px;
         }
-        
+
         &__subtitle {
             padding-top: 55px;
             padding-bottom: 24px;
         }
-        
+
         &__description {
             padding-top: 8px;
             margin-bottom: 40px;
         }
-    } 
+    }
 }
 
-@media screen and (max-width:883px) {
-    .main {
-        &__title {
-            font-size: 60px;
-            line-height: 50px;
-            letter-spacing: 5px;
-        }
-    } 
-}
 
 /* ---------Шапка для авторизованного---------------------- */
 
 .mask {
     display: flex;
     align-items: center;
-    
+
     &__img {
         margin-right: 13px;
     }
@@ -134,12 +143,12 @@
         line-height: 17px;
         color: rgba(255, 255, 255, 0.5);
     }
-    
+
     &__content {
         display: flex;
         align-items: center;
     }
-    
+
     &__bell {
         margin-left: 30px;
         background: transparent;
@@ -147,11 +156,87 @@
     }
 }
 
-/* ================АДАПТАЦИЯ===================== */ 
+/* ================АДАПТАЦИЯ===================== */
 
-@media (max-width:475px) {
-    .main__subtitle {
-        text-align: left;
-        font-size: 20px;
+@media (max-width:472px) {
+    .main {
+        background: transparent;
+
+        &__banner {
+            background: url(../../img/pngwing3.png) center center / cover no-repeat;
+            filter: drop-shadow(-130px 4px 20px rgba(0, 0, 0, 0.35));
+        }
+
+        &__subtitle {
+            text-align: left;
+            font-size: 20px;
+        }
+
+        &__title {
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1;
+            font-size: 95px;
+        }
+
+        &-nav {
+            padding-top: 0;
+        }
+
+        &__description {
+            display: none;
+        }
+
+        &__items {
+            justify-content: space-between;
+        }
+
+        &__social {
+            display: none;
+        }
+
+        &__button_mob {
+            margin-bottom: 46px;
+            margin-top: 68px;
+            display: block !important;
+
+            & a {
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 700;
+                text-decoration: none;
+                color: #fff;
+                padding: 20px 48px 20px 45px;
+                background: #F70E4D;
+                border-radius: 5px;
+            }
+        }
+
+        &__button {
+            display: none;
+        }
+
+        &__desc_mob {
+            display: block !important;
+            margin-top: 18px;
+        }
+
+        &__year_mob {
+            display: block !important;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+            color: #fff;
+            margin-top: 64px;
+            margin-bottom: 50px;
+        }
+        
+        &__text {
+            width: 150px;
+            margin-bottom: 40px;
+            &:last-child {
+                display: none; 
+            }
+        }
     }
 }
