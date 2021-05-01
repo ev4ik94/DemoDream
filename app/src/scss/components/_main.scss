@@ -146,3 +146,12 @@
         border: none;
     }
 }
+
+/* ================АДАПТАЦИЯ===================== */ 
+
+@media (max-width:475px) {
+    .main__subtitle {
+        text-align: left;
+        font-size: 20px;
+    }
+}
