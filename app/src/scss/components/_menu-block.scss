@@ -24,11 +24,13 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        & > div{
+
+        &>div {
             flex-direction: column;
             width: 100%;
             align-items: center;
-            & > div:first-child{
+
+            &>div:first-child {
                 justify-content: space-between;
             }
         }
@@ -38,13 +40,14 @@
         display: flex;
         justify-content: space-between;
     }
-    
+
     &__list {
         display: flex;
     }
-    
+
     &__social {
         margin-right: 110px;
+
         & a {
             margin-right: 9px;
         }
@@ -67,12 +70,13 @@
             color: #868686;
         }
     }
-    
+
     &__buttons {
         margin-top: 45px;
         display: flex;
         justify-content: space-between;
-        & > div{
+
+        &>div {
             width: var(--col-3);
         }
     }
@@ -86,6 +90,7 @@
         padding: 8px 21px 10px 21px;
         background: #F70E4D;
         border-radius: 5px;
+
         &:hover {
             background: #fff;
             color: rgba(0, 0, 0, 0.7);
@@ -102,9 +107,73 @@
         box-sizing: border-box;
         border-radius: 5px;
         padding: 8px 21px 8px 21px;
+
         &:hover {
             border: 1px solid #FFFFFF;
             color: #fff;
+        }
+    }
+}
+
+
+
+/* ==============Адаптация============ */
+
+@media (max-width: 472px) {
+    .menu-block {
+        padding: 35px 36px 25px 22px;
+        width: 81%;
+        margin-left: auto;
+
+
+        &__items {
+            justify-content: flex-end;
+            right: 25px;
+            position: absolute;
+        }
+
+        &__item:first-child {
+            display: none;
+        }
+
+        &__column>div {
+            align-items: flex-start;
+        }
+
+        &__column>div>div:first-child {
+            display: block !important;
+        }
+        
+        &__buttons {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 15px;
+            & div:first-child{
+                margin-top: 20px;
+                margin-bottom: 14px;
+            }
+        }
+        
+        &__social {
+            margin-right: 0;
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        &__list {
+            flex-direction: column-reverse;
+        }
+        
+        &__call {
+            display: flex;
+        }
+        
+        &__column-below {
+            flex-direction: column;
+        }
+        
+        &__end {
+            margin-top: 45px;
         }
     }
 }

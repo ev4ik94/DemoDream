@@ -676,885 +676,891 @@
         </div>
     </div>
     <!--Конец блока-меню-->
-    <section class="charts container">
-        <h2 class="charts__title h2-title">Чарты</h2>
-        <section class="charts__tabs tabs">
-            <div class="tabs__list">
-                <div class="tabs__buttons">
-                    <button href="#" class="tablinks button-tabs active" onclick="openCity(event, 'tracks')">По
-                        трекам</button>
-                    <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'authors')">По
-                        исполнителям</button>
-                    <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'albums')">По
-                        альбомам</button>
-                </div>
-            </div>
-            <div id="tracks" class="tabcontent chart-tracks active">
-                <a href="#" class="charts__link link-blue">Показать все</a>
-                <div class="chart-tracks__list">
-                    <div class="chart-tracks__item">
-                        <div class="chart-tracks__pic">
-                            <img src="img/chart1.png" alt="">
-                            <div class="chart-tracks__buttons">
-                                <a href="#"><img src="img/voice.svg" alt=""></a>
-                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
-                                <a href="#"><img src="img/user.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <h4 class="tracks__album-name">Ракета</h4>
-                        <span class="tracks__album-author">Gigs</span>
-                        <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                    </div>
-                    <div class="chart-tracks__item">
-                        <div class="chart-tracks__pic">
-                            <img src="img/char1.png" alt="">
-                            <div class="chart-tracks__buttons">
-                                <a href="#"><img src="img/voice.svg" alt=""></a>
-                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
-                                <a href="#"><img src="img/user.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <h4 class="tracks__album-name">Почему всё так</h4>
-                        <span class="tracks__album-author">Алина Найз & Пар</span>
-                        <p class="chart-tracks__text text-uppercase">Голоса: <span>985</span></p>
-                    </div>
-                    <div class="chart-tracks__item">
-                        <div class="chart-tracks__pic">
-                            <img src="img/char2.png" alt="">
-                            <div class="chart-tracks__buttons">
-                                <a href="#"><img src="img/voice.svg" alt=""></a>
-                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
-                                <a href="#"><img src="img/user.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <h4 class="tracks__album-name">Cool</h4>
-                        <span class="tracks__album-author">MC Longsliv</span>
-                        <p class="chart-tracks__text text-uppercase">Голоса: <span>630</span></p>
-                    </div>
-                    <div class="chart-tracks__item">
-                        <div class="chart-tracks__pic">
-                            <img src="img/char3.png" alt="">
-                            <div class="chart-tracks__buttons">
-                                <a href="#"><img src="img/voice.svg" alt=""></a>
-                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
-                                <a href="#"><img src="img/user.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <h4 class="tracks__album-name">Растафарай</h4>
-                        <span class="tracks__album-author">Городские легенды</span>
-                        <p class="chart-tracks__text text-uppercase">Голоса: <span>619</span></p>
-                    </div>
-                    <div class="chart-tracks__item">
-                        <div class="chart-tracks__pic">
-                            <img src="img/char4.png" alt="">
-                            <div class="chart-tracks__buttons">
-                                <a href="#"><img src="img/voice.svg" alt=""></a>
-                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
-                                <a href="#"><img src="img/user.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <h4 class="tracks__album-name">Качели</h4>
-                        <span class="tracks__album-author">Зной & Lil Smitt</span>
-                        <p class="chart-tracks__text text-uppercase">Голоса: <span>573</span></p>
-                    </div>
-                    <div class="chart-tracks__item">
-                        <div class="chart-tracks__pic">
-                            <img src="img/char5.png" alt="">
-                            <div class="chart-tracks__buttons">
-                                <a href="#"><img src="img/voice.svg" alt=""></a>
-                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
-                                <a href="#"><img src="img/user.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <h4 class="tracks__album-name">My capital</h4>
-                        <span class="tracks__album-author">Королина & Макси</span>
-                        <p class="chart-tracks__text text-uppercase">Голоса: <span>490</span></p>
-                    </div>
-                    <div class="chart-tracks__item">
-                        <div class="chart-tracks__pic">
-                            <img src="img/char6.png" alt="">
-                            <div class="chart-tracks__buttons">
-                                <a href="#"><img src="img/voice.svg" alt=""></a>
-                                <a href="#"><img src="img/play-bt.svg" alt=""></a>
-                                <a href="#"><img src="img/user.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <h4 class="tracks__album-name">А может быть п</h4>
-                        <span class="tracks__album-author">Рик Хант</span>
-                        <p class="chart-tracks__text text-uppercase">Голоса: <span>236</span></p>
+    <section class="charts backgr">
+        <div class="container">
+            <h2 class="charts__title h2-title">Чарты</h2>
+            <section class="charts__tabs tabs">
+                <div class="tabs__list">
+                    <div class="tabs__buttons">
+                        <button href="#" class="tablinks button-tabs active" onclick="openCity(event, 'tracks')"
+                            data-id="tracks">По
+                            трекам</button>
+                        <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'authors')"
+                            data-id="authors">По
+                            исполнителям</button>
+                        <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'albums')"
+                            data-id="albums">По
+                            альбомам</button>
                     </div>
                 </div>
-                <!------PLAYER-------------->
-                <div class="player__charts d-flex">
-
-                    <div class="player__charts__player_block">
-                        <div class="player__charts__buttons_player d-flex">
-                            <div class="player__charts__track_name">
-                                <p>Ракета</p>
-                                <p>Gigs</p>
+                <div id="tracks" class="tabcontent chart-tracks active">
+                    <a href="#" class="charts__link link-blue">Показать все</a>
+                    <div class="chart-tracks__list chart-track__list_main-cont">
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/chart1.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
                             </div>
-                            <div class="d-flex">
-                                <button>
-                                    <svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.6033 12.0408C26.1023 12.9063 26.1023 15.0699 24.6033 15.9354L4.3667 27.619C2.86769 28.4844 0.993931 27.4026 0.993931 25.6717V2.30448C0.993931 0.573578 2.86769 -0.508236 4.3667 0.357217L24.6033 12.0408Z" />
-                                    </svg>
-                                </button>
-                                <button>
-                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0)">
-                                            <path
-                                                d="M7.49451 0.878906H3.48582C2.82276 0.878906 2.2832 1.41847 2.2832 2.08152V18.9181C2.2832 19.5812 2.82276 20.1207 3.48582 20.1207H7.49454C8.1576 20.1207 8.69716 19.5812 8.69716 18.9181V2.08152C8.69712 1.41847 8.15756 0.878906 7.49451 0.878906Z"
-                                                fill="white" fill-opacity="0.3" />
-                                            <path
-                                                d="M17.1154 0.878906H13.1067C12.4436 0.878906 11.9041 1.41847 11.9041 2.08152V18.9181C11.9041 19.5812 12.4436 20.1207 13.1067 20.1207H17.1154C17.7784 20.1207 18.318 19.5812 18.318 18.9181V2.08152C18.318 1.41847 17.7784 0.878906 17.1154 0.878906Z"
-                                                fill="white" fill-opacity="0.3" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0">
-                                                <rect width="19.2418" height="19.2418" fill="white"
-                                                    transform="translate(0.679688 0.878906)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
+                            <h4 class="tracks__album-name">Ракета</h4>
+                            <span class="tracks__album-author">Gigs</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char1.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">Почему всё так</h4>
+                            <span class="tracks__album-author">Алина Найз & Пар</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>985</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char2.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">Cool</h4>
+                            <span class="tracks__album-author">MC Longsliv</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>630</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char3.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">Растафарай</h4>
+                            <span class="tracks__album-author">Городские легенды</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>619</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char4.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">Качели</h4>
+                            <span class="tracks__album-author">Зной & Lil Smitt</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>573</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char5.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">My capital</h4>
+                            <span class="tracks__album-author">Королина & Макси</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>490</span></p>
+                        </div>
+                        <div class="chart-tracks__item">
+                            <div class="chart-tracks__pic">
+                                <img src="img/char6.png" alt="">
+                                <div class="chart-tracks__buttons">
+                                    <a href="#"><img src="img/voice.svg" alt=""></a>
+                                    <a href="#"><img src="img/play-bt.svg" alt=""></a>
+                                    <a href="#"><img src="img/user.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <h4 class="tracks__album-name">А может быть п</h4>
+                            <span class="tracks__album-author">Рик Хант</span>
+                            <p class="chart-tracks__text text-uppercase">Голоса: <span>236</span></p>
+                        </div>
+                    </div>
 
-                                </button>
+                    <!------PLAYER-------------->
+                    <div class="player__charts d-flex">
 
-                                <button>
-                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0)">
+                        <div class="player__charts__player_block">
+                            <div class="player__charts__buttons_player d-flex">
+                                <div class="player__charts__track_name">
+                                    <p>Ракета</p>
+                                    <p>Gigs</p>
+                                </div>
+                                <div class="d-flex">
+                                    <button>
+                                        <svg width="26" height="28" viewBox="0 0 26 28"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M11.6723 1.58363C11.4491 1.47715 11.1861 1.50538 10.9937 1.66059L4.75422 6.65192H1.77302C1.06621 6.65192 0.490234 7.2279 0.490234 7.93471V13.0659C0.490234 13.774 1.06621 14.3487 1.77302 14.3487H4.75422L10.9924 19.34C11.1092 19.4323 11.2515 19.4798 11.3939 19.4798C11.4889 19.4798 11.5838 19.458 11.6723 19.4157C11.8942 19.3092 12.0353 19.0847 12.0353 18.8384V2.16216C12.0353 1.91587 11.8942 1.69138 11.6723 1.58363Z"
-                                                fill="white" fill-opacity="0.3" />
-                                            <path
-                                                d="M15.2819 5.96436C15.0292 5.7155 14.6239 5.71935 14.375 5.96949C14.1261 6.2222 14.1287 6.62756 14.3801 6.87771C15.3499 7.83467 15.8836 9.1213 15.8836 10.5003C15.8836 11.8793 15.3499 13.1659 14.3801 14.1229C14.1287 14.3705 14.1261 14.7771 14.375 15.0298C14.5007 15.1568 14.6662 15.2197 14.8304 15.2197C14.9933 15.2197 15.1562 15.1581 15.2819 15.0337C16.498 13.8368 17.1663 12.2257 17.1663 10.5003C17.1663 8.77495 16.498 7.16377 15.2819 5.96436Z"
-                                                fill="white" fill-opacity="0.3" />
-                                            <path
-                                                d="M17.092 4.15688C16.8393 3.90673 16.4339 3.9093 16.1837 4.16072C15.9349 4.41215 15.9375 4.81879 16.1876 5.06766C17.6461 6.51336 18.4491 8.44267 18.4491 10.5003C18.4491 12.5579 17.6461 14.4859 16.1876 15.9316C15.9375 16.1817 15.9349 16.5884 16.1837 16.8398C16.3107 16.9655 16.4749 17.0284 16.6391 17.0284C16.802 17.0284 16.9662 16.9668 17.092 16.8424C18.7955 15.1555 19.7319 12.9029 19.7319 10.5003C19.7319 8.0976 18.7955 5.84503 17.092 4.15688Z"
-                                                fill="white" fill-opacity="0.3" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0">
-                                                <rect width="19.2418" height="19.2418" fill="white"
-                                                    transform="translate(0.490234 0.878906)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </button>
+                                                d="M24.6033 12.0408C26.1023 12.9063 26.1023 15.0699 24.6033 15.9354L4.3667 27.619C2.86769 28.4844 0.993931 27.4026 0.993931 25.6717V2.30448C0.993931 0.573578 2.86769 -0.508236 4.3667 0.357217L24.6033 12.0408Z" />
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M7.49451 0.878906H3.48582C2.82276 0.878906 2.2832 1.41847 2.2832 2.08152V18.9181C2.2832 19.5812 2.82276 20.1207 3.48582 20.1207H7.49454C8.1576 20.1207 8.69716 19.5812 8.69716 18.9181V2.08152C8.69712 1.41847 8.15756 0.878906 7.49451 0.878906Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                                <path
+                                                    d="M17.1154 0.878906H13.1067C12.4436 0.878906 11.9041 1.41847 11.9041 2.08152V18.9181C11.9041 19.5812 12.4436 20.1207 13.1067 20.1207H17.1154C17.7784 20.1207 18.318 19.5812 18.318 18.9181V2.08152C18.318 1.41847 17.7784 0.878906 17.1154 0.878906Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="19.2418" height="19.2418" fill="white"
+                                                        transform="translate(0.679688 0.878906)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </button>
+
+                                    <button>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M11.6723 1.58363C11.4491 1.47715 11.1861 1.50538 10.9937 1.66059L4.75422 6.65192H1.77302C1.06621 6.65192 0.490234 7.2279 0.490234 7.93471V13.0659C0.490234 13.774 1.06621 14.3487 1.77302 14.3487H4.75422L10.9924 19.34C11.1092 19.4323 11.2515 19.4798 11.3939 19.4798C11.4889 19.4798 11.5838 19.458 11.6723 19.4157C11.8942 19.3092 12.0353 19.0847 12.0353 18.8384V2.16216C12.0353 1.91587 11.8942 1.69138 11.6723 1.58363Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                                <path
+                                                    d="M15.2819 5.96436C15.0292 5.7155 14.6239 5.71935 14.375 5.96949C14.1261 6.2222 14.1287 6.62756 14.3801 6.87771C15.3499 7.83467 15.8836 9.1213 15.8836 10.5003C15.8836 11.8793 15.3499 13.1659 14.3801 14.1229C14.1287 14.3705 14.1261 14.7771 14.375 15.0298C14.5007 15.1568 14.6662 15.2197 14.8304 15.2197C14.9933 15.2197 15.1562 15.1581 15.2819 15.0337C16.498 13.8368 17.1663 12.2257 17.1663 10.5003C17.1663 8.77495 16.498 7.16377 15.2819 5.96436Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                                <path
+                                                    d="M17.092 4.15688C16.8393 3.90673 16.4339 3.9093 16.1837 4.16072C15.9349 4.41215 15.9375 4.81879 16.1876 5.06766C17.6461 6.51336 18.4491 8.44267 18.4491 10.5003C18.4491 12.5579 17.6461 14.4859 16.1876 15.9316C15.9375 16.1817 15.9349 16.5884 16.1837 16.8398C16.3107 16.9655 16.4749 17.0284 16.6391 17.0284C16.802 17.0284 16.9662 16.9668 17.092 16.8424C18.7955 15.1555 19.7319 12.9029 19.7319 10.5003C19.7319 8.0976 18.7955 5.84503 17.092 4.15688Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="19.2418" height="19.2418" fill="white"
+                                                        transform="translate(0.490234 0.878906)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                    <div>
+                                        <input type="range" min="0" max="100" value="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time_line">
                                 <div>
                                     <input type="range" min="0" max="100" value="100">
                                 </div>
                             </div>
                         </div>
-                        <div class="time_line">
-                            <div>
-                                <input type="range" min="0" max="100" value="100">
-                            </div>
+
+                        <div class="player__charts__stars">
+                            <ul class="d-flex">
+                                <li>
+                                    <button><img src="./img/star.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button><img src="./img/star-active.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button><img src="./img/star.svg" alt=""></button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="player__charts__stars">
-                        <ul class="d-flex">
-                            <li>
-                                <button><img src="./img/star.svg" alt=""></button>
-                            </li>
-                            <li>
-                                <button><img src="./img/star-active.svg" alt=""></button>
-                            </li>
-                            <li>
-                                <button><img src="./img/star.svg" alt=""></button>
-                            </li>
-                        </ul>
-                    </div>
+                    <!---------PLAYER-END------->
                 </div>
-                <!---------PLAYER-END------->
-            </div>
-            <div id="authors" class="tabcontent chart-authors">
-                <div class="tabs__buttons charts-buttons">
-                    <button href="#" class="inner-tablinks button-bottom active" onclick="sortThing(event, 'day')">За
-                        день</button>
-                    <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'week')">За
-                        неделю</button>
-                    <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'month')">За
-                        месяц</button>
-                    <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'year')">За
-                        год</button>
-                </div>
-                <div id="day" class="inner-tabcontent charts-authors__date active">
-                    <div class="charts-author__list">
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">1.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Gigs</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">2.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Алина Найз & Пар..</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">3.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">MC Longsliv</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">4.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Городские легенды</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">5.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Зной & Lil Smith</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">6.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Королина & Макси...</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">7.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Рик Хант</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
-                            </div>
-                        </div>
-
-                        <a href="#" class="charts-author__link link-blue">Показать все</a>
-                    </div>
-                </div>
-                <div id="week" class="inner-tabcontent charts-authors__date">
-                    <div class="charts-author__list">
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">1.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Gigs</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">2.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Алина Найз & Пар..</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">3.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">MC Longsliv</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">4.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Городские легенды</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">5.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Зной & Lil Smith</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">6.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Королина & Макси...</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">7.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Рик Хант</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
-                            </div>
-                        </div>
-
-                        <a href="#" class="charts-author__link link-blue">Показать все</a>
-                    </div>
-                </div>
-                <div id="month" class="inner-tabcontent charts-authors__date">
-                    <div class="charts-author__list">
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">1.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Gigs</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">2.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Алина Найз & Пар..</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">3.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">MC Longsliv</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">4.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Городские легенды</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">5.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Зной & Lil Smith</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">6.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Королина & Макси...</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">7.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Рик Хант</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
-                            </div>
-                        </div>
-
-                        <a href="#" class="charts-author__link link-blue">Показать все</a>
-                    </div>
-                </div>
-                <div id="year" class="inner-tabcontent charts-authors__date">
-                    <div class="charts-author__list">
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">1.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Gigs</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">2.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Алина Найз & Пар..</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">3.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">MC Longsliv</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">4.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Городские легенды</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">5.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Зной & Lil Smith</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">6.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Королина & Макси...</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
-                            </div>
-                        </div>
-                        <div class="charts-author__item">
-                            <div class="charts-author__left-side">
-                                <p class="charts-author__count">7.</p>
-                                <img src="img/author-icon.png" class="charts-author__image">
-                            </div>
-                            <div class="charts-author__right-side">
-                                <p class="charts-author__name">Рик Хант</p>
-                                <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
-                            </div>
-                        </div>
-                        <a href="#" class="charts-author__link link-blue">Показать все</a>
-                    </div>
-                </div>
-            </div>
-            <div id="albums" class="tabcontent chart-albums">
-                <div class="charts-albums__wrapper">
+                <div id="authors" class="tabcontent chart-authors sub__buttons_chart">
                     <div class="tabs__buttons charts-buttons">
-                        <button href="#" class="sinner-tablinks button-bottom active"
-                            onclick="sortThingByDate(event, 'sday')">За день</button>
-                        <button href="#" class="sinner-tablinks button-bottom"
-                            onclick="sortThingByDate(event, 'sweek')">За неделю</button>
-                        <button href="#" class="sinner-tablinks button-bottom"
-                            onclick="sortThingByDate(event, 'smonth')">За месяц</button>
-                        <button href="#" class="sinner-tablinks button-bottom"
-                            onclick="sortThingByDate(event, 'syear')">За год</button>
+                        <button href="#" class="inner-tablinks button-bottom active"
+                            onclick="sortThing(event, 'day')">За
+                            день</button>
+                        <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'week')">За
+                            неделю</button>
+                        <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'month')">За
+                            месяц</button>
+                        <button href="#" class="inner-tablinks button-bottom" onclick="sortThing(event, 'year')">За
+                            год</button>
                     </div>
-                    <a href="#" class="charts-albums__link link-white">Показать все </a>
-                </div>
-                <div id="sday" class="sinner-tabcontent charts-albums__date active">
-                    <div class="chart-tracks__list">
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album1.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album3.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album2.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album4.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album5.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album6.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album7.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
+                    <div id="day" class="inner-tabcontent charts-authors__date active">
+                        <div class="charts-author__list">
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">1.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
 
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Gigs</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">2.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Алина Найз & Пар..</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">3.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">MC Longsliv</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">4.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Городские легенды</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">5.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Зной & Lil Smith</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">6.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Королина & Макси...</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">7.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Рик Хант</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="charts-author__link link-blue">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="week" class="inner-tabcontent charts-authors__date">
+                        <div class="charts-author__list">
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">1.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Gigs</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">2.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Алина Найз & Пар..</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">3.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">MC Longsliv</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">4.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Городские легенды</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">5.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Зной & Lil Smith</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">6.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Королина & Макси...</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">7.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Рик Хант</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="charts-author__link link-blue">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="month" class="inner-tabcontent charts-authors__date">
+                        <div class="charts-author__list">
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">1.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Gigs</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">2.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Алина Найз & Пар..</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">3.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">MC Longsliv</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">4.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Городские легенды</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">5.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Зной & Lil Smith</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">6.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Королина & Макси...</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">7.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Рик Хант</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="charts-author__link link-blue">Показать все</a>
+                        </div>
+                    </div>
+                    <div id="year" class="inner-tabcontent charts-authors__date">
+                        <div class="charts-author__list">
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">1.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Gigs</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>1000</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">2.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Алина Найз & Пар..</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>985</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">3.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">MC Longsliv</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>630</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">4.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Городские легенды</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>619</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">5.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Зной & Lil Smith</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>573</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">6.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Королина & Макси...</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>490</span></p>
+                                </div>
+                            </div>
+                            <div class="charts-author__item">
+                                <div class="charts-author__left-side">
+                                    <p class="charts-author__count">7.</p>
+                                    <img src="img/author-icon.png" class="charts-author__image">
+                                </div>
+                                <div class="charts-author__right-side">
+                                    <p class="charts-author__name">Рик Хант</p>
+                                    <p class="charts-author__text text-uppercase">Голоса: <span>236</span></p>
+                                </div>
+                            </div>
+                            <a href="#" class="charts-author__link link-blue">Показать все</a>
+                        </div>
                     </div>
                 </div>
-                <div id="sweek" class="sinner-tabcontent charts-albums__date">
-                    <div class="chart-tracks__list">
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album1.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                <div id="albums" class="tabcontent chart-albums">
+                    <div class="charts-albums__wrapper sub__buttons_chart">
+                        <div class="tabs__buttons charts-buttons">
+                            <button href="#" class="sinner-tablinks button-bottom active"
+                                onclick="sortThingByDate(event, 'sday')" data-id="sday">За день</button>
+                            <button href="#" class="sinner-tablinks button-bottom"
+                                onclick="sortThingByDate(event, 'sweek')" data-id="sweek">За неделю</button>
+                            <button href="#" class="sinner-tablinks button-bottom"
+                                onclick="sortThingByDate(event, 'smonth')" data-id="smonth">За месяц</button>
+                            <button href="#" class="sinner-tablinks button-bottom"
+                                onclick="sortThingByDate(event, 'syear')" data-id="syear">За год</button>
                         </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album3.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album2.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album4.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album5.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album6.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album7.png" alt="">
-                            </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-
+                        <a href="#" class="charts-albums__link link-white">Показать все </a>
                     </div>
-                </div>
-                <div id="smonth" class="sinner-tabcontent charts-albums__date">
-                    <div class="chart-tracks__list">
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album1.png" alt="">
+                    <div id="sday" class="sinner-tabcontent charts-albums__date active">
+                        <div class="chart-tracks__list chart-track__list_cont">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album1.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album3.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album3.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album2.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album2.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album4.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album4.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album5.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album5.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album6.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album6.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album7.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album7.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
-                <div id="syear" class="sinner-tabcontent charts-albums__date">
-                    <div class="chart-tracks__list">
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album1.png" alt="">
+                    <div id="sweek" class="sinner-tabcontent charts-albums__date">
+                        <div class="chart-tracks__list chart-track__list_cont">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album1.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album3.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album3.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album2.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album2.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album4.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album4.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album5.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album5.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album6.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album6.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
-                        <div class="chart-tracks__item">
-                            <div class="chart-tracks__pic">
-                                <img src="img/album7.png" alt="">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album7.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <h4 class="tracks__album-name">Ракета</h4>
-                            <span class="tracks__album-author">Gigs</span>
-                            <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
-                        </div>
 
+                        </div>
                     </div>
-                </div>
-                <!------PLAYER-------------->
-                <div class="player__charts d-flex">
-
-                    <div class="player__charts__player_block">
-                        <div class="player__charts__buttons_player d-flex">
-                            <div class="player__charts__track_name">
-                                <p>Ракета</p>
-                                <p>Gigs</p>
+                    <div id="smonth" class="sinner-tabcontent charts-albums__date">
+                        <div class="chart-tracks__list chart-track__list_cont">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album1.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
                             </div>
-                            <div class="d-flex">
-                                <button>
-                                    <svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.6033 12.0408C26.1023 12.9063 26.1023 15.0699 24.6033 15.9354L4.3667 27.619C2.86769 28.4844 0.993931 27.4026 0.993931 25.6717V2.30448C0.993931 0.573578 2.86769 -0.508236 4.3667 0.357217L24.6033 12.0408Z" />
-                                    </svg>
-                                </button>
-                                <button>
-                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0)">
-                                            <path
-                                                d="M7.49451 0.878906H3.48582C2.82276 0.878906 2.2832 1.41847 2.2832 2.08152V18.9181C2.2832 19.5812 2.82276 20.1207 3.48582 20.1207H7.49454C8.1576 20.1207 8.69716 19.5812 8.69716 18.9181V2.08152C8.69712 1.41847 8.15756 0.878906 7.49451 0.878906Z"
-                                                fill="white" fill-opacity="0.3" />
-                                            <path
-                                                d="M17.1154 0.878906H13.1067C12.4436 0.878906 11.9041 1.41847 11.9041 2.08152V18.9181C11.9041 19.5812 12.4436 20.1207 13.1067 20.1207H17.1154C17.7784 20.1207 18.318 19.5812 18.318 18.9181V2.08152C18.318 1.41847 17.7784 0.878906 17.1154 0.878906Z"
-                                                fill="white" fill-opacity="0.3" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0">
-                                                <rect width="19.2418" height="19.2418" fill="white"
-                                                    transform="translate(0.679688 0.878906)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album3.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album2.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album4.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album5.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album6.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album7.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
 
-                                </button>
+                        </div>
+                    </div>
+                    <div id="syear" class="sinner-tabcontent charts-albums__date">
+                        <div class="chart-tracks__list chart-track__list_cont">
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album1.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album3.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album2.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album4.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album5.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album6.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
+                            <div class="chart-tracks__item">
+                                <div class="chart-tracks__pic">
+                                    <img src="img/album7.png" alt="">
+                                </div>
+                                <h4 class="tracks__album-name">Ракета</h4>
+                                <span class="tracks__album-author">Gigs</span>
+                                <p class="chart-tracks__text text-uppercase">Голоса: <span>1000</span></p>
+                            </div>
 
-                                <button>
-                                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0)">
+                        </div>
+                    </div>
+                    <!------PLAYER-------------->
+                    <div class="player__charts d-flex">
+
+                        <div class="player__charts__player_block">
+                            <div class="player__charts__buttons_player d-flex">
+                                <div class="player__charts__track_name">
+                                    <p>Ракета</p>
+                                    <p>Gigs</p>
+                                </div>
+                                <div class="d-flex">
+                                    <button>
+                                        <svg width="26" height="28" viewBox="0 0 26 28"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
-                                                d="M11.6723 1.58363C11.4491 1.47715 11.1861 1.50538 10.9937 1.66059L4.75422 6.65192H1.77302C1.06621 6.65192 0.490234 7.2279 0.490234 7.93471V13.0659C0.490234 13.774 1.06621 14.3487 1.77302 14.3487H4.75422L10.9924 19.34C11.1092 19.4323 11.2515 19.4798 11.3939 19.4798C11.4889 19.4798 11.5838 19.458 11.6723 19.4157C11.8942 19.3092 12.0353 19.0847 12.0353 18.8384V2.16216C12.0353 1.91587 11.8942 1.69138 11.6723 1.58363Z"
-                                                fill="white" fill-opacity="0.3" />
-                                            <path
-                                                d="M15.2819 5.96436C15.0292 5.7155 14.6239 5.71935 14.375 5.96949C14.1261 6.2222 14.1287 6.62756 14.3801 6.87771C15.3499 7.83467 15.8836 9.1213 15.8836 10.5003C15.8836 11.8793 15.3499 13.1659 14.3801 14.1229C14.1287 14.3705 14.1261 14.7771 14.375 15.0298C14.5007 15.1568 14.6662 15.2197 14.8304 15.2197C14.9933 15.2197 15.1562 15.1581 15.2819 15.0337C16.498 13.8368 17.1663 12.2257 17.1663 10.5003C17.1663 8.77495 16.498 7.16377 15.2819 5.96436Z"
-                                                fill="white" fill-opacity="0.3" />
-                                            <path
-                                                d="M17.092 4.15688C16.8393 3.90673 16.4339 3.9093 16.1837 4.16072C15.9349 4.41215 15.9375 4.81879 16.1876 5.06766C17.6461 6.51336 18.4491 8.44267 18.4491 10.5003C18.4491 12.5579 17.6461 14.4859 16.1876 15.9316C15.9375 16.1817 15.9349 16.5884 16.1837 16.8398C16.3107 16.9655 16.4749 17.0284 16.6391 17.0284C16.802 17.0284 16.9662 16.9668 17.092 16.8424C18.7955 15.1555 19.7319 12.9029 19.7319 10.5003C19.7319 8.0976 18.7955 5.84503 17.092 4.15688Z"
-                                                fill="white" fill-opacity="0.3" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0">
-                                                <rect width="19.2418" height="19.2418" fill="white"
-                                                    transform="translate(0.490234 0.878906)" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </button>
+                                                d="M24.6033 12.0408C26.1023 12.9063 26.1023 15.0699 24.6033 15.9354L4.3667 27.619C2.86769 28.4844 0.993931 27.4026 0.993931 25.6717V2.30448C0.993931 0.573578 2.86769 -0.508236 4.3667 0.357217L24.6033 12.0408Z" />
+                                        </svg>
+                                    </button>
+                                    <button>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M7.49451 0.878906H3.48582C2.82276 0.878906 2.2832 1.41847 2.2832 2.08152V18.9181C2.2832 19.5812 2.82276 20.1207 3.48582 20.1207H7.49454C8.1576 20.1207 8.69716 19.5812 8.69716 18.9181V2.08152C8.69712 1.41847 8.15756 0.878906 7.49451 0.878906Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                                <path
+                                                    d="M17.1154 0.878906H13.1067C12.4436 0.878906 11.9041 1.41847 11.9041 2.08152V18.9181C11.9041 19.5812 12.4436 20.1207 13.1067 20.1207H17.1154C17.7784 20.1207 18.318 19.5812 18.318 18.9181V2.08152C18.318 1.41847 17.7784 0.878906 17.1154 0.878906Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="19.2418" height="19.2418" fill="white"
+                                                        transform="translate(0.679688 0.878906)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </button>
+
+                                    <button>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M11.6723 1.58363C11.4491 1.47715 11.1861 1.50538 10.9937 1.66059L4.75422 6.65192H1.77302C1.06621 6.65192 0.490234 7.2279 0.490234 7.93471V13.0659C0.490234 13.774 1.06621 14.3487 1.77302 14.3487H4.75422L10.9924 19.34C11.1092 19.4323 11.2515 19.4798 11.3939 19.4798C11.4889 19.4798 11.5838 19.458 11.6723 19.4157C11.8942 19.3092 12.0353 19.0847 12.0353 18.8384V2.16216C12.0353 1.91587 11.8942 1.69138 11.6723 1.58363Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                                <path
+                                                    d="M15.2819 5.96436C15.0292 5.7155 14.6239 5.71935 14.375 5.96949C14.1261 6.2222 14.1287 6.62756 14.3801 6.87771C15.3499 7.83467 15.8836 9.1213 15.8836 10.5003C15.8836 11.8793 15.3499 13.1659 14.3801 14.1229C14.1287 14.3705 14.1261 14.7771 14.375 15.0298C14.5007 15.1568 14.6662 15.2197 14.8304 15.2197C14.9933 15.2197 15.1562 15.1581 15.2819 15.0337C16.498 13.8368 17.1663 12.2257 17.1663 10.5003C17.1663 8.77495 16.498 7.16377 15.2819 5.96436Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                                <path
+                                                    d="M17.092 4.15688C16.8393 3.90673 16.4339 3.9093 16.1837 4.16072C15.9349 4.41215 15.9375 4.81879 16.1876 5.06766C17.6461 6.51336 18.4491 8.44267 18.4491 10.5003C18.4491 12.5579 17.6461 14.4859 16.1876 15.9316C15.9375 16.1817 15.9349 16.5884 16.1837 16.8398C16.3107 16.9655 16.4749 17.0284 16.6391 17.0284C16.802 17.0284 16.9662 16.9668 17.092 16.8424C18.7955 15.1555 19.7319 12.9029 19.7319 10.5003C19.7319 8.0976 18.7955 5.84503 17.092 4.15688Z"
+                                                    fill="white" fill-opacity="0.3" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="19.2418" height="19.2418" fill="white"
+                                                        transform="translate(0.490234 0.878906)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                    <div>
+                                        <input type="range" min="0" max="100" value="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time_line">
                                 <div>
                                     <input type="range" min="0" max="100" value="100">
                                 </div>
                             </div>
                         </div>
-                        <div class="time_line">
-                            <div>
-                                <input type="range" min="0" max="100" value="100">
-                            </div>
+
+                        <div class="player__charts__stars">
+                            <ul class="d-flex">
+                                <li>
+                                    <button><img src="./img/star.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button><img src="./img/star-active.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button><img src="./img/star.svg" alt=""></button>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="player__charts__stars">
-                        <ul class="d-flex">
-                            <li>
-                                <button><img src="./img/star.svg" alt=""></button>
-                            </li>
-                            <li>
-                                <button><img src="./img/star-active.svg" alt=""></button>
-                            </li>
-                            <li>
-                                <button><img src="./img/star.svg" alt=""></button>
-                            </li>
-                        </ul>
-                    </div>
+                    <!---------PLAYER-END------->
                 </div>
-                <!---------PLAYER-END------->
-
-            </div>
-
-
-        </section>
+            </section>
+        </div>
     </section>
     <section class="revolution container">
         <div class="revolution__items">

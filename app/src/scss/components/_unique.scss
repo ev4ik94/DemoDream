@@ -106,3 +106,27 @@
     }
 }
 
+@media (max-width: 472px) {
+    .unique {
+        
+        &__list {
+            display: block;
+        }
+        
+        &__title {
+            
+            & img {
+                display: none;
+            }
+        }
+        
+        &__item {
+            width: 100%;
+        }
+        
+        &__buttons-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
