@@ -1,38 +1,39 @@
 .unique {
     padding-top: 74px;
     padding-bottom: 161px;
+
     &__picture img,
-    &__picture-above img{
+    &__picture-above img {
         max-width: 100%;
     }
-    
+
     &__title {
         margin-bottom: 100px;
     }
-    
+
     &__list {
         display: flex;
         justify-content: space-between;
     }
-    
-    &__item{
+
+    &__item {
         width: 50%;
         position: relative;
-        
+
         &:first-child {
             z-index: 500;
         }
-        
+
         &:last-child {
             z-index: 400;
         }
     }
-    
+
     &__buttons-wrapper {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    
+
     &__button-wrapper {
         background: #000000;
         border-radius: 10px;
@@ -42,20 +43,20 @@
         max-height: auto;
         max-width: 273px;
     }
-    
+
     &__button-wrapper--pink {
         margin-top: 37px;
         max-height: auto;
     }
-    
+
     &__number {
         color: #656565;
         font-size: 16px;
         line-height: 20px;
         font-weight: bold;
-        
+
     }
-    
+
     &__text {
         color: #fff;
         font-weight: 400;
@@ -63,7 +64,7 @@
         line-height: 20px;
         margin-top: 11px;
     }
-    
+
     &__button-pink {
         padding: 36px 80px;
         vertical-align: middle;
@@ -76,14 +77,14 @@
         background: #F70E4D;
         text-decoration: none;
         box-shadow: 0 0 20px rgba(247, 14, 77, 0.5);
-        
+
         &:hover {
             color: rgba(255, 255, 255, 0.5);
             background: #6c3f4f;
             box-shadow: none;
         }
     }
-    
+
     &__picture-above {
         position: absolute;
         top: 0;
@@ -91,13 +92,13 @@
         left: 0;
         right: 0;
     }
-    
+
     &__picture--sm {
         position: relative;
         top: -60px;
         left: -60px;
     }
-    
+
     &__picture--bg {
         position: relative;
         max-width: 447px;
@@ -108,25 +109,30 @@
 
 @media (max-width: 472px) {
     .unique {
-        
+
         &__list {
             display: block;
         }
-        
+
         &__title {
-            
+
             & img {
                 display: none;
             }
         }
-        
+
         &__item {
             width: 100%;
         }
-        
+
         &__buttons-wrapper {
             display: flex;
             flex-direction: column;
+        }
+
+        &__button-wrapper--pink {
+            position: absolute;
+            bottom: -550px;
         }
     }
 }
