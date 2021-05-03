@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick/slick.css">
     <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Главная страница</title>
@@ -682,8 +684,8 @@
         <div class="container">
             <h2 class="charts__title h2-title">Чарты</h2>
             <section class="charts__tabs tabs">
-                <div class="tabs__list">
-                    <div class="tabs__buttons">
+                <div class="tabs__list tabs_mobile_carousel carousel_container">
+                    <div class="tabs__buttons slider_button">
                         <button href="#" class="tablinks button-tabs active" onclick="openCity(event, 'tracks')"
                             data-id="tracks">По
                             трекам</button>
@@ -694,6 +696,12 @@
                             data-id="albums">По
                             альбомам</button>
                     </div>
+                    <div class="item_arrows">
+                        <div class="item_arrow item_prev"><i class="fa fa-angle-left"></i></div>
+                        <div class="item_arrow item_next"><i class="fa fa-angle-right"></i></div>
+                    </div>
+
+                    <div class="nav_dots"></div>
                 </div>
                 <div id="tracks" class="tabcontent chart-tracks active">
                     <a href="#" class="charts__link link-blue">Показать все</a>
@@ -880,7 +888,7 @@
                     <!---------PLAYER-END------->
                 </div>
                 <div id="authors" class="tabcontent chart-authors sub__buttons_chart">
-                    <div class="tabs__buttons charts-buttons">
+                    <div class="tabs__buttons charts-buttons tabs__buttons_mobile">
                         <button href="#" class="inner-tablinks button-bottom active"
                             onclick="sortThing(event, 'day')">За
                             день</button>
@@ -1217,12 +1225,12 @@
                 </div>
                 <div id="albums" class="tabcontent chart-albums">
                     <div class="charts-albums__wrapper sub__buttons_chart">
-                        <div class="tabs__buttons charts-buttons">
-                            <button href="#" class="sinner-tablinks button-bottom active"
+                        <div class="tabs__buttons charts-buttons carousel_function">
+                            <button href="#" class="sinner-tablinks button-bottom active carousel_item"
                                 onclick="sortThingByDate(event, 'sday')" data-id="sday">За день</button>
-                            <button href="#" class="sinner-tablinks button-bottom"
+                            <button href="#" class="sinner-tablinks button-bottom carousel_item"
                                 onclick="sortThingByDate(event, 'sweek')" data-id="sweek">За неделю</button>
-                            <button href="#" class="sinner-tablinks button-bottom"
+                            <button href="#" class="sinner-tablinks button-bottom carousel_item"
                                 onclick="sortThingByDate(event, 'smonth')" data-id="smonth">За месяц</button>
                             <button href="#" class="sinner-tablinks button-bottom"
                                 onclick="sortThingByDate(event, 'syear')" data-id="syear">За год</button>
@@ -1900,7 +1908,11 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+
+
         /*-----Carousel Slick--------*/
         $('.chart-track__list_main-cont').slick({
             slidesToShow: 6,
@@ -1924,6 +1936,8 @@
                 }
             ]
         })
+
+
 
 
 
