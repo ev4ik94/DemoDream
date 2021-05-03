@@ -1,6 +1,9 @@
 .sides {
     padding-bottom: 157px;
-    
+
+    &__content-list{
+        position: relative;
+    }
     &__title {
         max-width: 727px;
         margin-bottom: 74px;
@@ -8,16 +11,18 @@
     
     &__list {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     
     &__item {
         background-color: rgba(0, 0, 0, 1);
         border-radius: 10px;
         padding: 38px 29px;
-//        margin-right: 56px;
         margin-right: 2.1%;
-        max-width: 395px;
+        width: var(--col-4);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
     &__wrapper {
@@ -77,21 +82,103 @@
     &__pic--trio {
         max-height: 215px;
     }
+
+    &__content-list{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    & .slick-dots {
+        display: flex;
+
+        & li {
+            list-style-type: none;
+        }
+
+        & li>button {
+            width: 15px;
+            height: 15px;
+            margin: 10px;
+            background-color: transparent;
+            background-image: url("../img/star.svg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: none;
+            color: transparent;
+        }
+
+        & .slick-active {
+            & button {
+                background-image: url("../img/star-fill.svg");
+
+                &::marker {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    & .sides__dots_vertical{
+        position: absolute;
+        left: -40px;
+        & .slick-dots{
+            display: flex;
+            flex-direction: column;
+            & li {
+                list-style-type: none;
+            }
+
+            & li>button {
+                width: 15px;
+                height: 15px;
+                margin: 10px;
+                background-color: transparent;
+                background-image: url("../img/star.svg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                border: none;
+                color: transparent;
+            }
+
+            & .slick-active {
+                & button {
+                    background-image: url("../img/star-fill.svg");
+
+                    &::marker {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &__slider-chart{
+        & img{
+            margin: 0 auto;
+        }
+    }
 }
 
-.sides__slider--three .slick-slide,
+
+
+
+
+
 .sides__slider-one .slick-slide {
     width: 100%;
     
 }
-.sides__slider--three .slick-dots, 
+
 .sides__slider-one .slick-dots {
     bottom: 0;
     display: flex;
     text-align: left;
     z-index: 100;
 }
-.sides__slider--three .slick-dots button, 
+
 .sides__slider-one .slick-dots button{
    width: 19px;
    height: 19px;
@@ -99,7 +186,7 @@
    background: url("../../img/star.svg") center center / 100% no-repeat;
 }
  
-.sides__slider--three .slick-dots li,
+
 .sides__slider-one .slick-dots li {
     margin-right: 15px;
     margin-left: 15px;
@@ -109,14 +196,14 @@
     }
 }
 
-.sides__slider--three .slick-dots li button:before,
+
 .sides__slider-one .slick-dots li button:before {
     content: "";
     margin-left: 68px;
     margin-right: 68px;
 }
 
-.sides__slider--three .slick-dots li.slick-active,
+
 .sides__slider-one .slick-dots li.slick-active {
     width: 19px;
     height: 19px;
@@ -130,4 +217,31 @@
     overflow-y: hidden;
     overflow-x: hidden;
     min-width: 0;
+}
+
+
+
+/*--------- Mobile Queries--------*/
+
+@media (max-width: 900px){
+    .sides{
+        &__list{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__item{
+            margin-bottom: 15px;
+            width: var(--col-8);
+        }
+    }
+}
+
+@media (max-width: 670px){
+    .sides{
+
+        &__item{
+            width: var(--col-12);
+        }
+    }
 }

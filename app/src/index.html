@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick/slick.css">
     <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Главная страница</title>
 </head>
 
@@ -1562,23 +1564,25 @@
             </section>
         </div>
     </section>
-    <section class="revolution container">
-        <div class="revolution__items">
-            <h2 class="revolution__title h2-title">Прорыв в музыкальной индустрии?</h2>
-            <img src="img/circle.svg" alt="" class="revolution__circle">
-        </div>
-        <div class="revolution__list">
-            <div class="revolution__image">
-                <img src="img/macbook.png" alt="">
-            </div>
-            <div class="revolution__text">
-                <p class="revolution__description description">Воспользуйтесь нашим <b>бесплатным уникальным
-                        генератором</b> подбора треков и демо по индивидуальным вкусам и особым жизненным ситуациям</p>
-                <p class="revolution__description--gray description-gray">Конструктор сделает для вас лучшую подборку из
-                    топовых треков различных жанров</p>
-                <a href="#" class="revolution__button-pink button-pink">Протестировать бесплатно</a>
-            </div>
-        </div>
+    <section class="revolution">
+       <div class="container">
+           <div class="revolution__items">
+               <h2 class="revolution__title h2-title">Прорыв в музыкальной индустрии?</h2>
+               <img src="img/circle.svg" alt="" class="revolution__circle">
+           </div>
+           <div class="revolution__list">
+               <div class="revolution__image">
+                   <img src="img/macbook.png" alt="">
+               </div>
+               <div class="revolution__text">
+                   <p class="revolution__description description">Воспользуйтесь нашим <b>бесплатным уникальным
+                       генератором</b> подбора треков и демо по индивидуальным вкусам и особым жизненным ситуациям</p>
+                   <p class="revolution__description--gray description-gray">Конструктор сделает для вас лучшую подборку из
+                       топовых треков различных жанров</p>
+                   <a href="#" class="revolution__button-pink button-pink">Протестировать бесплатно</a>
+               </div>
+           </div>
+       </div>
     </section>
     <a href="#" class="scrollTop"><img src="img/arrowTop.svg" alt=""></a>
     <section class="unique container">
@@ -1662,12 +1666,10 @@
     <section class="sides container">
         <h2 class="sides__title h2-title">Перейди на нужную сторону</h2>
         <div class="sides__list">
-            <div class="sides__item">
+            <div class="sides__item" data-index="1">
                 <div class="sides__wrapper">
                     <span class="sides__text">Вы</span>
-                    <div class="sides__dots">
-
-                    </div>
+                    <div class="sides__dots"></div>
                     <img src="img/rings-gray.svg" alt="">
                 </div>
                 <h3 class="sides__title-content title-content">Исполнитель</h3>
@@ -1705,17 +1707,15 @@
                 </div>
 
             </div>
-            <div class="sides__item">
+            <div class="sides__item" data-index="2">
                 <div class="sides__wrapper">
                     <span class="sides__text">Вы</span>
                     <img src="img/rings-gray.svg" alt="">
                 </div>
                 <h3 class="sides__title-content title-content">Лейбл</h3>
                 <div class="sides__content-list">
-                    <div class="sides__content-dots">
-
-                    </div>
-                    <div class="sides__slider-one">
+                    <div class="sides__dots_vertical"></div>
+                    <div class="sides__slider-two">
                         <div class="sides__slider-chart">
                             <img src="img/sides-lable.png" alt="" class="sides__pic sides__pic--label">
                         </div>
@@ -1732,14 +1732,15 @@
                 </div>
 
             </div>
-            <div class="sides__item">
+            <div class="sides__item" data-index="3">
                 <div class="sides__wrapper">
                     <span class="sides__text">Вы</span>
+                    <div class="sides__dots"></div>
                     <img src="img/rings-gray.svg" alt="">
                 </div>
                 <h3 class="sides__title-content title-content">Слушатель</h3>
                 <div class="sides__slider-one">
-                    <div class="slides__slider-chart">
+                    <div class="sides__slider-chart">
                         <img src="img/content4.png" alt="" class="sides__pic sides__pic--listener">
                     </div>
                     <div class="slides__slider-chart">
@@ -1900,6 +1901,61 @@
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
     <script>
+        /*-----Carousel Slick--------*/
+        $('.chart-track__list_main-cont').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [{
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
+            },
+                {
+                    breakpoint: 460,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                }
+            ]
+        })
+
+
+
+        $('.charts__tabs button').on('click', (e) => {
+            console.log('click')
+            const id = e.target.getAttribute('data-id')
+            const elem = $(`#${id} .chart-track__list_cont`)[0]
+
+
+            $(elem).slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                    {
+                        breakpoint: 460,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    }
+                ]
+            })
+        })
         /*-----Create data options for select-----*/
         const selectDate = Array.from(document.querySelectorAll('select[data-id="pick_date_select"]'));
         const selectMonth = Array.from(document.querySelectorAll('select[data-id="pick_month_select"]'));

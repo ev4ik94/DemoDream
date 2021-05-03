@@ -32,6 +32,16 @@
 
     &__button-pink {
         padding: 18px 28px;
+        width: 80%;
+        text-align: center;
+        display: block;
+    }
+
+    &__image{
+        background-image: url("../../img/ellipse-red-blur.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
     }
 }
 
@@ -48,18 +58,35 @@
         transform: rotate(360deg);
     }
 }
+//
+//@media (max-width: 900px) {
+//    .revolution{
+//        &__circle {
+//            display: none;
+//        }
+//    }
+//}
 
-@media (max-width: 472px) {
+@media (max-width: 900px) {
     .revolution {
         display: flex;
         flex-wrap: wrap;
 
-        &__circle {
+        &__list {
+            flex-wrap: wrap;
+        }
+
+        &__circle{
             display: none;
         }
 
-        &__list {
-            flex-wrap: wrap;
+        &__title{
+            font-size: 42px;
+        }
+
+        &__button-pink{
+            width: 100%;
+            font-size: 14px!important;
         }
 
         &__image {

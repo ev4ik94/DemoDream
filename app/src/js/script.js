@@ -1,6 +1,6 @@
 // sliders settings
 
-console.log('work watch1')
+
 $(".slider").slick({
     arrows: false,
     dots: true,
@@ -39,13 +39,24 @@ $(".donate-slider").slick({
 $(".sides__slider--three").slick({
     dots:true,
     arrows: false,
+    appendDots: $('.sides__item[data-index="1"] .sides__dots'),
     slidesToShow: 3,
     slidesToScroll: 3
+});
+
+$(".sides__slider-two").slick({
+    dots:true,
+    arrows: false,
+    appendDots: $('.sides__item[data-index="2"] .sides__dots_vertical'),
+    slidesToShow: 1,
+    vertical: true,
+    slidesToScroll: 1
 });
 
 $(".sides__slider-one").slick({
     dots:true,
     arrows: false,
+    appendDots: $('.sides__item[data-index="3"] .sides__dots'),
     slidesToShow: 1,
     slidesToScroll: 1
 });
