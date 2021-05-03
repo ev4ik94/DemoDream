@@ -119,61 +119,66 @@
 
 /* ==============Адаптация============ */
 
-@media (max-width: 472px) {
+@media (max-width: 764px) {
     .menu-block {
-        padding: 35px 36px 25px 22px;
-        width: 81%;
-        margin-left: auto;
+    padding: 35px 36px 25px 22px;
+    width: 81%;
+    margin-left: auto;
 
 
-        &__items {
-            justify-content: flex-end;
-            right: 25px;
-            position: absolute;
-        }
+    &__items {
+        justify-content: flex-end;
+        right: 25px;
+        position: absolute;
+    }
 
-        &__item:first-child {
-            display: none;
-        }
+    &__item:first-child {
+        display: none;
+    }
 
-        &__column>div {
-            align-items: flex-start;
-        }
+    &__column>div {
+        align-items: flex-start;
+    }
 
-        &__column>div>div:first-child {
-            display: block !important;
-        }
-        
-        &__buttons {
-            display: flex;
-            flex-direction: column-reverse;
-            margin-top: 15px;
-            & div:first-child{
-                margin-top: 20px;
-                margin-bottom: 14px;
-            }
-        }
-        
-        &__social {
-            margin-right: 0;
-            display: flex;
+    &__column>div>div:first-child {
+        display: block !important;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 15px;
+
+        & div:first-child {
             margin-top: 20px;
-        }
-        
-        &__list {
-            flex-direction: column-reverse;
-        }
-        
-        &__call {
-            display: flex;
-        }
-        
-        &__column-below {
-            flex-direction: column;
-        }
-        
-        &__end {
-            margin-top: 45px;
+            margin-bottom: 14px;
         }
     }
+
+    &__social {
+        margin-right: 0;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    &__list {
+        flex-direction: column-reverse;
+    }
+
+    &__call {
+        display: flex;
+    }
+
+    &__column-below {
+        flex-direction: column;
+    }
+
+    &__end {
+        margin-top: 45px;
+    }
+}
+}
+
+@media (max-width: 472px) {
+    
 }

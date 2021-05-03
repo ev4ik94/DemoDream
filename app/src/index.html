@@ -1565,24 +1565,26 @@
         </div>
     </section>
     <section class="revolution">
-       <div class="container">
-           <div class="revolution__items">
-               <h2 class="revolution__title h2-title">Прорыв в музыкальной индустрии?</h2>
-               <img src="img/circle.svg" alt="" class="revolution__circle">
-           </div>
-           <div class="revolution__list">
-               <div class="revolution__image">
-                   <img src="img/macbook.png" alt="">
-               </div>
-               <div class="revolution__text">
-                   <p class="revolution__description description">Воспользуйтесь нашим <b>бесплатным уникальным
-                       генератором</b> подбора треков и демо по индивидуальным вкусам и особым жизненным ситуациям</p>
-                   <p class="revolution__description--gray description-gray">Конструктор сделает для вас лучшую подборку из
-                       топовых треков различных жанров</p>
-                   <a href="#" class="revolution__button-pink button-pink">Протестировать бесплатно</a>
-               </div>
-           </div>
-       </div>
+        <div class="container">
+            <div class="revolution__items">
+                <h2 class="revolution__title h2-title">Прорыв в музыкальной индустрии?</h2>
+                <img src="img/circle.svg" alt="" class="revolution__circle">
+            </div>
+            <div class="revolution__list">
+                <div class="revolution__image">
+                    <img src="img/macbook.png" alt="">
+                </div>
+                <div class="revolution__text">
+                    <p class="revolution__description description">Воспользуйтесь нашим <b>бесплатным уникальным
+                            генератором</b> подбора треков и демо по индивидуальным вкусам и особым жизненным ситуациям
+                    </p>
+                    <p class="revolution__description--gray description-gray">Конструктор сделает для вас лучшую
+                        подборку из
+                        топовых треков различных жанров</p>
+                    <a href="#" class="revolution__button-pink button-pink">Протестировать бесплатно</a>
+                </div>
+            </div>
+        </div>
     </section>
     <a href="#" class="scrollTop"><img src="img/arrowTop.svg" alt=""></a>
     <section class="unique container">
@@ -1814,31 +1816,39 @@
     </section>
     <section class="form">
         <div class="container">
-            <h2 class="form__title h2-title">Остались вопросы? Готовы развеять...</h2>
-            <p class="form__description description-bold">Напишите вопрос, укажите номер телефона и свое имя. Мы
-                обязательно с вами свяжемся в ближайшее время!</p>
-            <form action="/" class="form__form">
-                <input type="text" class="form__input input-bottom" placeholder="Имя">
-                <input type="tel" class="form__input input-bottom" placeholder="Телефон">
-                <input type="text" class="form__input input-bottom" placeholder="Ваш вопрос">
-                <button class="form__button button-blue">Отправить</button>
-            </form>
+            <div class="form__info">
+                <h2 class="form__title h2-title">Остались вопросы? Готовы развеять...</h2>
+                <p class="form__description description-bold">Напишите вопрос, укажите номер телефона и свое имя. Мы
+                    обязательно с вами свяжемся в ближайшее время!</p>
+                <form action="/" class="form__form">
+                    <input type="text" class="form__input input-bottom" placeholder="Имя">
+                    <input type="tel" class="form__input input-bottom" placeholder="Телефон">
+                    <input type="text" class="form__input input-bottom" placeholder="Ваш вопрос">
+                    <button class="form__button button-blue">Отправить</button>
+                </form>
+            </div>
+
         </div>
     </section>
     <section class="thank-you container">
-        <div class="thank-you__items">
+        <div class="thank-you__items position-relative">
             <div class="thank-you__item">
                 <h2 class="thank-you__title h2-title">Спасибо, что доверились!</h2>
                 <p class="thank-you__description description-bold">У вас еще нет бесплатной учетной записи?</p>
                 <div class="thank-you__list">
                     <a href="#" class="thank-you__button-pink button-pink">Зарегистрироваться бесплатно</a>
-                    <span class="thank-you__text-gray text-gray">У вас уже есть аккаунт?</span>
-                    <a href="#" class="thank-you__link">Войти</a>
+                    <div class="thank-you__links">
+                        <span class="thank-you__text-gray text-gray">У вас уже есть аккаунт?</span>
+                        <a href="#" class="thank-you__link">Войти</a>
+                    </div>
                 </div>
             </div>
-            <div class="thank-you__item">
+            <div class="thank-you__item_image position-absolute">
                 <img src="img/piano.png" alt="">
             </div>
+        </div>
+        <div class="thank-you__rings d-none">
+            <img src="./img/rings-blue.svg" alt="">
         </div>
     </section>
 
@@ -1907,13 +1917,13 @@
             slidesToScroll: 1,
             arrows: false,
             responsive: [{
-                breakpoint: 900,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: false,
-                }
-            },
+                    breakpoint: 900,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
                 {
                     breakpoint: 460,
                     settings: {
@@ -1938,13 +1948,13 @@
                 slidesToScroll: 1,
                 arrows: false,
                 responsive: [{
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
-                },
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    },
                     {
                         breakpoint: 460,
                         settings: {
