@@ -1,0 +1,72 @@
+.broadcost {
+margin-top: 110px;
+    &__image {
+        width: 314px;
+        height: 168px;
+        position: relative;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__player {
+        background: transparent;
+        border: none;
+        position: absolute;
+        bottom: 35%;
+        right: 44%;
+    }
+
+    &__window {
+        background: transparent;
+        border: none;
+        position: absolute;
+        right: 12px;
+        bottom: 7px;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #fff;
+        margin-top: 13px;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #BBBBBB;
+        margin-bottom: 10px;
+    }
+
+    &__data {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #BBBBBB;
+    }
+
+    &__donation {
+        width: 170px;
+        height: 52px;
+        margin-top: 45px;
+        
+        & button {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            background: #F70E4D;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+}
