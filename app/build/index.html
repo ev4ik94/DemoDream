@@ -685,18 +685,24 @@
         <div class="container">
             <h2 class="charts__title h2-title">Чарты</h2>
             <section class="charts__tabs tabs">
-                <div class="tabs__list tabs_mobile_carousel carousel_container">
-                    <div class="tabs__buttons slider_button">
-                        <button href="#" class="tablinks button-tabs active" onclick="openCity(event, 'tracks')"
-                            data-id="tracks">По
-                            трекам</button>
-                        <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'authors')"
-                            data-id="authors">По
-                            исполнителям</button>
-                        <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'albums')"
-                            data-id="albums">По
-                            альбомам</button>
-                    </div>
+                <div class="tabs__list tabs_mobile_carousel carousel_container tabs_list_carousel">
+                    <ul class="tabs__buttons slider_button">
+                        <li>
+                            <button href="#" class="tablinks button-tabs active" onclick="openCity(event, 'tracks')"
+                                    data-id="tracks">По
+                                трекам</button>
+                        </li>
+                        <li>
+                            <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'authors')"
+                                    data-id="authors">По
+                                исполнителям</button>
+                        </li>
+                        <li>
+                            <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'albums')"
+                                    data-id="albums">По
+                                альбомам</button>
+                        </li>
+                    </ul>
                     <div class="item_arrows">
                         <div class="item_arrow item_prev"><i class="fa fa-angle-left"></i></div>
                         <div class="item_arrow item_next"><i class="fa fa-angle-right"></i></div>
@@ -1925,6 +1931,9 @@
 
 
         /*-----Carousel Slick--------*/
+
+
+
         $('.chart-track__list_main-cont').slick({
             slidesToShow: 6,
             slidesToScroll: 1,
@@ -1953,7 +1962,6 @@
 
 
         $('.charts__tabs button').on('click', (e) => {
-            console.log('click')
             const id = e.target.getAttribute('data-id')
             const elem = $(`#${id} .chart-track__list_cont`)[0]
 
@@ -2017,84 +2025,7 @@
         }
 
 
-        /*------ Toggle Buttons Forms-----*/
-        const registerForm = document.getElementById('signUp-from');
-        const registerFormArr = registerForm.querySelectorAll('form')
-        const btnsArr = registerForm.querySelectorAll('button[data-button]');
 
-        btnsArr.forEach(btn => btn.addEventListener('click', ToggleForms))
-
-        function ToggleForms(e) {
-            const buttonClick = e.target;
-            btnsArr.forEach(btn => {
-                btn.classList.remove('active')
-            })
-            registerFormArr.forEach(form => form.classList.remove('d-block'))
-            buttonClick.classList.add('active')
-            const btnId = buttonClick.getAttribute('data-button')
-            const form = document.getElementById(btnId)
-            form.classList.add('d-block')
-        }
-
-
-        /*-----Show Password--------*/
-
-        const btnsShowPass = document.querySelectorAll('.button__show_password');
-        btnsShowPass.forEach(item => {
-            item.addEventListener('click', (e) => {
-                e.preventDefault();
-                const btn = e.currentTarget;
-                const input = btn.parentElement.querySelector('input');
-                if (input.getAttribute('type') === 'password') {
-                    input.setAttribute('type', 'text')
-                } else {
-                    input.setAttribute('type', 'password')
-                }
-
-            })
-        })
-
-
-        /*------Open modal window Authentication-----*/
-
-        const buttonsAuth = Array.from(document.getElementsByClassName('open__modalWindow_form'));
-        const modalWindow = document.getElementById('modal-window-auth');
-        const btnClose = Array.from(document.getElementsByClassName('btn__close'));
-
-        buttonsAuth.forEach(item => {
-            item.addEventListener('click', (e) => {
-
-                e.preventDefault();
-                const typeForm = item.getAttribute('data-form');
-                modalWindow.classList.add('show');
-                const form1 = document.getElementById('signIn-from');
-                const form2 = document.getElementById('signUp-from');
-                const form3 = document.getElementById('forgot_pass_form');
-
-                if (typeForm === 'sign-in') {
-                    form1.classList.add('show');
-                    form3.classList.remove('show');
-                    form2.classList.remove('show');
-                } else if (typeForm === 'sign-up') {
-                    form2.classList.add('show');
-                    form3.classList.remove('show');
-                    form1.classList.remove('show');
-                } else if (typeForm === 'forgot_pass_form') {
-                    form2.classList.remove('show');
-                    form1.classList.remove('show');
-                    form3.classList.add('show');
-                }
-
-            });
-        });
-
-        btnClose.forEach(item => item.addEventListener('click', closeModal))
-
-
-        function closeModal() {
-            console.log('click')
-            modalWindow.classList.remove('show');
-        }
     </script>
 </body>
 

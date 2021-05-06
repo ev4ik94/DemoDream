@@ -3,6 +3,42 @@
     padding-bottom: 121px;
     overflow-x: hidden;
 
+    & .tabs_list_carousel{
+        overflow: hidden;
+        position: relative;
+        & .slick-slider{
+            position: static;
+        }
+        & .slider-btn-catalog{
+            visibility: hidden;
+            border: none;
+            outline: none;
+            position: absolute;
+            top: 0;
+            width: 16px;
+            height: 100%;
+            background: #0F0F0F;
+            z-index: 3;
+            &.next-btn{
+                right: 0;
+            }
+            &.preview-btn{
+                left: -5px;
+            }
+            & > svg{
+                fill: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+
+    & .slider_button{
+        max-height: 50px;
+        & li{
+            list-style: none;
+            margin-right: 15px;
+        }
+    }
+
 
     &__link {
         text-align: right;
@@ -157,3 +193,15 @@
 .tabs__list {
         margin-bottom: 60px;
     }
+
+/*-------Media ------*/
+@media (max-width: 450px){
+    .charts{
+        & .tabs_list_carousel{
+            & .slider-btn-catalog{
+                visibility: visible;
+            }
+        }
+
+    }
+}
