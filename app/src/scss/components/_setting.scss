@@ -1,0 +1,198 @@
+.setting {
+
+    &__account {
+
+
+        & button {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: #fff;
+            background: #000;
+            border-radius: 6px;
+            border: none;
+            padding: 9px 26px 22px 24px;
+        }
+    }
+
+    &__section {
+        background: #000000;
+        border-radius: 10px;
+        padding: 46px 22px 50px 24px;
+    }
+
+    &__block {
+
+        & p {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 55px;
+        }
+    }
+
+    &__name {
+
+        & input {
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background: transparent;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.3);
+            padding: 5px 16px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__data_block {
+        justify-content: space-between;
+        & select {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+            background: transparent;
+            padding: 5px 13px;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 4px;
+
+            & option {
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 400;
+                color: #fff;
+                background: transparent;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &__desc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 30%;
+
+        & input {
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background: transparent;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.3);
+            padding: 5px 16px;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        & p {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 55px;
+        }
+    }
+
+    &__password_desc {
+        font-size: 13px !important;
+        line-height: 1 !important;
+        font-weight: 100 !important;
+        color: #fff !important;
+        margin-bottom: 9px !important;
+    }
+
+    &__password {
+        position: relative;
+    }
+
+    &__eye {
+        width: 18px;
+        height: 12px;
+        position: absolute;
+        background: transparent;
+        border: none;
+        top: 10px;
+        right: 8px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__data {
+        
+        & p {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+            margin-bottom: 16px !important;
+        }
+    }
+
+    &__button {
+        display: flex;
+    }
+
+    &__other {
+        display: flex;
+        margin-top: 60px;
+    }
+
+    &__img {
+        margin-left: 178px;
+    }
+
+    &__save {
+        margin-right: 12px;
+        & button {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+            background: #F70E4D;
+            border-radius: 5px;
+            border: none;
+            padding: 7px 22px 9px 22px;
+        }
+    }
+
+    &__dropping {
+
+        & button {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+            background: transparent;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 5px 20px 7px 22px;
+        }
+    }
+}
+
+.title__input_data {
+    margin-top: 12px !important;
+    margin-bottom: 30px !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+}
