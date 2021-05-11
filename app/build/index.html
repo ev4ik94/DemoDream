@@ -1859,7 +1859,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="thank-you__item_image position-absolute">
+                <div class="thank-you__item_image position-absolute"> 
                     <img src="img/piano.png" alt="">
                 </div>
             </div>
@@ -1989,40 +1989,7 @@
                 ]
             })
         })
-        /*-----Create data options for select-----*/
-        const selectDate = Array.from(document.querySelectorAll('select[data-id="pick_date_select"]'));
-        const selectMonth = Array.from(document.querySelectorAll('select[data-id="pick_month_select"]'));
-        const selectYear = Array.from(document.querySelectorAll('select[data-id="pick_year_select"]'));
-
-        const arrDate = [];
-        const arrMonth = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь',
-            'Ноябрь', 'Декабрь'
-        ];
-        const arrYear = [];
-
-        for (let d = 1; d <= 31; d++) {
-            arrDate.push(d);
-        }
-        for (let d = 2007; d >= 1956; d--) {
-            arrYear.push(d);
-        }
-
-        selectDate.forEach(item => createOptions(arrDate, item));
-        selectMonth.forEach(item => createOptions(arrMonth, item));
-        selectYear.forEach(item => createOptions(arrYear, item));
-
-
-        function createOptions(arr, elem) {
-            const option = arr.map(item => {
-                const optionItem = document.createElement('option');
-                optionItem.setAttribute('value', item);
-                optionItem.innerText = item;
-                return optionItem;
-            })
-            option.forEach(opt => {
-                elem.appendChild(opt)
-            })
-        }
+       
 
 
 

@@ -1,5 +1,8 @@
 .broadcost {
-margin-top: 110px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    flex-wrap: wrap;
+
     &__image {
         width: 100%;
         height: 100%;
@@ -12,14 +15,14 @@ margin-top: 110px;
         }
     }
 
-    &__review{
+    &__review {
         overflow: hidden;
         border-radius: 5px;
         height: 168px;
         border: 2px solid #F70E4D;
     }
 
-    &__info{
+    &__info {
         padding: 15px;
         width: var(--col-3);
     }
@@ -30,6 +33,13 @@ margin-top: 110px;
         position: absolute;
         bottom: 35%;
         right: 44%;
+        transition: 0.5s;
+
+        &:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+        }
     }
 
     &__window {
@@ -68,7 +78,7 @@ margin-top: 110px;
         width: 170px;
         height: 52px;
         margin-top: 45px;
-        
+
         & button {
             font-size: 16px;
             line-height: 20px;
@@ -79,6 +89,63 @@ margin-top: 110px;
             background: #F70E4D;
             border: none;
             border-radius: 5px;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        & button {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #37E7FF;
+            border: 1px solid #37E7FF;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 15px 28px;
+            background: transparent;
+        }
+    }
+
+    &__list {
+        margin-bottom: 125px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
+/*-----Media Queries--------*/
+@media (max-width: 970px) {
+    .broadcost {
+        &__info {
+            width: var(--col-4);
+        }
+    }
+}
+
+
+@media (max-width: 640px) {
+    .broadcost {
+        &__info {
+            width: var(--col-6);
+        }
+    }
+}
+
+@media (max-width: 471px) {
+    .broadcost {
+        &__info {
+            width: var(--col-12);
         }
     }
 }

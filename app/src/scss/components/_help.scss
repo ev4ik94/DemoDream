@@ -1,0 +1,74 @@
+.help__img {
+    flex-grow: 1;
+    display: flex;
+}
+
+.help__list {
+    flex-grow: 1;
+}
+
+.help__img_1 {
+    width: 433px;
+    height: 287.75px;
+    top: 25px;
+    right: 101px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.help__rings {
+    right: 80px;
+    top: -10px;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.help__img_2 {
+    width: 456px;
+    height: 304.04px;
+    bottom: 30px;
+    right: 0;
+
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.chat_block_title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 575px;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.chat_block_help{
+    & .wrap_chat_block{
+        border-radius: 0px!important;
+        & > div:first-child{
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+}
+
+
+/* ===============Адаптация===================== */ 
+
+@media (max-width: 600px) {
+    .help {
+        
+        &__img {
+            display: none;
+        }
+    }
+}
