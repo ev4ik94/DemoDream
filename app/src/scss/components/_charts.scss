@@ -144,6 +144,15 @@
     &__list {
         display: flex;
         flex-wrap: nowrap;
+        & .slick-track{
+            height: 100%;
+            & .slick-slide{
+                & > div{
+                    height: 100%;
+                }
+            }
+        }
+
     }
     
     &__item:not(:last-child) {
@@ -168,6 +177,7 @@
     }
     
     &__buttons {
+        transition: all .3s ease;
         position: absolute;
         top: 0;
         left: 0;
@@ -180,7 +190,7 @@
         justify-content: space-around;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 8.34056px;
+        border-radius: 8.5px;
     }
     
     
@@ -203,5 +213,14 @@
             }
         }
 
+    }
+
+    .chart-tracks{
+        & .slick-list{
+            height: 300px;
+        }
+        &__pic{
+            height: 200px;
+        }
     }
 }

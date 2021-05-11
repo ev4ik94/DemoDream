@@ -125,7 +125,7 @@ function sortThingByDate(sevent, sthing) {
   }
 
 // menu 
-console.log('script work')
+
 const closeMenuBtn = document.querySelector(".close"),
       openMenuBtn = document.querySelector(".main-nav__burger"),
       menu = document.querySelector(".menu-block");
@@ -142,6 +142,19 @@ openMenuBtn.addEventListener("click", function(e) {
    document.body.style.overflowY = "hidden";
 });
 
+
+const date = new Date()
+const year = date.getFullYear()
+const elem = $('[data-id="current-date-year"]').append(year)
+
+
+/*---------MODAL WINDOW TRACK-LIST-------*/
+
+/*------Click like-------*/
+const buttonsLike = $('button[data-item="like"]')
+$('button[data-item="like"]').on('click', function(e){
+    e.currentTarget.classList.toggle('liked')
+})
 
 /*--------- Authentication Functions--------*/
 /*------ Toggle Buttons Forms-----*/

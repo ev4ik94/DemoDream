@@ -422,6 +422,39 @@
     display: flex;
     flex-direction: column;
 
+    &__hover__buttons{
+        position: absolute;
+        background: #b9b8b8;
+        width: 113%;
+        height: 30px;
+        align-items: center;
+        justify-content: space-between;
+        top: -5px;
+        right: -13px;
+        padding-left: 20px;
+        padding-right: 55px;
+        border-radius: 3px;
+        transition: all .3s ease;
+        opacity: 0;
+        & button{
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 15px;
+            height: 15px;
+            & svg{
+                width: 100%;
+                height: 100%;
+                fill: #000;
+            }
+            &.liked{
+                & svg{
+                    fill: red;
+                }
+            }
+        }
+    }
+
     &__content {
         width: 100%;
     }
@@ -506,11 +539,9 @@
             color: rgba(0, 0, 0, 0.6);
             margin-bottom: 8px;
             position: relative;
-
-            &:hover {
-                background: rgba(0, 0, 0, 0.2);
-                border-radius: 4px;
-                width: 100%;
+            cursor: pointer;
+            &:hover > .modal-track__hover__buttons {
+                opacity: 1;
             }
 
             &:after {
@@ -521,6 +552,8 @@
 
             & span {
                 color: #000;
+                position: relative;
+                z-index: 3;
             }
         }
     }

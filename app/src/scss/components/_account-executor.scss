@@ -1,5 +1,7 @@
 .main {
-    background: url(../../img/main-background.png) center center no-repeat;
+    background-image: url(../../img/main-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     padding-top: 45px;
     padding-bottom: 36px;
