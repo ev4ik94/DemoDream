@@ -112,10 +112,13 @@
 
     <section class="setting container">
         <div class="setting__account">
-            <button>Учетная запись</button>
+            <button data-id="account" class="active">Учетная запись</button>
+            <button data-id="confidentiality">Конфеденциальность</button>
         </div>
 
-        <div class="setting__section">
+        <!--------------- BLOCK SETTING ACCOUNT------------------------->
+
+        <div class="setting__section" data-id="account">
             <div class="setting__desc">
                 <div class="setting__info">
                     <div class="setting__block">
@@ -144,7 +147,16 @@
                 <div class="setting__info">
                     <p>Контакты</p>
                     <input type="text" placeholder="Введите Ваш e-mail">
-                    <input type="text" placeholder="">
+                    <div class="position-relative">
+
+                        <div data-id="select-country" class="position-absolute setting__info__select_country">
+                            <div data-type="selected" onclick="dropDown()">
+                                <img src="" alt="">
+                            </div>
+                            <div class="dropdown_select position-absolute d-none"></div>
+                        </div>
+                        <input type="text" placeholder="" data-type="mask-number">
+                    </div>
                     <input type="text" placeholder="@my_telegram">
                     <input type="text" placeholder="@my_instagram ">
                     <input type="text" placeholder="@my_facebook ">
@@ -152,22 +164,22 @@
                 <div class="setting__info">
                     <p>Смена пароля</p>
                     <div class="setting__password">
-                        <input type="text" placeholder="Старый пароль">
-                        <button class="setting__eye">
+                        <input type="password" placeholder="Старый пароль">
+                        <button class="setting__eye" onclick="toggleShowPassword(this)">
                             <img src="./img/eye.svg" alt="">
                         </button>
                     </div>
                     <div class="setting__password">
-                        <input type="text" placeholder="Новый пароль">
-                        <button class="setting__eye">
+                        <input type="password" placeholder="Новый пароль">
+                        <button class="setting__eye" onclick="toggleShowPassword(this)">
                             <img src="./img/eye.svg" alt="">
                         </button>
                     </div>
                     <p class="setting__password_desc">Пароль должен содержать не менее 9 символов, включающих в себя: латинские буквы нижнего (a..z)
                         или верхнего (A..Z) регистров, цифры (0..9)</p>
                     <div class="setting__password">
-                        <input type="text" placeholder="Повторите пароль">
-                        <button class="setting__eye">
+                        <input type="password" placeholder="Повторите пароль">
+                        <button class="setting__eye" onclick="toggleShowPassword(this)">
                             <img src="./img/eye.svg" alt="">
                         </button>
                     </div>
@@ -186,6 +198,9 @@
                     <img src="./img/stars.svg" alt="">
                 </div>
             </div>
+        </div>
+        <div class="setting__section d-none" data-id="confidentiality">
+
         </div>
     </section>
 
@@ -242,7 +257,23 @@
 
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slick.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
+
+    <script>
+
+        /*-------Toggle Buttons-----*/
+        $('.setting__account button[data-id]').on('click', (e)=>{
+            const id = e.currentTarget.getAttribute('data-id')
+            $('.setting__section[data-id]').addClass('d-none')
+            $('.setting__account button[data-id]').removeClass('active')
+            e.currentTarget.classList.add('active')
+            $(`.setting__section[data-id=${id}]`).removeClass('d-none')
+        })
+
+
+
+    </script>
 </body>
 
 </html>

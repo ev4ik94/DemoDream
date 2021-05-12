@@ -291,3 +291,55 @@ $('.slider_button').slick({
                 elem.appendChild(opt)
             })
         }
+
+
+/*------Show Password Button---------*/
+function toggleShowPassword(e){
+    const input = e.parentElement.querySelector('input')
+    const show = input.getAttribute('type') === 'text'
+    input.setAttribute('type', show?'password':'text')
+}
+
+
+/*-------Set Mask Input-----*/
+function setMask(){
+    const inputMask = Array.from(document.querySelectorAll('input[data-type="mask-number"]'))
+    inputMask.forEach(item=>{
+        const phoneMask = IMask(
+            item, {
+                mask: '+{7}(000)000-00-00',
+                lazy: false
+            });
+        console.log(item)
+    })
+}
+
+/*-------Select Country------*/
+function selectCountryRender(){
+    const countries = ['rus', 'uzb']
+    const containers = Array.from($('div[data-id="select-country"] .dropdown_select'))
+    $('div[data-type="selected"] img').attr('src', `./img/country_flags/${countries[0]}.png`)
+    countries.forEach(item=>{
+        const img = `./img/country_flags/${item}.png`
+        containers.forEach(select=>{
+            $(select).append(`<div onclick='selectCountry(this)'><img src=${img} alt="" /></div>`)
+        })
+    })
+}
+
+function selectCountry(e){
+    const img = e.querySelector('img')
+    const src = img?img.getAttribute('src'):''
+    const selectDiv = $('div[data-type="selected"] img')
+    $(selectDiv).attr('src', src)
+    dropDown()
+}
+
+function dropDown(){
+    $('.dropdown_select').toggleClass('d-none')
+}
+
+$(document).ready(()=>{
+    setMask()
+    selectCountryRender()
+})
