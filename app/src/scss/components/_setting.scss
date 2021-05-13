@@ -245,7 +245,7 @@
             padding: 5px 20px 7px 22px;
         }
     }
-    
+
     &__section:last-child {
         background: #000000;
         border-radius: 10px;
@@ -316,9 +316,10 @@
             margin-left: 20px;
         }
     }
-    
+
     &__user_list {
         margin-top: 35px;
+
         & div {
             display: flex;
         }
@@ -331,6 +332,7 @@
         border-bottom: 1px solid #333333;
         padding-bottom: 15px;
         margin-right: 70px;
+
         & span {
             font-size: 16px;
             line-height: 20px;
@@ -346,11 +348,12 @@
             color: #fff;
         }
     }
-    
+
     &__btn_left {
         position: absolute;
         top: 7px;
         left: -40px;
+
         & button {
             background-image: url(../img/chevron-left.svg);
             width: 20px;
@@ -363,11 +366,12 @@
             background-position: center center;
         }
     }
-    
+
     &__btn_right {
         position: absolute;
         top: 8px;
         right: 25px;
+
         & button {
             background-image: url(../img/chevron-right.svg);
             width: 20px;
@@ -379,6 +383,45 @@
             background-size: contain;
             background-position: center center;
         }
+    }
+
+    &__user_save {
+        margin-right: 12px;
+
+        & button {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+            background: #F70E4D;
+            border-radius: 5px;
+            border: none;
+            padding: 7px 22px 9px 22px;
+        }
+    }
+
+    &__user_dropping {
+
+        & button {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+            background: transparent;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 5px 20px 7px 22px;
+        }
+    }
+
+    &__user_button {
+        display: flex;
+    }
+
+    &__user_other {
+        display: flex;
+        margin-top: 60px;
     }
 }
 
@@ -434,4 +477,73 @@ label:hover:before {
 /* Disabled */
 input[type=radio]:disabled+label:before {
     filter: grayscale(100%);
+}
+
+
+/* =============Адаптация============= */
+@media (max-width: 925px) {
+    .setting {
+        &__section {
+            background: transparent;
+        }
+
+        &__desc {
+            flex-direction: column;
+        }
+
+        &__info {
+            width: auto;
+
+            & p {
+                margin-top: 50px;
+            }
+        }
+
+        &__tab {
+            display: flex !important;
+            align-items: center;
+
+            & button {
+                background: rgba(255, 255, 255, 0.3);
+                border: none;
+                font-size: 22px;
+                line-height: 27px;
+                font-weight: 700;
+                color: rgba(0, 0, 0, 0.3);
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+
+            & span {
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.3);
+            }
+        }
+        
+        &__password_desc {
+            margin-top: 0 !important;
+        }
+        
+        &__img {
+            display: none;
+        }
+        
+        &__account button.active {
+            background: transparent;
+            border-bottom: 1px solid #37E7FF;
+        }
+    }
+}
+
+@media (max-width: 497px) {
+    .setting {
+        
+        &__account button {
+           padding: 0px 20px 9px 0px !important;
+        }
+    }
 }

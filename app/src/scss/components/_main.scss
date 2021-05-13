@@ -154,7 +154,7 @@
 
 /* ================АДАПТАЦИЯ===================== */
 
-@media (max-width:472px) {
+@media (max-width: 670px) {
     .main {
         background: transparent;
 
@@ -175,9 +175,6 @@
             font-size: 95px;
         }
 
-        &-nav {
-            padding-top: 0;
-        }
 
         &__description {
             display: none;
