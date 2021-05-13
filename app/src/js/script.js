@@ -255,6 +255,23 @@ $('.slider_button').slick({
 });
 
 
+/*---------Input Range---------*/
+const inputs = Array.from($('input[type="range"]'))
+inputs.forEach(item => {
+    item.addEventListener('input', (e) => {
+        var value = ((e.currentTarget.value - e.currentTarget.min) / (e.currentTarget.max - e
+            .currentTarget.min)) * 100;
+
+        e.currentTarget.style.background = "linear-gradient(to right, #37E7FF 0%, #37E7FF " +
+            value +
+            "%, rgba(255,255,255,.1) " +
+            value +
+            "%, rgba(255,255,255,.1) 100%)"
+
+    })
+})
+
+
 
 
  /*-----Create data options for select-----*/

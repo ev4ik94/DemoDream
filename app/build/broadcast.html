@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick/slick.css">
     <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
     <title>Document</title>
 
 </head>
@@ -109,6 +110,64 @@
             </div>
         </nav>
         <!-- Конец навигационного меню -->
+
+        <!------- VIDEO PLAYER STAR---------------->
+            <div class="video__player_block show">
+                <div class="vide__container">
+                    <button class="close" onclick="closeVideoPLayer()">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                                    fill="#F70E4D" />
+                        </svg>
+                    </button>
+                    <div class="video__player_container">
+
+                        <video id='video-element'>
+                            <source src='http://html5videoformatconverter.com/data/images/happyfit2.mp4' type='video/mp4'>
+                        </video>
+                        <button id='btnPlayPause' class='play' title='play' accesskey="P" onclick='playPauseVideo();'>
+                            <img src="./img/play-red.svg" alt=""></button>
+                        <div id='controls'>
+                            <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <div class="live">
+                                        <p>Live</p>
+                                    </div>
+                                    <button id='btnPlayPause-2' class='play-1' title='play' onclick='playPauseVideo();'>
+                                        <img src="./img/play-bt.svg" alt="">
+                                    </button>
+                                    <button id='btnMute' class='mute' title='mute' onclick='muteVolume();'>
+                                        <img src="./img/sound-mute.svg" alt="">
+                                    </button>
+                                    <input type="range" id="volume-bar" title="volume" min="0" max="1" step="0.1" value="1">
+                                </div>
+                                <div class="">
+                                    <div class="quality_settings position-absolute d-none">
+                                        <p>Качество</p>
+                                        <div>
+                                            <p>1080p</p>
+                                            <p>1080p</p>
+                                            <p>1080p</p>
+                                            <p>1080p</p>
+                                            <p>1080p</p>
+                                            <p>1080p</p>
+                                        </div>
+                                    </div>
+                                    <button class="settings" onclick="toggleSettings()"><img src="./img/setting-button.svg" alt=""></button>
+                                    <button id='btnFullScreen' class='fullscreen' title='toggle full screen' accesskey="T" onclick='toggleFullScreen();'>
+                                        <img src="./img/broadcost-window.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        <!------- VIDEO PLAYER END---------------->
         <section class="broadcost d-flex">
 
             <div class="broadcost__info">
@@ -359,6 +418,144 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+    <script>
+        player       = document.getElementById('video-element');
+        btnPlayPause = document.getElementById('btnPlayPause');
+        btnPlayPause2 = document.getElementById('btnPlayPause-2');
+        btnMute      = document.getElementById('btnMute');
+        progressBar  = document.getElementById('progress-bar');
+        volumeBar    = document.getElementById('volume-bar');
+
+        // Update the video volume
+        volumeBar.addEventListener("change", function(evt) {
+            player.volume = evt.target.value;
+        });
+        document.getElementById('btnFullScreen').disabled = false;
+        // Add a listener for the timeupdate event so we can update the progress bar
+        player.addEventListener('timeupdate', updateProgressBar, false);
+
+        function stopVideo() {
+            player.pause();
+            changeButtonType(btnPlayPause, 'play', './img/play-red.svg');
+            changeButtonType(btnPlayPause2, 'play-1', './img/play-bt.svg');
+            if (player.currentTime) player.currentTime = 0;
+        }
+        player.addEventListener('ended', function() { this.pause(); }, false);
+
+        progressBar.addEventListener("click", seek);
+
+        function seek(e) {
+            var percent = e.offsetX / this.offsetWidth;
+            player.currentTime = percent * player.duration;
+            e.target.value = Math.floor(percent / 100);
+            e.target.innerHTML = progressBar.value + '% played';
+        }
+
+        function playPauseVideo() {
+
+            if (player.paused || player.ended) {
+                changeButtonType(btnPlayPause, 'pause', './img/pause.svg');
+                changeButtonType(btnPlayPause2, 'pause-1', './img/pause-white.svg');
+                player.play();
+            }
+            else {
+
+                changeButtonType(btnPlayPause, 'play', './img/play-red.svg');
+                changeButtonType(btnPlayPause2, 'play-1', './img/play-bt.svg');
+                player.pause();
+            }
+        }
+
+
+        function muteVolume() {
+            if (player.muted) {
+
+                changeButtonType(btnMute, 'mute', './img/sound-mute.svg');
+                player.muted = false;
+            }
+            else {
+
+                changeButtonType(btnMute, 'unmute', './img/mute.svg');
+                player.muted = true;
+            }
+        }
+
+
+
+
+        function updateProgressBar() {
+
+            var percentage = Math.floor((100 / player.duration) * player.currentTime);
+
+            progressBar.value = percentage;
+            progressBar.innerHTML = percentage + '% played';
+        }
+
+        // Updates a button's title, innerHTML and CSS class
+        function changeButtonType(btn, value, src='') {
+            const img = btn.querySelector('img')
+            if(img && src!==''){
+                img.setAttribute('src', src)
+            }else{
+                btn.innerHTML = value;
+            }
+            btn.title     = value;
+            btn.className = value;
+        }
+
+        function resetPlayer() {
+            progressBar.value = 0;
+            player.currentTime = 0;
+
+            changeButtonType(btnPlayPause, 'play');
+        }
+
+        function toggleSettings(){
+            $('.quality_settings').toggleClass('d-none')
+        }
+
+        function closeVideoPLayer(){
+            stopVideo()
+            $('.video__player_block').toggleClass('show')
+        }
+
+
+
+        function toggleFullScreen() {
+
+            if (player.requestFullscreen)
+                if (document.fullScreenElement) {
+                    document.cancelFullScreen();
+                } else {
+                    player.requestFullscreen();
+                }
+            else if (player.msRequestFullscreen)
+                if (document.msFullscreenElement) {
+                    document.msExitFullscreen();
+                } else {
+                    player.msRequestFullscreen();
+                }
+            else if (player.mozRequestFullScreen)
+                if (document.mozFullScreenElement) {
+                    document.mozCancelFullScreen();
+                } else {
+                    player.mozRequestFullScreen();
+                }
+            else if (player.webkitRequestFullscreen)
+                if (document.webkitFullscreenElement) {
+                    document.webkitCancelFullScreen();
+                } else {
+                    player.webkitRequestFullscreen();
+                }
+            else {
+                alert("Fullscreen API is not supported");
+
+            }
+        }
+
+        $('.broadcost__player').on('click', closeVideoPLayer)
+    </script>
 </body>
 
 </html>

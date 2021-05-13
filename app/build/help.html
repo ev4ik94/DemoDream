@@ -115,6 +115,8 @@
         <p class="chat_block_title">Задай любой вопрос или опиши проблему, и наши специалисты ответят вам в ближайшее
             время.</p>
         <div class="d-flex wrap_chat_block position-relative">
+
+            <!------ CHAT BLOCK START-------------------------->
             <div class="chat_block_messages">
                 <div class="d-flex user_name_chat">
                     <div>
@@ -129,6 +131,37 @@
                     </div>
                 </div>
                 <div class="chats_window">
+                    <!------TEMPLATE MESSAGES START------->
+                    <div class="template__messages" id="template__messages">
+                        <button class="template__messages__close" onclick="closeTemplate()">
+                            <img src="./img/close_white.svg" alt="">
+                        </button>
+                        <p>Используйте наши стандартные обращения для более быстрой коммуникации</p>
+                        <div class="template__messages__variations d-flex">
+                            <div class="template__messages__array__messages">
+                                <div class="block_messages_results">
+                                    <div class="template__messages__item_message">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
+                                            deleniti</p>
+                                    </div>
+                                    <div class="template__messages__item_message">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
+                                            deleniti</p>
+                                    </div>
+                                    <div class="template__messages__item_message">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
+                                            deleniti</p>
+                                    </div>
+                                    <div class="template__messages__item_message">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
+                                            deleniti</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="template__messages__show_more" onclick="showMore(this)">Еще</button>
+                        </div>
+                    </div>
+                    <!------TEMPLATE MASSAGES END------->
                     <div class="chat_balloon chat_balloon_message" data-time="14:20">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
                             deleniti
@@ -160,6 +193,7 @@
                     </button>
                 </div>
             </div>
+            <!---------------------CHAT BLOCK END---------------------------->
             <div class="help__img">
                 <div class="help__list position-relative">
                     <div class="help__img_1 position-absolute"><img src="./img/help-image1.png" alt=""></div>
@@ -223,6 +257,17 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        function showMore(e){
+            e.classList.add('d-none')
+            const height = $('.block_messages_results').innerHeight()
+            $('.template__messages__array__messages').css('height', `${height+20}px`)
+        }
+
+        function closeTemplate(){
+            $('#template__messages').addClass('d-none')
+        }
+    </script>
 </body>
 
 </html>
