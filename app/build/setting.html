@@ -160,6 +160,10 @@
                     <input type="text" placeholder="@my_telegram">
                     <input type="text" placeholder="@my_instagram ">
                     <input type="text" placeholder="@my_facebook ">
+                    <div class="setting__tab d-none">
+                        <button>+</button>
+                        <span>Добавить вкладку</span>
+                    </div>
                 </div>
                 <div class="setting__info">
                     <p>Смена пароля</p>
@@ -175,7 +179,8 @@
                             <img src="./img/eye.svg" alt="">
                         </button>
                     </div>
-                    <p class="setting__password_desc">Пароль должен содержать не менее 9 символов, включающих в себя: латинские буквы нижнего (a..z)
+                    <p class="setting__password_desc">Пароль должен содержать не менее 9 символов, включающих в себя:
+                        латинские буквы нижнего (a..z)
                         или верхнего (A..Z) регистров, цифры (0..9)</p>
                     <div class="setting__password">
                         <input type="password" placeholder="Повторите пароль">
@@ -200,7 +205,75 @@
             </div>
         </div>
         <div class="setting__section d-none" data-id="confidentiality">
+            <div class="setting__confidentiality">
+                <div class="setting__confidentiality_info">
+                    <div class="setting__confidentiality_list">
+                        <p>Получать сообщения от любого пользователя</p>
+                        <span>Если вы выключите этот параметр, отправлять вам сообщения смогут только люди, за которыми
+                            вы следите.</span>
+                        <div class="setting__radio">
+                            <div class="setting__radio_btn">
+                                <div class="radio_btns_groups">
+                                    <input type="radio" id="test2" name="radio-group">
+                                    <label for="radio-1" onclick="radioButtons(this)">Вкл/<span>Выкл</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting__confidentiality_list">
+                        <p>Уведомления</p>
+                        <span> Если вы включите этот параметр, вам будут приходить уведомления о новых обновлениях
+                            платформы, о скачиваниях ваших треков, пополнении счета и др.</span>
+                        <div class="setting__radio">
+                            <div class="setting__radio_btn">
 
+                                <div class="radio_btns_groups">
+                                    <input type="radio" id="test2" name="radio-group">
+                                    <label for="radio-1" onclick="radioButtons(this)">Вкл/<span>Выкл</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting__users">
+                    <p class="setting__users_text">Заблокированные пользователи</p>
+                    <div class="setting__users_info">
+                        <input type="text" placeholder="Введите имя пользователя">
+                        <button>Добавить</button>
+                    </div>
+                </div>
+                <div class="setting__user_list position-relative">
+                    <div>
+                        <div class="setting__users_up">
+                            <span>1.</span>
+                            <p>Gigs </p>
+                        </div>
+                        <div class="setting__users_up">
+                            <span>2.</span>
+                            <p>Алина Найз & Пар...</p>
+                        </div>
+                    </div>
+                    <div class="setting__btn_left">
+                        <button></button>
+                    </div>
+                    <div class="setting__btn_right">
+                        <button></button>
+                    </div>
+                </div>
+                <div class="setting__user_other">
+                    <div class="setting__user_button">
+                        <div class="setting__user_save">
+                            <button>Сохранить</button>
+                        </div>
+                        <div class="setting__user_dropping">
+                            <button>Сбросить настройки</button>
+                        </div>
+                    </div>
+                    <div class="setting__img">
+                        <img src="./img/stars.svg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -261,18 +334,14 @@
     <script src="js/script.js"></script>
 
     <script>
-
         /*-------Toggle Buttons-----*/
-        $('.setting__account button[data-id]').on('click', (e)=>{
+        $('.setting__account button[data-id]').on('click', (e) => {
             const id = e.currentTarget.getAttribute('data-id')
             $('.setting__section[data-id]').addClass('d-none')
             $('.setting__account button[data-id]').removeClass('active')
             e.currentTarget.classList.add('active')
             $(`.setting__section[data-id=${id}]`).removeClass('d-none')
         })
-
-
-
     </script>
 </body>
 

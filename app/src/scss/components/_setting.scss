@@ -1,18 +1,21 @@
 .setting {
     padding-top: 80px;
+
     &__account {
         padding-left: 35px;
+
         & button {
             font-size: 16px;
             margin-right: 15px;
             line-height: 22px;
             font-weight: 700;
-            color: rgba(255,255,255,.3);
+            color: rgba(255, 255, 255, .3);
             background: transparent;
             border-radius: 6px 6px 0px 0px;
             border: none;
             transition: all .3s ease;
             padding: 9px 26px 9px 24px;
+
             &.active {
                 background: #000;
                 color: #fff;
@@ -56,6 +59,7 @@
 
     &__data_block {
         justify-content: space-between;
+
         & select {
             font-size: 16px;
             line-height: 20px;
@@ -95,7 +99,8 @@
             padding: 5px 16px;
             width: 100%;
             margin-bottom: 15px;
-            &[data-type="mask-number"]{
+
+            &[data-type="mask-number"] {
                 padding-left: 50px;
             }
         }
@@ -110,20 +115,23 @@
             margin-bottom: 55px;
         }
 
-        &__select_country{
+        &__select_country {
             width: 30px;
             height: 25px;
             padding: 3px;
             left: 5px;
             top: 0;
-            & img{
+
+            & img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
-            & div[data-type="selected"]{
+
+            & div[data-type="selected"] {
                 cursor: pointer;
-                &:after{
+
+                &:after {
                     content: '';
                     width: 0;
                     height: 0;
@@ -134,19 +142,22 @@
                     margin-left: 3px;
                 }
             }
-            & .dropdown_select{
+
+            & .dropdown_select {
                 background: #000;
                 position: absolute;
                 top: 100%;
                 left: 0;
                 border: 1px solid #fff;
                 border-top: none;
-                & div{
+
+                & div {
                     padding: 3px;
-                    &:hover{
+
+                    &:hover {
                         cursor: pointer;
                         transition: all .3s ease;
-                        background: rgba(255,255,255,.3);
+                        background: rgba(255, 255, 255, .3);
                     }
                 }
             }
@@ -182,7 +193,7 @@
     }
 
     &__data {
-        
+
         & p {
             font-size: 16px;
             line-height: 20px;
@@ -207,6 +218,7 @@
 
     &__save {
         margin-right: 12px;
+
         & button {
             font-size: 16px;
             line-height: 20px;
@@ -233,6 +245,184 @@
             padding: 5px 20px 7px 22px;
         }
     }
+
+    &__section:last-child {
+        background: #000000;
+        border-radius: 10px;
+        padding: 65px 0 65px 80px !important;
+    }
+
+    &__confidentiality_info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__confidentiality_list {
+        width: 495px;
+    }
+
+    &__confidentiality_list p {
+        line-height: 20px;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 22px;
+    }
+
+    &__confidentiality_list span {
+        line-height: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    &__radio {
+        margin-top: 40px;
+    }
+
+    &__users_text {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    &__users_info {
+
+        & input {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.3);
+            width: 414px;
+            padding: 11px 16px;
+            background: transparent;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+
+        & button {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #000000;
+            background: #37E7FF;
+            border-radius: 5px;
+            border: none;
+            padding: 11px 40px;
+            margin-left: 20px;
+        }
+    }
+
+    &__user_list {
+        margin-top: 35px;
+
+        & div {
+            display: flex;
+        }
+    }
+
+    &__users_up {
+        display: flex;
+        max-width: 408px;
+        width: 100%;
+        border-bottom: 1px solid #333333;
+        padding-bottom: 15px;
+        margin-right: 70px;
+
+        & span {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.5);
+            margin-right: 28px;
+        }
+
+        & p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #fff;
+        }
+    }
+
+    &__btn_left {
+        position: absolute;
+        top: 7px;
+        left: -40px;
+
+        & button {
+            background-image: url(../img/chevron-left.svg);
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+    }
+
+    &__btn_right {
+        position: absolute;
+        top: 8px;
+        right: 25px;
+
+        & button {
+            background-image: url(../img/chevron-right.svg);
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center center;
+        }
+    }
+
+    &__user_save {
+        margin-right: 12px;
+
+        & button {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+            background: #F70E4D;
+            border-radius: 5px;
+            border: none;
+            padding: 7px 22px 9px 22px;
+        }
+    }
+
+    &__user_dropping {
+
+        & button {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #fff;
+            background: transparent;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 5px 20px 7px 22px;
+        }
+    }
+
+    &__user_button {
+        display: flex;
+    }
+
+    &__user_other {
+        display: flex;
+        margin-top: 60px;
+    }
 }
 
 .title__input_data {
@@ -242,4 +432,128 @@
     line-height: 20px !important;
     color: #fff !important;
     font-weight: 400 !important;
+}
+
+
+.form_radio {
+    margin-bottom: 10px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: url(/img/radio-1.png) 0 0 no-repeat;
+}
+
+/* Checked */
+input[type=radio]:checked+label:before {
+    background: url(/img/radio-2.png) 0 0 no-repeat;
+}
+
+/* Hover */
+label:hover:before {
+    filter: brightness(120%);
+}
+
+/* Disabled */
+input[type=radio]:disabled+label:before {
+    filter: grayscale(100%);
+}
+
+
+/* =============Адаптация============= */
+@media (max-width: 925px) {
+    .setting {
+        &__section {
+            background: transparent;
+        }
+
+        &__desc {
+            flex-direction: column;
+        }
+
+        &__info {
+            width: auto;
+
+            & p {
+                margin-top: 50px;
+            }
+        }
+
+        &__tab {
+            display: flex !important;
+            align-items: center;
+
+            & button {
+                background: rgba(255, 255, 255, 0.3);
+                border: none;
+                font-size: 22px;
+                line-height: 27px;
+                font-weight: 700;
+                color: rgba(0, 0, 0, 0.3);
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-right: 15px;
+            }
+
+            & span {
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.3);
+            }
+        }
+        
+        &__password_desc {
+            margin-top: 0 !important;
+        }
+        
+        &__img {
+            display: none;
+        }
+        
+        &__account button.active {
+            background: transparent;
+            border-bottom: 1px solid #37E7FF;
+        }
+    }
+}
+
+@media (max-width: 497px) {
+    .setting {
+        
+        &__account button {
+           padding: 0px 20px 9px 0px !important;
+        }
+    }
+}
+/* =======Адаптация конфигурации========= */
+@media (max-width: 900px) {
+    .setting {
+        
+        &__section:last-child {
+            background: transparent;
+            padding: 0 !important;
+        }
+    }
 }

@@ -356,6 +356,14 @@ function dropDown(){
     $('.dropdown_select').toggleClass('d-none')
 }
 
+
+/*---------Radio Btn Func----------------*/
+function radioButtons(e){
+   
+    const radio = e.parentElement.querySelector('input[type="radio"]')
+    radio.click()
+}
+
 $(document).ready(()=>{
     setMask()
     selectCountryRender()

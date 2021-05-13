@@ -121,10 +121,9 @@
 
 /* ===============Адаптация===================== */ 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .help {
-        
-        &__img {
+        &__list {
             display: none;
         }
     }
