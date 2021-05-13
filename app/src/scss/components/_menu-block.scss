@@ -60,59 +60,59 @@
     }
 
     &__link {
-        margin-bottom: 25px;
-        font-size: 26px;
-        line-height: 32px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 32px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        color: #868686;
+    }
+}
+
+&__buttons {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+
+    &>div {
+        width: var(--col-3);
+    }
+}
+
+&__button_red {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 8px 21px 10px 21px;
+    background: #F70E4D;
+    border-radius: 5px;
+
+    &:hover {
+        background: #fff;
+        color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+&__button_blue {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #37E7FF;
+    background: transparent;
+    border: 1px solid #37E7FF;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 8px 21px 8px 21px;
+
+    &:hover {
+        border: 1px solid #FFFFFF;
         color: #fff;
-        text-decoration: none;
-
-        &:hover {
-            color: #868686;
-        }
     }
-
-    &__buttons {
-        margin-top: 45px;
-        display: flex;
-        justify-content: space-between;
-
-        &>div {
-            width: var(--col-3);
-        }
-    }
-
-    &__button_red {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 400;
-        color: #fff;
-        border: none;
-        padding: 8px 21px 10px 21px;
-        background: #F70E4D;
-        border-radius: 5px;
-
-        &:hover {
-            background: #fff;
-            color: rgba(0, 0, 0, 0.7);
-        }
-    }
-
-    &__button_blue {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 400;
-        color: #37E7FF;
-        background: transparent;
-        border: 1px solid #37E7FF;
-        box-sizing: border-box;
-        border-radius: 5px;
-        padding: 8px 21px 8px 21px;
-
-        &:hover {
-            border: 1px solid #FFFFFF;
-            color: #fff;
-        }
-    }
+}
 }
 
 
@@ -121,64 +121,64 @@
 
 @media (max-width: 764px) {
     .menu-block {
-    padding: 35px 36px 25px 22px;
-    width: 81%;
-    margin-left: auto;
+        padding: 35px 36px 25px 22px;
+        width: 81%;
+        margin-left: auto;
+        height: 100%;
+        
+        &__link {
+            margin-bottom: 22px;
+        }
+        
+        &__items {
+            justify-content: flex-end;
+            right: 25px;
+            position: absolute;
+        }
 
+        &__item:first-child {
+            display: none;
+        }
 
-    &__items {
-        justify-content: flex-end;
-        right: 25px;
-        position: absolute;
-    }
+        &__column>div {
+            align-items: flex-start;
+        }
 
-    &__item:first-child {
-        display: none;
-    }
+        &__column>div>div:first-child {
+            display: block !important;
+        }
 
-    &__column>div {
-        align-items: flex-start;
-    }
+        &__buttons {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 15px;
 
-    &__column>div>div:first-child {
-        display: block !important;
-    }
+            & div:first-child {
+                margin-top: 20px;
+                margin-bottom: 14px;
+            }
+        }
 
-    &__buttons {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 15px;
-
-        & div:first-child {
+        &__social {
+            margin-right: 0;
+            display: flex;
             margin-top: 20px;
-            margin-bottom: 14px;
+        }
+
+        &__list {
+            flex-direction: column-reverse;
+        }
+
+        &__call {
+            display: flex;
+        }
+
+        &__column-below {
+            flex-direction: column;
+        }
+
+        &__end {
+            margin-top: 25px;
         }
     }
-
-    &__social {
-        margin-right: 0;
-        display: flex;
-        margin-top: 20px;
-    }
-
-    &__list {
-        flex-direction: column-reverse;
-    }
-
-    &__call {
-        display: flex;
-    }
-
-    &__column-below {
-        flex-direction: column;
-    }
-
-    &__end {
-        margin-top: 45px;
-    }
-}
-}
-
-@media (max-width: 472px) {
-    
 }
