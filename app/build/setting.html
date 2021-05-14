@@ -213,9 +213,9 @@
                             вы следите.</span>
                         <div class="setting__radio">
                             <div class="setting__radio_btn">
-                                <div class="radio_btns_groups">
-                                    <input type="radio" id="test2" name="radio-group">
-                                    <label for="radio-1" onclick="radioButtons(this)">Вкл/<span>Выкл</span></label>
+                                <div class="radio_btns_groups d-flex">
+                                    <div class="radio__btn position-relative" onclick="radioButtons(this)"></div>
+                                    <p>Вкл/<span>Выкл</span></p>
                                 </div>
                             </div>
                         </div>
@@ -227,9 +227,9 @@
                         <div class="setting__radio">
                             <div class="setting__radio_btn">
 
-                                <div class="radio_btns_groups">
-                                    <input type="radio" id="test2" name="radio-group">
-                                    <label for="radio-1" onclick="radioButtons(this)">Вкл/<span>Выкл</span></label>
+                                <div class="radio_btns_groups d-flex">
+                                    <div class="radio__btn position-relative" onclick="radioButtons(this)"></div>
+                                    <p>Вкл/<span>Выкл</span></p>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +243,7 @@
                     </div>
                 </div>
                 <div class="setting__user_list position-relative">
-                    <div>
+                    <div class="user_black_list">
                         <div class="setting__users_up">
                             <span>1.</span>
                             <p>Gigs </p>
@@ -252,13 +252,17 @@
                             <span>2.</span>
                             <p>Алина Найз & Пар...</p>
                         </div>
+                        <div class="setting__users_up">
+                            <span>2.</span>
+                            <p>Алина Найз & Пар...</p>
+                        </div>
+                        <div class="setting__users_up">
+                            <span>2.</span>
+                            <p>Алина Найз & Пар...</p>
+                        </div>
                     </div>
-                    <div class="setting__btn_left">
-                        <button></button>
-                    </div>
-                    <div class="setting__btn_right">
-                        <button></button>
-                    </div>
+                    <div class="setting__btn_left"><button></button></div>
+                    <div class="setting__btn_right"><button></button></div>
                 </div>
                 <div class="setting__user_other">
                     <div class="setting__user_button">
@@ -334,6 +338,16 @@
     <script src="js/script.js"></script>
 
     <script>
+
+        // /*------Carousel Slick-----------*/
+        // $('.user_black_list').slick({
+        //     slidesToShow: 2,
+        //     slidesToScroll: 1,
+        //     arrows: true,
+        //     prevArrow:'<div class="setting__btn_left"><button></button></div>',
+        //     nextArrow:'<div class="setting__btn_right"><button></button></div>'
+        //
+        // })
         /*-------Toggle Buttons-----*/
         $('.setting__account button[data-id]').on('click', (e) => {
             const id = e.currentTarget.getAttribute('data-id')
@@ -342,6 +356,11 @@
             e.currentTarget.classList.add('active')
             $(`.setting__section[data-id=${id}]`).removeClass('d-none')
         })
+
+        /*---------Radio Btn Func----------------*/
+        function radioButtons(e){
+            e.parentElement.classList.toggle('active')
+        }
     </script>
 </body>
 

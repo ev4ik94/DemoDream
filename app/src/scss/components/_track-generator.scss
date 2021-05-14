@@ -669,6 +669,9 @@
 
     .top__list_tracks__track {
         flex-wrap: wrap;
+        & > div{
+            height: 100%;
+        }
     }
 
     .charts {
@@ -797,6 +800,11 @@
     .charts-buttons {
         display: flex;
     }
+
+    //.top__list_tracks__img{
+    //    height: 200px;
+    //}
+
 }
 
 @media (max-width: 426px) {

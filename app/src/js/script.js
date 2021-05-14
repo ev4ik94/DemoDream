@@ -357,12 +357,7 @@ function dropDown(){
 }
 
 
-/*---------Radio Btn Func----------------*/
-function radioButtons(e){
-   
-    const radio = e.parentElement.querySelector('input[type="radio"]')
-    radio.click()
-}
+
 
 $(document).ready(()=>{
     setMask()

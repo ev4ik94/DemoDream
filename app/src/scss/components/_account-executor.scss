@@ -618,12 +618,16 @@
 
 /*----------Section-3-----------*/
 
-.section-three {
+.executor-section-three {
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+
+    & ul{
+        display: flex;
+        flex-wrap: wrap;
+        & li{
+            list-style: none;
+        }
+    }
 }
 
 .different__btn button {

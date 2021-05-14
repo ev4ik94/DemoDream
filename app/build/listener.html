@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/slick/slick.css">
+     <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <title>Demo Dream</title>
+</head>
+<body>
+
+<!--Начало блока-меню-->
+<div class="menu-block">
+    <div class="menu-block__items">
+        <div class="menu-block__item">
+            <a href="/"><img src="img/logo.svg" alt="" class="logo"></a>
+        </div>
+        <div class="menu-block__item">
+            <a href="#" class="close"><img src="img/close.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="menu-block__column">
+        <div class="d-flex">
+            <div class="d-flex">
+                <div class="menu-block__row">
+                    <a href="#" class="menu-block__link">Чарт</a>
+                    <a href="#" class="menu-block__link">Платформа</a>
+                    <a href="#" class="menu-block__link">Авторство</a>
+                </div>
+                <div class="menu-block__row">
+                    <a href="#" class="menu-block__link">Тарифы</a>
+                    <a href="#" class="menu-block__link">Отзывы</a>
+                    <a href="#" class="menu-block__link">Контакты</a>
+                </div>
+            </div>
+            <div class="menu-block__buttons">
+                <div>
+                    <button class="menu-block__button_red">Зарегистрироваться</button>
+                </div>
+                <div>
+                    <button class="menu-block__button_blue">Войти</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="menu-block__column-below">
+        <div class="menu-block__list">
+            <div class="menu-block__social">
+                <a href="#"><img src="img/instagram.svg" alt=""></a>
+                <a href="#"><img src="img/facebook.svg" alt=""></a>
+                <a href="#"><img src="img/telegram.svg" alt=""></a>
+                <a href="#"><img src="img/youtube.svg" alt=""></a>
+            </div>
+            <div class="menu-block__call">
+                <img src="img/phone-call.svg" alt="">
+                <a href="tel:+79152328018" class="menu-block__phone phone">+7(915)-232-80-18</a>
+            </div>
+        </div>
+        <div class="menu-block__end">
+            <p class="menu-block__small small">2020 &#169; Все права защищены</p>
+            <a href="#" class="menu-block__link-underline link-underline">Политика конфиденциальности</a>
+        </div>
+    </div>
+</div>
+<!--Конец блока-меню-->
+<!--       Начало шапки-->
+        <header class="nav container">
+            <nav class="nav__list">
+                <div class="nav__logo">
+                    <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
+                </div>
+                <div class="nav__type">
+                    <span class="nav__type-text">Профиль</span>
+                </div>
+                <div class="nav__right">
+                    <div class="nav__search">
+                    <label for="">
+                        <input type="text" class="nav__search-input" placeholder="Поиск артистов, лейблов, треков">
+                        <a href="#"><img src="img/search.svg" alt=""></a>
+                    </label>
+                </div>
+                <div class="nav__icons">
+                    <a href="#"><img src="img/message.svg" alt=""></a>
+                    <a href="#"><img src="img/bell.svg" alt=""></a>
+                </div>
+                <div class="nav__menu">
+                <a href="#"><img src="img/burger.svg" alt=""></a>
+            </div>
+                </div>
+                
+            </nav>
+            
+        </header>
+<!--        Завершение шапки-->
+
+<!--        Начало основной части-->
+        <main class="main-page container">
+           <div class="main-page__wrapper">
+               <div class="main-page__slider slider">
+               <div class="slider__item">
+                   <img src="img/user-background.png" alt="">
+               </div>
+                <div class="slider__item">
+                   <img src="img/user-background.png" alt="">
+               </div>
+               <div class="slider__item">
+                   <img src="img/user-background.png" alt="">
+               </div>
+            </div>
+            <div class="main-page__text">
+                <div class="main-page__top">
+                    <div class="main-page__item">
+                        <span class="main-page__role role">Слушатель</span>
+                    </div>
+                    <div class="main-page__item">
+                        <a href="#" class="main-pagee__link-underline link-underline">Загрузить изображение</a>
+                    </div>
+                </div>
+                <div class="main-page__bottom">
+                   
+                    <div class="main-page__profile profile">
+                        <img src="img/avatar.png" alt="" class="main__page--avatar">
+                        <div class="profile__text-wrapper">
+                            <div class="profile__text">
+                              <h5 class="profile__name">Максим Краснов</h5>
+                              <a href="#"><img src="img/pen.svg" alt=""></a>
+                            </div>
+                              <span class="main-page_status profile__status">Статус</span>
+                        </div>
+                        
+                    </div>
+                    <div class="main-page__socials profile__socials">
+                        <span class="profile__social-text">Соц. сети слушателя</span>
+                        <div class="profile-social__list">
+                            <a href="#"><img src="img/instagram.svg" alt=""></a>
+                            <a href="#"><img src="img/facebook.svg" alt=""></a>
+                            <a href="#"><img src="img/telegram.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+            
+        </main>
+<!--        Табы начало-->
+        <section class="tabs container">
+           <div class="tabs__list">
+               <div class="tabs__buttons">
+                  <button href="#" class="tablinks button-tabs active" onclick="openCity(event, 'subscription')">Подписки</button>
+                  <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'tracks')">Добавленные треки и альбомы</button>
+                  <button href="#" class="tablinks button-tabs" onclick="openCity(event, 'donate')">Пожертвования</button>
+               </div>
+               <img src="img/rings.svg" alt="">
+           </div>
+           
+           <div id="subscription" class="tabcontent subscribe active blackboard">
+              <div class="subscribe__list">
+                  <p class="subscribe__text">Подписки: <span class="subscribe__count">22</span></p>
+                  <a href="#" class="subscribe__link link-blue">Показать все </a>
+              </div>
+              <div class="subscribe__slider">
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                 <div class="subscribe__item"><img src="img/incognito.png" alt=""></div>
+                  
+              </div>
+           </div>
+           <div id="tracks" class="tabcontent tracks blackboard">
+             <div class="tracks__text-wrapper">
+                 <p class="tracks__text text-above">Добавленные треки: <span class="light-gray">55</span></p>
+                 <p class="tracks__text text-above">Добавленные альбомы: <span class="light-gray">6</span></p>
+             </div>
+              
+              <div class="tracks__wrapper">
+                  <div class="tracks__tracks">
+                      <h5 class="tracks__subtitle subtitle">Треки:</h5>
+                      <div class="tracks__melodies">
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">1.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Танцпол</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">2:08</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">2.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">DANCE</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">1:24</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">3.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Многоэтажки</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">2:43</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">4.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Неоновый свет</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">3:15</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">5.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Фанари</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">3:15</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">6.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Краш</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">2:37</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">7.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Летим</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">1:50</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">1.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Танцпол</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">2:08</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">2.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">DANCE</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">1:24</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">3.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Многоэтажки</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">2:43</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">4.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Неоновый свет</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">3:15</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">5.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Фанари</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">3:15</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">6.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Краш</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">2:37</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">7.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Летим</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">1:50</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">1.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Танцпол</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">2:08</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">2.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">DANCE</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">1:24</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">3.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Многоэтажки</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">2:43</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">4.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Неоновый свет</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">3:15</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">5.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Фанари</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">3:15</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">6.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Краш</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">2:37</time>
+                                 </div>
+                             </div>
+                          </div>
+                          <div class="tracks__melody-item">
+                             <div class="tracks__melody-static">
+                                 <div class="tracks__melody-left">
+                                     <p class="tracks__melody-number">7.</p>
+                                     <a href="#" class="tracks__melody-icon--play"><img src="img/play-sm.svg" alt=""></a>
+                                     <span class="tracks__melody-name">Летим</span>
+                                 </div>
+                                 
+                                 <div class="tracks__melody-right">
+                                    <a href="#" class="tracks__melody-icon"><img src="img/micro.svg" alt=""></a>
+                                     <time class="tracks__melody-time">1:50</time>
+                                 </div>
+                             </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="tracks__albums">
+                      <h5 class="tracks__subtitle-album subtitle">Альбомы:</h5>
+                      <div class="tracks__album-list">
+                          <div class="tracks__album-item">
+                              <img src="img/album1.png" alt="">
+                              <h4 class="tracks__album-name">Ракета</h4>
+                              <p class="tracks__album-author">Gigs</p>
+                          </div>
+                          <div class="tracks__album-item">
+                              <img src="img/album2.png" alt="">
+                              <h4 class="tracks__album-name">Почему все так...</h4>
+                              <p class="tracks__album-author">Алина Найз & Пар...</p>
+                          </div>
+                          <div class="tracks__album-item">
+                              <img src="img/album3.png" alt="">
+                              <h4 class="tracks__album-name">Cool</h4>
+                              <p class="tracks__album-author">MC Longsliv</p>
+                          </div>
+                          <div class="tracks__album-item">
+                              <img src="img/album1.png" alt="">
+                              <h4 class="tracks__album-name">Ракета</h4>
+                              <p class="tracks__album-author">Gigs</p>
+                          </div>
+                          <div class="tracks__album-item">
+                              <img src="img/album2.png" alt="">
+                              <h4 class="tracks__album-name">Почему все так...</h4>
+                              <p class="tracks__album-author">Алина Найз & Пар...</p>
+                          </div>
+                          <div class="tracks__album-item">
+                              <img src="img/album3.png" alt="">
+                              <h4 class="tracks__album-name">Cool</h4>
+                              <p class="tracks__album-author">MC Longsliv</p>
+                          </div>
+                          <div class="tracks__album-item">
+                              <img src="img/album1.png" alt="">
+                              <h4 class="tracks__album-name">Ракета</h4>
+                              <p class="tracks__album-author">Gigs</p>
+                          </div>
+                          <div class="tracks__album-item">
+                              <img src="img/album2.png" alt="">
+                              <h4 class="tracks__album-name">Почему все так...</h4>
+                              <p class="tracks__album-author">Алина Найз & Пар...</p>
+                          </div>
+                          <div class="tracks__album-item">
+                              <img src="img/album3.png" alt="">
+                              <h4 class="tracks__album-name">Cool</h4>
+                              <p class="tracks__album-author">MC Longsliv</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+           </div>
+           <div id="donate" class="tabcontent donate blackboard">
+              <p class="donate__text text-above">Количество донатов: <span class="light-gray">5</span></p>
+              <div class="donate__list">
+                  <div class="donate__item">
+                     <div class="donate-slider">
+                         <div class="donate-slider__item">
+                          <h4 class="donate__title">Уникальная особенность данной платформы, работающая по системе донатов.</h4>
+                          <p class="donate__descr">У вас есть возможность внести любому понравившемуся артисту определенную сумму средств на развитие творческого потенциала и написания новых треков.</p>
+                      </div>
+                      <div class="donate-slider__item">
+                          <h4 class="donate__title">Уникальная особенность данной платформы, работающая по системе донатов.</h4>
+                          <p class="donate__descr">У вас есть возможность внести любому понравившемуся артисту определенную сумму средств на развитие творческого потенциала и написания новых треков.</p>
+                      </div>
+                      <div class="donate-slider__item">
+                          <h4 class="donate__title">Уникальная особенность данной платформы, работающая по системе донатов.</h4>
+                          <p class="donate__descr">У вас есть возможность внести любому понравившемуся артисту определенную сумму средств на развитие творческого потенциала и написания новых треков.</p>
+                      </div>
+                     </div>
+                      <div class="donate__parts">
+                          <div class="donate__part">
+                              <p class="donate__text-below">Внесено средств:</p>
+                          </div>
+                          <div class="donate__part">
+                              <span class="donate__cost">5</span>
+                              <span class="donate__cost">3</span>
+                              <span class="donate__cost">2</span>
+                              <span class="donate__dollar">$</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="donate__item">
+                      <img src="img/background-two.png" alt="">
+                  </div>
+              </div>
+           </div>
+            
+            
+        </section>
+<!--        Табы конец-->
+<!--        Конец основной части-->
+        
+<!--        Начало футера-->
+        <footer class="footer">
+           <div class="container">
+               <div class="footer__column">
+                    <div class="footer__row">
+                        <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
+                        <small class="footer__small">2020 &#169; Все права защищены</small>
+                        <a href="#" class="footer__link-underline link-underline">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="#" class="footer__link">Профиль</a>
+                        <a href="#" class="footer__link">Трансляции</a>
+                        <a href="#" class="footer__link">Авторство</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="#" class="footer__link--gray">Настройки</a>
+                        <a href="#" class="footer__link">Помощь</a>
+                    </div>
+                    <div class="footer__row">
+                        <span class="footer__text text">
+                            Загрузи демо прямо сейчас
+                        </span>
+                        <div class="footer__list">
+                            <img src="img/phone-call.svg" alt="">
+                            <a href="+79152328018" class="footer__phone">+7(915)-232-80-18</a>
+                        </div>
+                    </div>
+                    <div class="footer__row">
+                        <a href="#" class="footer__button button">
+                            Выйти
+                        </a>
+                        <div class="footer__social social">
+                            <a href="#"><img src="img/instagram.svg" alt=""></a>
+                            <a href="#"><img src="img/facebook.svg" alt=""></a>
+                            <a href="#"><img src="img/telegram.svg" alt=""></a>
+                            <a href="#"><img src="img/youtube.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </footer>
+<!--        Завершение футера-->
+       
+        <script src="js/jQuery.js"></script>
+        <script src="js/slick.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>

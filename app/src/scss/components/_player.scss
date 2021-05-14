@@ -6,6 +6,12 @@
   align-items: center;
   margin-top: 15px;
   border-radius: 15px;
+  &__buttons_player{
+    flex-wrap: wrap;
+    & > div:last-child{
+      padding-left: 0px;
+    }
+  }
   &__player_block{
     width: var(--col-10)
   }
