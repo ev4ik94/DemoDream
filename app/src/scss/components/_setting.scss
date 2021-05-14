@@ -517,15 +517,15 @@
                 color: rgba(255, 255, 255, 0.3);
             }
         }
-        
+
         &__password_desc {
             margin-top: 0 !important;
         }
-        
+
         &__img {
             display: none;
         }
-        
+
         &__account button.active {
             background: transparent;
             border-bottom: 1px solid #37E7FF;
@@ -535,18 +535,113 @@
 
 @media (max-width: 497px) {
     .setting {
-        
+
         &__account button {
-           padding: 0px 20px 9px 0px !important;
+            padding: 0px 20px 9px 0px !important;
         }
     }
 }
+
+@media (max-width: 360px) {
+    .setting__dropping button {
+        padding: 0;
+    }
+    
+    .setting__data_block {
+        flex-direction: column;
+        width: 42%;
+    }
+    
+    .setting__data_block select {
+        margin-bottom: 10px;
+    }
+}
+
 /* =======Адаптация конфигурации========= */
 @media (max-width: 900px) {
     .setting {
-        
+
         &__section:last-child {
             background: transparent;
+            padding: 50px 0 0 0 !important;
+        }
+        
+        &__confidentiality_info {
+            flex-direction: column;
+        }
+        
+        &__confidentiality_list:first-child {
+            margin-bottom: 75px;
+        }
+
+        &__users_info input {
+            padding: 5px 10px;
+            width: 290px;
+        }
+
+        &__users_info button {
+            padding: 5px 20px;
+        }
+
+        &__btn_left {
+            display: none !important;
+        }
+
+        &__btn_right {
+            display: none !important;
+        }
+
+        &__user_block {
+            flex-direction: column;
+
+            & button {
+                display: block !important;
+                width: 120px;
+                background: transparent;
+                border: none;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 22px;
+                color: #37E7FF;
+                margin-top: 20px;
+            }
+        }
+
+        &__users_up {
+            display: flex !important;
+            margin-bottom: 25px;
+            max-width: 480px;
+        }
+    }
+}
+
+@media (max-width: 471px) {
+    .setting {
+        
+        &__confidentiality_list {
+            width: auto;
+        }
+        
+        &__users_info input {
+            width: 100%;
+        }
+        
+        &__users_info button {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+        
+        &__account {
+            padding-left: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        &__user_dropping button {
+            padding: 6px 10px;
+        }
+        
+        &__account button {
             padding: 0 !important;
         }
     }
