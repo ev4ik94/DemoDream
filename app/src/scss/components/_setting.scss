@@ -434,6 +434,15 @@
     font-weight: 400 !important;
 }
 
+
+.black-list-users-block{
+    margin-top: 40px;
+    & .show-more{
+        visibility: hidden;
+    }
+}
+
+
 /*----Radio Buttons------*/
 .radio_btns_groups{
     .radio__btn{
@@ -478,7 +487,7 @@
 @media (max-width: 925px) {
     .setting {
         &__section {
-            background: transparent;
+            background: transparent!important;
         }
 
         &__desc {
@@ -529,6 +538,31 @@
         &__account button.active {
             background: transparent;
             border-bottom: 1px solid #37E7FF;
+        }
+    }
+
+    .black-list-users-block{
+        & > div{
+            height: 80px;
+            transition: all .3s ease;
+            overflow: hidden;
+            & .user-black-list{
+                & > div{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        & .show-more{
+            background-color: transparent;
+            color: #37E7FF;
+            border: none;
+            font-size: 1rem;
+            margin-top: 15px;
+            visibility: visible;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }

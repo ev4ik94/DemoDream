@@ -308,12 +308,16 @@
     }
 
     &__answer {
+        flex-wrap: wrap;
         margin-top: 50px;
     }
 
 
 
     &__info {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: var(--col-5);
         cursor: pointer;
         background-color: rgba(0, 0, 0, .8);
         padding: 15px;
@@ -633,7 +637,7 @@
         }
 
         &__info {
-            margin-bottom: 15px;
+            width: var(--col-12);
         }
 
         & .generator__buttons {

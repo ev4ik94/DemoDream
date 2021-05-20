@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick/slick.css">
     <link rel="stylesheet" href="css/slick/slick-theme.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 
@@ -35,32 +36,35 @@
                         <a href="#" class="menu-block__link">Отзывы</a>
                         <a href="#" class="menu-block__link">Контакты</a>
                     </div>
+<!--                    <div class="mask_menu">-->
+<!--                        <div class="d-flex">-->
+<!--                            <div class="mask_menu__img">-->
+<!--                                <img src="./img/default-avatar.jpg" alt="">-->
+<!--                            </div>-->
+<!--                            <div class="mask_menu__content">-->
+<!--                                <div class="mask_menu__info">-->
+<!--                                    <div class="mask_menu__name">-->
+<!--                                        <p>Mike Fliper</p>-->
+<!--                                        <div>-->
+<!--                                            <img src="./img/online.svg" alt="">-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <span>Исполнитель</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="mask_menu__bell">-->
+<!--                            <button>-->
+<!--                                <img src="./img/letter.svg" alt="">-->
+<!--                            </button>-->
+<!--                            <button>-->
+<!--                                <img src="./img/bell.svg" alt="">-->
+<!--                            </button>-->
+<!--                        </div>-->
+<!--                        <button class="mask_menu__come">Войти</button>-->
+<!--                    </div>-->
                 </div>
-                <div class="mask">
-                    <div class="mask__img">
-                        <img src="./img/default-avatar.jpg" alt="">
-                    </div>
-                    <div class="mask__content">
-                        <div class="mask__info">
-                            <div class="mask__name">
-                                <p>Mike Fliper</p>
-                                <div>
-                                    <img src="./img/online.svg" alt="">
-                                </div>
-                            </div>
-                            <span>Исполнитель</span>
-                        </div>
-                    </div>
-                    <div class="mask__bell">
-                        <button>
-                            <img src="./img/letter.svg" alt="">
-                        </button>
-                        <button>
-                            <img src="./img/bell.svg" alt="">
-                        </button>
-                    </div>
-                    <button class="mask__come">Войти</button>
-                </div>
+
                 <div class="menu-block__buttons d-none">
                     <div>
                         <button class="menu-block__button_red">Зарегистрироваться</button>
@@ -267,39 +271,29 @@
                         <button>Добавить</button>
                     </div>
                 </div>
-                <div class="setting__user_list position-relative">
-<<<<<<< HEAD
-                    <div class="user_black_list">
-=======
-                    <div class="setting__user_block">
->>>>>>> d7d02a4a96d4730a21150466b26bd3fe593d0fa9
-                        <div class="setting__users_up">
-                            <span>1.</span>
-                            <p>Gigs </p>
+                <div class="position-relative black-list-users-block">
+
+                    <div>
+                        <div class="user-black-list">
+                            <div class="setting__users_up">
+                                <p><span>1.</span>Gigs </p>
+                            </div>
+                            <div class="setting__users_up">
+
+                                <p><span>2.</span>Алина Найз & Пар...</p>
+                            </div>
+
+                            <div class="setting__users_up">
+
+                                <p><span>3.</span>Алина Найз & Пар...</p>
+                            </div>
+                            <div class="setting__users_up">
+
+                                <p><span>4.</span>Алина Найз & Пар...</p>
+                            </div>
                         </div>
-                        <div class="setting__users_up">
-                            <span>2.</span>
-                            <p>Алина Найз & Пар...</p>
-                        </div>
-<<<<<<< HEAD
-                        <div class="setting__users_up">
-                            <span>2.</span>
-                            <p>Алина Найз & Пар...</p>
-                        </div>
-                        <div class="setting__users_up">
-                            <span>2.</span>
-                            <p>Алина Найз & Пар...</p>
-                        </div>
-=======
-                        <div class="setting__users_up d-none">
-                            <span>3.</span>
-                            <p>MC Longsliv </p>
-                        </div>
-                        <button class="d-none">Показать все</button>
->>>>>>> d7d02a4a96d4730a21150466b26bd3fe593d0fa9
                     </div>
-                    <div class="setting__btn_left"><button></button></div>
-                    <div class="setting__btn_right"><button></button></div>
+                    <button class="show-more" onclick="showMore(this)" data-state="show">Показать все</button>
                 </div>
                 <div class="setting__user_other">
                     <div class="setting__user_button">
@@ -370,21 +364,28 @@
 
 
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="js/script.js"></script>
 
     <script>
 
-        // /*------Carousel Slick-----------*/
-        // $('.user_black_list').slick({
-        //     slidesToShow: 2,
-        //     slidesToScroll: 1,
-        //     arrows: true,
-        //     prevArrow:'<div class="setting__btn_left"><button></button></div>',
-        //     nextArrow:'<div class="setting__btn_right"><button></button></div>'
-        //
-        // })
+        function showMore(button){
+            const stateShow=  $(button).attr('data-state') === 'show'
+            const height = $('.user-black-list').innerHeight()
+
+
+            if(stateShow){
+                $(button).attr('data-state', 'hide')
+                $(button).html('Скрыть')
+                $('.black-list-users-block > div').css('height', `${height+20}px`)
+            }else{
+                $(button).attr('data-state', 'show')
+                $(button).html('Показать все')
+                $('.black-list-users-block > div').css('height', '')
+            }
+        }
+
         /*-------Toggle Buttons-----*/
         $('.setting__account button[data-id]').on('click', (e) => {
             const id = e.currentTarget.getAttribute('data-id')
@@ -392,6 +393,16 @@
             $('.setting__account button[data-id]').removeClass('active')
             e.currentTarget.classList.add('active')
             $(`.setting__section[data-id=${id}]`).removeClass('d-none')
+            if(window.innerWidth>925){
+                $('.user-black-list').slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    arrows: true,
+                    prevArrow:'<div class="setting__btn_left"><button></button></div>',
+                    nextArrow:'<div class="setting__btn_right"><button></button></div>'
+
+                })
+            }
         })
 
         /*---------Radio Btn Func----------------*/
