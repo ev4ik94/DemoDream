@@ -37,33 +37,33 @@
                         <a href="#" class="menu-block__link">Отзывы</a>
                         <a href="#" class="menu-block__link">Контакты</a>
                     </div>
-<!--                    <div class="mask_menu">-->
-<!--                        <div class="d-flex">-->
-<!--                            <div class="mask_menu__img">-->
-<!--                                <img src="./img/default-avatar.jpg" alt="">-->
-<!--                            </div>-->
-<!--                            <div class="mask_menu__content">-->
-<!--                                <div class="mask_menu__info">-->
-<!--                                    <div class="mask_menu__name">-->
-<!--                                        <p>Mike Fliper</p>-->
-<!--                                        <div>-->
-<!--                                            <img src="./img/online.svg" alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <span>Исполнитель</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="mask_menu__bell">-->
-<!--                            <button>-->
-<!--                                <img src="./img/letter.svg" alt="">-->
-<!--                            </button>-->
-<!--                            <button>-->
-<!--                                <img src="./img/bell.svg" alt="">-->
-<!--                            </button>-->
-<!--                        </div>-->
-<!--                        <button class="mask_menu__come">Войти</button>-->
-<!--                    </div>-->
+                    <!--                    <div class="mask_menu">-->
+                    <!--                        <div class="d-flex">-->
+                    <!--                            <div class="mask_menu__img">-->
+                    <!--                                <img src="./img/default-avatar.jpg" alt="">-->
+                    <!--                            </div>-->
+                    <!--                            <div class="mask_menu__content">-->
+                    <!--                                <div class="mask_menu__info">-->
+                    <!--                                    <div class="mask_menu__name">-->
+                    <!--                                        <p>Mike Fliper</p>-->
+                    <!--                                        <div>-->
+                    <!--                                            <img src="./img/online.svg" alt="">-->
+                    <!--                                        </div>-->
+                    <!--                                    </div>-->
+                    <!--                                    <span>Исполнитель</span>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="mask_menu__bell">-->
+                    <!--                            <button>-->
+                    <!--                                <img src="./img/letter.svg" alt="">-->
+                    <!--                            </button>-->
+                    <!--                            <button>-->
+                    <!--                                <img src="./img/bell.svg" alt="">-->
+                    <!--                            </button>-->
+                    <!--                        </div>-->
+                    <!--                        <button class="mask_menu__come">Войти</button>-->
+                    <!--                    </div>-->
                 </div>
                 <div class="menu-block__buttons">
                     <div>
@@ -139,61 +139,63 @@
         <!-- Конец навигационного меню -->
 
         <!------- VIDEO PLAYER STAR---------------->
-            <div class="video__player_block">
-                <div class="vide__container">
-                    <button class="close" onclick="closeVideoPLayer()">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                    d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
-                                    fill="#F70E4D" />
-                        </svg>
-                    </button>
-                    <div class="video__player_container">
+        <div class="video__player_block">
+            <div class="vide__container">
+                <button class="close" onclick="closeVideoPLayer()">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                            fill="#F70E4D" />
+                    </svg>
+                </button>
+                <div class="video__player_container">
 
-                        <video id='video-element'>
-                            <source src='http://html5videoformatconverter.com/data/images/happyfit2.mp4' type='video/mp4'>
-                        </video>
-                        <button id='btnPlayPause' class='play' title='play' accesskey="P" onclick='playPauseVideo();'>
-                            <img src="./img/play-red.svg" alt=""></button>
-                        <div id='controls'>
-                            <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
-                            <div class="d-flex justify-content-between">
-                                <div class="d-flex">
-                                    <div class="live">
-                                        <p>Live</p>
-                                    </div>
-                                    <button id='btnPlayPause-2' class='play-1' title='play' onclick='playPauseVideo();'>
-                                        <img src="./img/play-bt.svg" alt="">
-                                    </button>
-                                    <button id='btnMute' class='mute' title='mute' onclick='muteVolume();'>
-                                        <img src="./img/sound-mute.svg" alt="">
-                                    </button>
-                                    <input type="range" id="volume-bar" title="volume" min="0" max="1" step="0.1" value="1">
+                    <video id='video-element'>
+                        <source src='http://html5videoformatconverter.com/data/images/happyfit2.mp4' type='video/mp4'>
+                    </video>
+                    <button id='btnPlayPause' class='play' title='play' accesskey="P" onclick='playPauseVideo();'>
+                        <img src="./img/play-red.svg" alt=""></button>
+                    <div id='controls'>
+                        <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex">
+                                <div class="live">
+                                    <p>Live</p>
                                 </div>
-                                <div class="">
-                                    <div class="quality_settings position-absolute d-none">
-                                        <p>Качество</p>
-                                        <div>
-                                            <p>1080p</p>
-                                            <p>1080p</p>
-                                            <p>1080p</p>
-                                            <p>1080p</p>
-                                            <p>1080p</p>
-                                            <p>1080p</p>
-                                        </div>
+                                <button id='btnPlayPause-2' class='play-1' title='play' onclick='playPauseVideo();'>
+                                    <img src="./img/play-bt.svg" alt="">
+                                </button>
+                                <button id='btnMute' class='mute' title='mute' onclick='muteVolume();'>
+                                    <img src="./img/sound-mute.svg" alt="">
+                                </button>
+                                <input type="range" id="volume-bar" title="volume" min="0" max="1" step="0.1" value="1">
+                            </div>
+                            <div class="">
+                                <div class="quality_settings position-absolute d-none">
+                                    <p>Качество</p>
+                                    <div>
+                                        <p>1080p</p>
+                                        <p>1080p</p>
+                                        <p>1080p</p>
+                                        <p>1080p</p>
+                                        <p>1080p</p>
+                                        <p>1080p</p>
                                     </div>
-                                    <button class="settings" onclick="toggleSettings()"><img src="./img/setting-button.svg" alt=""></button>
-                                    <button id='btnFullScreen' class='fullscreen' title='toggle full screen' accesskey="T" onclick='toggleFullScreen();'>
-                                        <img src="./img/broadcost-window.svg" alt="">
-                                    </button>
                                 </div>
+                                <button class="settings" onclick="toggleSettings()"><img src="./img/setting-button.svg"
+                                        alt=""></button>
+                                <button id='btnFullScreen' class='fullscreen' title='toggle full screen' accesskey="T"
+                                    onclick='toggleFullScreen();'>
+                                    <img src="./img/broadcost-window.svg" alt="">
+                                </button>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
+
+        </div>
         <!------- VIDEO PLAYER END---------------->
         <section class="broadcost d-flex">
 
@@ -442,20 +444,42 @@
     </footer>
 
 
+    <div class="alert-warning container">
+        <div class="alert-warning__block">
+            <div class="alert-warning__vision">
+                <div class="alert-warning__button">
+                    <button>X</button>
+                </div>
+                <div class="alert-warning__content">
+                    <div class="alert-warning__img">
+                        <img src="./img/warning.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="alert-warning__info">
+                <h3 class="alert-warning__title">lorem</h3>
+                <p class="alert-warning__desc">lorem</p>
+                <button class="alert-warning__ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
     <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
     <script>
-        player       = document.getElementById('video-element');
+        player = document.getElementById('video-element');
         btnPlayPause = document.getElementById('btnPlayPause');
         btnPlayPause2 = document.getElementById('btnPlayPause-2');
-        btnMute      = document.getElementById('btnMute');
-        progressBar  = document.getElementById('progress-bar');
-        volumeBar    = document.getElementById('volume-bar');
+        btnMute = document.getElementById('btnMute');
+        progressBar = document.getElementById('progress-bar');
+        volumeBar = document.getElementById('volume-bar');
 
         // Update the video volume
-        volumeBar.addEventListener("change", function(evt) {
+        volumeBar.addEventListener("change", function (evt) {
             player.volume = evt.target.value;
         });
         document.getElementById('btnFullScreen').disabled = false;
@@ -468,7 +492,9 @@
             changeButtonType(btnPlayPause2, 'play-1', './img/play-bt.svg');
             if (player.currentTime) player.currentTime = 0;
         }
-        player.addEventListener('ended', function() { this.pause(); }, false);
+        player.addEventListener('ended', function () {
+            this.pause();
+        }, false);
 
         progressBar.addEventListener("click", seek);
 
@@ -485,8 +511,7 @@
                 changeButtonType(btnPlayPause, 'pause', './img/pause.svg');
                 changeButtonType(btnPlayPause2, 'pause-1', './img/pause-white.svg');
                 player.play();
-            }
-            else {
+            } else {
 
                 changeButtonType(btnPlayPause, 'play', './img/play-red.svg');
                 changeButtonType(btnPlayPause2, 'play-1', './img/play-bt.svg');
@@ -500,8 +525,7 @@
 
                 changeButtonType(btnMute, 'mute', './img/sound-mute.svg');
                 player.muted = false;
-            }
-            else {
+            } else {
 
                 changeButtonType(btnMute, 'unmute', './img/mute.svg');
                 player.muted = true;
@@ -520,14 +544,14 @@
         }
 
         // Updates a button's title, innerHTML and CSS class
-        function changeButtonType(btn, value, src='') {
+        function changeButtonType(btn, value, src = '') {
             const img = btn.querySelector('img')
-            if(img && src!==''){
+            if (img && src !== '') {
                 img.setAttribute('src', src)
-            }else{
+            } else {
                 btn.innerHTML = value;
             }
-            btn.title     = value;
+            btn.title = value;
             btn.className = value;
         }
 
@@ -538,11 +562,11 @@
             changeButtonType(btnPlayPause, 'play');
         }
 
-        function toggleSettings(){
+        function toggleSettings() {
             $('.quality_settings').toggleClass('d-none')
         }
 
-        function closeVideoPLayer(){
+        function closeVideoPLayer() {
             stopVideo()
             $('.video__player_block').toggleClass('show')
         }
