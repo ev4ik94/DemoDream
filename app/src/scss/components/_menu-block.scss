@@ -74,11 +74,12 @@
             color: #868686;
         }
     }
-    
+
     &__buttons {
         margin-top: 45px;
         display: flex;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: center;
 
         &>div {
             width: var(--col-3);
@@ -131,11 +132,11 @@
         width: 81%;
         margin-left: auto;
         height: 100%;
-        
+
         &__link {
             margin-bottom: 22px;
         }
-        
+
         &__items {
             justify-content: flex-end;
             right: 25px;
