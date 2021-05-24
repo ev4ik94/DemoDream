@@ -38,40 +38,42 @@
                         <a href="#" class="menu-block__link">Отзывы</a>
                         <a href="#" class="menu-block__link">Контакты</a>
                     </div>
-<!--                    <div class="mask_menu">-->
-<!--                        <div class="d-flex">-->
-<!--                            <div class="mask_menu__img">-->
-<!--                                <img src="./img/default-avatar.jpg" alt="">-->
-<!--                            </div>-->
-<!--                            <div class="mask_menu__content">-->
-<!--                                <div class="mask_menu__info">-->
-<!--                                    <div class="mask_menu__name">-->
-<!--                                        <p>Mike Fliper</p>-->
-<!--                                        <div>-->
-<!--                                            <img src="./img/online.svg" alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <span>Исполнитель</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="mask_menu__bell">-->
-<!--                            <button>-->
-<!--                                <img src="./img/letter.svg" alt="">-->
-<!--                            </button>-->
-<!--                            <button>-->
-<!--                                <img src="./img/bell.svg" alt="">-->
-<!--                            </button>-->
-<!--                        </div>-->
-<!--                        <button class="mask_menu__come">Войти</button>-->
-<!--                    </div>-->
+                    <!----- Авторизованный пользователь вид START--------->
+                    <div class="mask_menu d-none">
+                        <div class="d-flex">
+                            <div class="mask_menu__img">
+                                <img src="./img/default-avatar.jpg" alt="">
+                            </div>
+                            <div class="mask_menu__content">
+                                <div class="mask_menu__info">
+                                    <div class="mask_menu__name">
+                                        <p>Mike Fliper</p>
+                                        <div>
+                                            <img src="./img/online.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <span>Исполнитель</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mask_menu__bell">
+                            <button>
+                                <img src="./img/letter.svg" alt="">
+                            </button>
+                            <button>
+                                <img src="./img/bell.svg" alt="">
+                            </button>
+                        </div>
+                        <button class="mask_menu__come">Войти</button>
+                    </div>
+                    <!----- Авторизованный пользователь вид END--------->
                 </div>
                 <div class="menu-block__buttons">
                     <div>
-                        <button class="menu-block__button_red">Зарегистрироваться</button>
+                        <button class="menu-block__button_red open__modalWindow_form" data-form="sign-up">Зарегистрироваться</button>
                     </div>
                     <div>
-                        <button class="menu-block__button_blue">Войти</button>
+                        <button class="menu-block__button_blue open__modalWindow_form" data-form="sign-in">Войти</button>
                     </div>
                 </div>
             </div>
@@ -622,7 +624,14 @@
                             </label>
                         </div>
                     </div>
-                    <div class="mask">
+                    <div class="main-nav__buttons">
+                        <a href="#" class="main-nav__button button-blue open__modalWindow_form"
+                           data-form="sign-in">Войти</a>
+                        <a href="#" class="main-nav__button--white button-white open__modalWindow_form"
+                           data-form="sign-up">Зарегистрироваться</a>
+                    </div>
+                    <!----- Авторизованный пользователь вид START--------->
+                    <div class="mask d-none">
                         <div class="mask__img">
                             <img src="./img/default-avatar.jpg" alt="">
                         </div>
@@ -647,34 +656,14 @@
 
                         </div>
                     </div>
+                    <!----- Авторизованный пользователь вид END--------->
                 </div>
                 <div class="main-nav__buttons">
                     <a href="#" class="main-nav__burger"><img src="img/burger.svg" alt=""></a>
                 </div>
             </nav>
-            <!--          Начало шапки-->
-            <!-- <nav class="main-nav">
-                <div class="main-nav__logo">
-                    <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
-                </div>
-                <div class="nav__right">
-                    <div class="nav__search">
-                        <label for="">
-                            <input type="text" class="nav__search-input input-bottom"
-                                placeholder="Поиск артистов, лейблов, треков">
-                            <a href="#"><img src="img/search.svg" alt=""></a>
-                        </label>
-                    </div>
-                </div>
-                <div class="main-nav__buttons">
-                    <a href="#" class="main-nav__button button-blue open__modalWindow_form"
-                        data-form="sign-in">Войти</a>
-                    <a href="#" class="main-nav__button--white button-white open__modalWindow_form"
-                        data-form="sign-up">Зарегистрироваться</a>
-                    <a href="#" class="main-nav__burger"><img src="img/burger.svg" alt=""></a>
-                </div>
-            </nav>  -->
-            <!--          Конец шапки-->
+        </div>
+
             <p class="main__year_mob d-none" data-id="current-date-year"></p>
             <div class="main__banner">
                 <span class="main__subtitle">Инновационная музыкальная платформа</span>

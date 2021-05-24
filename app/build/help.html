@@ -12,130 +12,655 @@
 </head>
 
 <body>
-    <!--Начало блока-меню-->
-    <div class="menu-block">
-        <div class="menu-block__items">
-            <div class="menu-block__item">
-                <a href="/"><img src="img/logo.svg" alt="" class="logo"></a>
+<!--Начало блока-меню-->
+<div class="menu-block">
+    <div class="menu-block__items">
+        <div class="menu-block__item">
+            <a href="/"><img src="img/logo.svg" alt="" class="logo"></a>
+        </div>
+        <div class="menu-block__item">
+            <a href="#" class="close"><img src="img/close.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="menu-block__column">
+        <div class="d-flex">
+            <div class="d-flex">
+                <div class="menu-block__row">
+                    <a href="#" class="menu-block__link">Чарт</a>
+                    <a href="#" class="menu-block__link">Платформа</a>
+                    <a href="#" class="menu-block__link">Авторство</a>
+                </div>
+                <div class="menu-block__row">
+                    <a href="#" class="menu-block__link">Тарифы</a>
+                    <a href="#" class="menu-block__link">Отзывы</a>
+                    <a href="#" class="menu-block__link">Контакты</a>
+                </div>
+                <!----- Авторизованный пользователь вид START--------->
+                <div class="mask_menu d-none">
+                    <div class="d-flex">
+                        <div class="mask_menu__img">
+                            <img src="./img/default-avatar.jpg" alt="">
+                        </div>
+                        <div class="mask_menu__content">
+                            <div class="mask_menu__info">
+                                <div class="mask_menu__name">
+                                    <p>Mike Fliper</p>
+                                    <div>
+                                        <img src="./img/online.svg" alt="">
+                                    </div>
+                                </div>
+                                <span>Исполнитель</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mask_menu__bell">
+                        <button>
+                            <img src="./img/letter.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="./img/bell.svg" alt="">
+                        </button>
+                    </div>
+                    <button class="mask_menu__come">Войти</button>
+                </div>
+                <!----- Авторизованный пользователь вид END--------->
             </div>
-            <div class="menu-block__item">
-                <a href="#" class="close"><img src="img/close.svg" alt=""></a>
+            <div class="menu-block__buttons">
+                <div>
+                    <button class="menu-block__button_red open__modalWindow_form" data-form="sign-up">Зарегистрироваться</button>
+                </div>
+                <div>
+                    <button class="menu-block__button_blue open__modalWindow_form" data-form="sign-in">Войти</button>
+                </div>
             </div>
         </div>
-        <div class="menu-block__column">
-            <div class="d-flex">
-                <div class="d-flex">
-                    <div class="menu-block__row">
-                        <a href="#" class="menu-block__link">Чарт</a>
-                        <a href="#" class="menu-block__link">Платформа</a>
-                        <a href="#" class="menu-block__link">Авторство</a>
-                    </div>
-                    <div class="menu-block__row">
-                        <a href="#" class="menu-block__link">Тарифы</a>
-                        <a href="#" class="menu-block__link">Отзывы</a>
-                        <a href="#" class="menu-block__link">Контакты</a>
-                    </div>
-<!--                    <div class="mask_menu">-->
-<!--                        <div class="d-flex">-->
-<!--                            <div class="mask_menu__img">-->
-<!--                                <img src="./img/default-avatar.jpg" alt="">-->
-<!--                            </div>-->
-<!--                            <div class="mask_menu__content">-->
-<!--                                <div class="mask_menu__info">-->
-<!--                                    <div class="mask_menu__name">-->
-<!--                                        <p>Mike Fliper</p>-->
-<!--                                        <div>-->
-<!--                                            <img src="./img/online.svg" alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <span>Исполнитель</span>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="mask_menu__bell">-->
-<!--                            <button>-->
-<!--                                <img src="./img/letter.svg" alt="">-->
-<!--                            </button>-->
-<!--                            <button>-->
-<!--                                <img src="./img/bell.svg" alt="">-->
-<!--                            </button>-->
-<!--                        </div>-->
-<!--                        <button class="mask_menu__come">Войти</button>-->
-<!--                    </div>-->
+
+    </div>
+    <div class="menu-block__column-below">
+        <div class="menu-block__list">
+            <div class="menu-block__social">
+                <a href="#"><img src="img/instagram.svg" alt=""></a>
+                <a href="#"><img src="img/facebook.svg" alt=""></a>
+                <a href="#"><img src="img/telegram.svg" alt=""></a>
+                <a href="#"><img src="img/youtube.svg" alt=""></a>
+            </div>
+            <div class="menu-block__call">
+                <img src="img/phone-call.svg" alt="">
+                <a href="tel:+79152328018" class="menu-block__phone phone">+7(915)-232-80-18</a>
+            </div>
+        </div>
+        <div class="menu-block__end">
+            <p class="menu-block__small small"><span data-id="current-date-year"></span> &#169; Все права защищены</p>
+            <a href="#" class="menu-block__link-underline link-underline">Политика конфиденциальности</a>
+        </div>
+    </div>
+</div>
+<!--Конец блока-меню-->
+
+<!----- модальное окно: вход в личный кобинет Начало------->
+
+<div class="cabinet" id="modal-window-auth">
+    <div class="modal" id="signIn-from">
+        <button class="btn__close close-modal-window">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                        fill="#F70E4D" />
+            </svg>
+        </button>
+        <div class="check d-flex justify-content-between">
+            <div class="check__logo position-absolute">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="check__main">
+                <div class="check__start">
+                    <h1 class="check__title">Вход в личный кабинет</h1>
+
                 </div>
-                <div class="menu-block__buttons">
-                    <div>
-                        <button class="menu-block__button_red">Зарегистрироваться</button>
+                <div class="check__stars">
+                    <img src="./img/star.svg" alt="">
+                    <img src="./img/star-active.svg" alt="">
+                    <img src="./img/star.svg" alt="">
+                </div>
+                <div class="ring__end_1">
+                    <img src="./img/rings-blue.svg" alt="">
+                </div>
+
+                <div class="check__social">
+                    <p>Быстрый вход с помощью:</p>
+                    <div class="social__img">
+                        <a href=""><img src="./img/google.svg" alt=""></a>
+                        <a href=""><img src="./img/apple.svg" alt=""></a>
+                        <a href=""><img src="./img/facebook2.svg" alt=""></a>
+                        <a href=""><img src="./img/vk1.svg" alt=""></a>
                     </div>
-                    <div>
-                        <button class="menu-block__button_blue">Войти</button>
+                </div>
+
+                <form class="check__input">
+                    <p>Введите свои данные</p>
+                    <div class="input__data">
+                        <div>
+                            <input placeholder="E-mail" type="text" name="email">
+                            <p class="input__desc">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                        </div>
+                        <div>
+                            <input placeholder="Пароль" type="password" name="password">
+                            <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                            <button id="forget-password" class="open__modalWindow_form"
+                                    data-form="forgot_pass_form">Забыли пароль?</button>
+                        </div>
                     </div>
+                    <div class="check__form_button">
+                        <div class="check__button">
+                            <div class="check__link">
+                                <button type="submit">Войти</button>
+                            </div>
+
+                            <div class="check__checkbox">
+                                <input type="checkbox">
+                                <p>Запомнить меня</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="confidentiality">
+                    <div class="check__confidentiality">
+                        <p>Нажимая на данную кнопку, вы соглашаетесь с
+                            <a class="link__confidentiality" href="">условиями политики конфиденциальности</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="position-relative check__right_block">
+                <div class="position-relative authentication__group_images">
+                    <div class="taylor__img">
+                        <img src="./img/taylor-IuckVlGbnOY-unsplash 1.png" alt="">
+                    </div>
+                    <div class="israel__img">
+                        <img src="./img/israel-palacio-BuiBnE4N31U-unsplash 1.png" alt="">
+                    </div>
+                    <div class="emiliano__img">
+                        <img src="./img/emiliano-vittoriosi-ViYQ4VsAnaw-unsplash 1.png" alt="">
+                    </div>
+                </div>
+                <div class="check__end">
+                    <div class="social__link">
+                        <a href="#">
+                            <img src="./img/instagram2.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/facebook3.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/telegram2.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="check__right">
+                        <p>2020 © Все права защищены</p>
+                        <a href="" class="link-underline">Политика конфиденциальности</a>
+                    </div>
+
                 </div>
             </div>
 
         </div>
-        <div class="menu-block__column-below">
-            <div class="menu-block__list">
-                <div class="menu-block__social">
-                    <a href="#"><img src="img/instagram.svg" alt=""></a>
-                    <a href="#"><img src="img/facebook.svg" alt=""></a>
-                    <a href="#"><img src="img/telegram.svg" alt=""></a>
-                    <a href="#"><img src="img/youtube.svg" alt=""></a>
+        <div class="ring__end">
+            <img src="./img/rings-blue.svg" alt="">
+        </div>
+    </div>
+
+
+    <!------------FORM FORGOT PASSWORD------------------------------>
+
+    <div class="modal" id="forgot_pass_form">
+        <button class="btn__close close-modal-window">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                        fill="#F70E4D" />
+            </svg>
+        </button>
+        <div class="check d-flex justify-content-between">
+            <div class="check__logo position-absolute">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="check__main">
+                <div class="check__start">
+                    <h1 class="check__title">Восстановление пароля</h1>
+
                 </div>
-                <div class="menu-block__call">
-                    <img src="img/phone-call.svg" alt="">
-                    <a href="tel:+79152328018" class="menu-block__phone phone">+7(915)-232-80-18</a>
+                <div class="check__stars">
+                    <img src="./img/star.svg" alt="">
+                    <img src="./img/star-active.svg" alt="">
+                    <img src="./img/star.svg" alt="">
+                </div>
+                <div class="ring__end_1">
+                    <img src="./img/rings-blue.svg" alt="">
+                </div>
+
+
+                <form class="check__input">
+
+                    <div class="input__data">
+                        <p>На почту привязанную к аккаунту будет выслано письмо с ссылкой для подтверждения смены
+                            пароля</p>
+                        <div>
+                            <input placeholder="E-mail" type="email" name="email">
+                            <p class="input__desc">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                        </div>
+                        <div class="position-relative">
+                            <input placeholder="Пароль" type="password" name="password">
+                            <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="position-relative">
+                            <input placeholder="Повторить пароль" type="password" name="repeat_password">
+                            <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="check__form_button">
+                        <div class="check__button">
+                            <div class="check__link">
+                                <button type="submit">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div class="confidentiality">
+                    <div class="check__confidentiality">
+                        <p>Нажимая на данную кнопку, вы соглашаетесь с
+                            <a class="link__confidentiality" href="">условиями политики конфиденциальности</a>
+                        </p>
+                    </div>
+
                 </div>
             </div>
-            <div class="menu-block__end">
-                <p class="menu-block__small small">2020 &#169; Все права защищены</p>
-                <a href="#" class="menu-block__link-underline link-underline">Политика конфиденциальности</a>
+
+            <div class="position-relative check__right_block">
+                <div class="taylor__img">
+                    <img src="./img/taylor-IuckVlGbnOY-unsplash 1.png" alt="">
+                </div>
+                <div class="israel__img">
+                    <img src="./img/israel-palacio-BuiBnE4N31U-unsplash 1.png" alt="">
+                </div>
+                <div class="emiliano__img">
+                    <img src="./img/emiliano-vittoriosi-ViYQ4VsAnaw-unsplash 1.png" alt="">
+                </div>
+                <div class="check__end">
+                    <div class="social__link">
+                        <a href="#">
+                            <img src="./img/instagram2.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/facebook3.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/telegram2.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="check__right">
+                        <p>2020 © Все права защищены</p>
+                        <a href="" class="link-underline">Политика конфиденциальности</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="ring__end">
+            <img src="./img/rings-blue.svg" alt="">
+        </div>
+    </div>
+
+    <!-----------------FORM SIGN-UP------------------------------->
+
+    <div class="modal" id="signUp-from">
+        <button class="btn__close close-modal-window">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                        fill="#F70E4D" />
+            </svg>
+        </button>
+        <div class="registor__executor d-flex">
+            <div class="check__logo position-absolute">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="registor__main">
+                <div class="check__start">
+                    <h1 class="check__title">Регистрация в личном кабинете</h1>
+
+                </div>
+                <div class="check__stars">
+                    <img src="./img/star.svg" alt="">
+                    <img src="./img/star-active.svg" alt="">
+                    <img src="./img/star.svg" alt="">
+                </div>
+                <div class="register__toggle_forms">
+                    <h1>Создайте собственный аккаунт на платформе и используйте все ее возможности</h1>
+                    <div class="registor__button">
+                        <button class="active" data-button="executor">Исполнитель</button>
+                        <button data-button="label">Лейбл</button>
+                        <button data-button="listener">Слушатель</button>
+                    </div>
+                </div>
+                <div class="check__social position-relative">
+                    <p>Быстрый вход с помощью:</p>
+                    <div class="social__img">
+                        <a href="" target="_blank"><img src="./img/google.svg" alt=""></a>
+                        <a href="" target="_blank"><img src="./img/apple.svg" alt=""></a>
+                        <a href="" target="_blank"><img src="./img/facebook2.svg" alt=""></a>
+                        <a href="" target="_blank"><img src="./img/vk1.svg" alt=""></a>
+                    </div>
+                    <div class="ring__end">
+                        <img src="./img/rings-blue.svg" alt="">
+                    </div>
+                </div>
+                <p class="registor__data">Введите свои данные</p>
+                <form action="" class="registor__input input__data d-block" id="executor">
+
+                    <div class="input__group">
+                        <input class="registor__nick" type="text" name="nick_name" placeholder="Ваш Никнейм">
+                    </div>
+                    <div class="input__group">
+                        <input class="registor__name" type="text" name="fio" placeholder="Укажите ваше ФИО">
+                    </div>
+                    <div class="input__group">
+                        <input class="registor__mail" type="email" name="email" placeholder="E-mail">
+                        <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                    </div>
+                    <div class="position-relative input__group">
+                        <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                        <input type="password" class="register__pasword" name="password" placeholder="Пароль">
+                        <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя:
+                            латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
+                    </div>
+                    <div class="position-relative input__group">
+                        <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                        <input type="password" class="register__pasword-repeat" name="password_repeat"
+                               placeholder="Повторить Пароль">
+
+                    </div>
+
+                    <div class="group__input_date">
+                        <p class="title__input_data">Дата Рождения:</p>
+                        <div class="group__input_selectors d-flex">
+                            <select data-id="pick_date_select">
+                                <option value="" selected>День</option>
+                            </select>
+                            <select data-id="pick_month_select">
+                                <option value="" selected>Месяц</option>
+                            </select>
+                            <select data-id="pick_year_select">
+                                <option value="" selected>Год</option>
+                            </select>
+                        </div>
+                        <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем,
+                            это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения
+                            ваших авторских прав</p>
+                    </div>
+
+                    <div class="check__button">
+                        <div class="check__link">
+                            <button type="submit">Завершить</button>
+                        </div>
+
+                        <div class="check__checkbox">
+                            <input type="checkbox">
+                            <p>Запомнить меня</p>
+                        </div>
+                    </div>
+                    <div class="input__data">
+                        <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
+                        </p>
+                    </div>
+
+                </form>
+
+                <form action="" class="registor__input input__data" id="label">
+
+                    <div class="input__group">
+                        <input type="text" name="label_name" placeholder="Название лейбла">
+                    </div>
+                    <div class="input__group">
+                        <input type="text" name="fio" placeholder="Укажите ФИО руководителя">
+                    </div>
+                    <div class="input__group">
+                        <input type="email" name="email" placeholder="E-mail">
+                        <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                    </div>
+                    <div class="position-relative input__group">
+                        <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                        <input type="password" name="password" placeholder="Пароль">
+                        <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя:
+                            латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
+                    </div>
+                    <div class="position-relative input__group">
+                        <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                        <input type="password" name="password_repeat" placeholder="Повторить Пароль">
+
+                    </div>
+
+                    <div class="group__input_date">
+                        <p class="title__input_data">Дата Рождения:</p>
+                        <div class="group__input_selectors d-flex">
+                            <select data-id="pick_date_select">
+                                <option value="" selected>День</option>
+                            </select>
+                            <select data-id="pick_month_select">
+                                <option value="" selected>Месяц</option>
+                            </select>
+                            <select data-id="pick_year_select">
+                                <option value="" selected>Год</option>
+                            </select>
+                        </div>
+                        <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем,
+                            это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения
+                            ваших авторских прав</p>
+                    </div>
+
+                    <div class="check__button">
+                        <div class="check__link">
+                            <button type="submit">Завершить</button>
+                        </div>
+
+                        <div class="check__checkbox">
+                            <input type="checkbox">
+                            <p>Запомнить меня</p>
+                        </div>
+                    </div>
+                    <div class="input__data">
+                        <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
+                        </p>
+                    </div>
+
+                </form>
+
+                <form action="" class="registor__input input__data" id="listener">
+
+                    <div class="input__group">
+                        <input type="text" name="user_name" placeholder="Укажите ваше имя">
+                    </div>
+                    <div class="input__group">
+                        <input type="email" name="email" placeholder="E-mail">
+                        <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                    </div>
+                    <div class="position-relative input__group">
+                        <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                        <input type="password" name="password" placeholder="Пароль">
+                        <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя:
+                            латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
+                    </div>
+                    <div class="position-relative input__group">
+                        <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                        <input type="password" name="password_repeat" placeholder="Повторить Пароль">
+
+                    </div>
+
+                    <div class="group__input_date">
+                        <p class="title__input_data">Дата Рождения:</p>
+                        <div class="group__input_selectors d-flex">
+                            <select data-id="pick_date_select">
+                                <option value="" selected>День</option>
+                            </select>
+                            <select data-id="pick_month_select">
+                                <option value="" selected>Месяц</option>
+                            </select>
+                            <select data-id="pick_year_select">
+                                <option value="" selected>Год</option>
+                            </select>
+                        </div>
+                        <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем,
+                            это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения
+                            ваших авторских прав</p>
+                    </div>
+
+                    <div class="check__button">
+                        <div class="check__link">
+                            <button type="submit">Завершить</button>
+                        </div>
+
+                        <div class="check__checkbox">
+                            <input type="checkbox">
+                            <p>Запомнить меня</p>
+                        </div>
+                    </div>
+                    <div class="input__data">
+                        <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="register__right_block position-relative">
+                <div class="ring__end">
+                    <img src="./img/rings-blue.svg" alt="">
+                </div>
+                <div class="register__group_images position-relative">
+                    <div class="position-absolute">
+                        <img src="./img/taylor-IuckVlGbnOY-unsplash%201.png" alt="">
+                    </div>
+                    <div class="position-absolute">
+                        <img src="./img/israel-palacio-BuiBnE4N31U-unsplash%201.png" alt="">
+                    </div>
+                    <div class="position-absolute">
+                        <img src="./img/pic1.png" alt="">
+                    </div>
+                </div>
+                <div class="check__stars">
+                    <img src="./img/star.svg" alt="">
+                    <img src="./img/star-active.svg" alt="">
+                    <img src="./img/star.svg" alt="">
+                </div>
+                <div class="group__privacy">
+                    <div class="social__link">
+                        <a href="#">
+                            <img src="./img/instagram2.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/facebook3.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./img/telegram2.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="check__right">
+                        <p>2020 © Все права защищены</p>
+                        <a href="" class="link-underline">Политика конфиденциальности</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!--Конец блока-меню-->
 
-    <!-- Навигационное меню -->
+</div>
+<!--   Главный блок: начало-->
+<header class="main transparent-bg">
     <div class="container">
         <nav class="main-nav">
             <div class="main-nav__logo">
                 <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
             </div>
-            <div class="right-executor">
-                <p>ПОМОЩЬ</p>
-            </div>
-            <div class="mask">
-                <div class="mask__img">
-                    <img src="./img/default-avatar.jpg" alt="">
-                </div>
-                <div class="mask__content">
-                    <div class="mask__info">
-                        <div class="mask__name">
-                            <p>Mike Fliper</p>
-                            <div>
-                                <img src="./img/online.svg" alt="">
-                            </div>
-                        </div>
-                        <span>Исполнитель</span>
+            <div class="main-center">
+                <div class="nav__right">
+                    <div class="nav__search">
+                        <label for="">
+                            <input type="text" class="nav__search-input input-bottom"
+                                   placeholder="Поиск артистов, лейблов, треков">
+                            <a href="#"><img src="img/search.svg" alt=""></a>
+                        </label>
                     </div>
                 </div>
-                <div class="mask__bell">
-                    <button>
-                        <img src="./img/letter.svg" alt="">
-                    </button>
-                    <button>
-                        <img src="./img/bell.svg" alt="">
-                    </button>
-
+                <div class="main-nav__buttons">
+                    <a href="#" class="main-nav__button button-blue open__modalWindow_form"
+                       data-form="sign-in">Войти</a>
+                    <a href="#" class="main-nav__button--white button-white open__modalWindow_form"
+                       data-form="sign-up">Зарегистрироваться</a>
                 </div>
-            </div>
+                <!----- Авторизованный пользователь вид START--------->
+                <div class="mask d-none">
+                    <div class="mask__img">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                    <div class="mask__content">
+                        <div class="mask__info">
+                            <div class="mask__name">
+                                <p>Mike Fliper</p>
+                                <div>
+                                    <img src="./img/online.svg" alt="">
+                                </div>
+                            </div>
+                            <span>Исполнитель</span>
+                        </div>
+                    </div>
+                    <div class="mask__bell">
+                        <button>
+                            <img src="./img/letter.svg" alt="">
+                        </button>
+                        <button>
+                            <img src="./img/bell.svg" alt="">
+                        </button>
 
+                    </div>
+                </div>
+                <!----- Авторизованный пользователь вид END--------->
+            </div>
             <div class="main-nav__buttons">
                 <a href="#" class="main-nav__burger"><img src="img/burger.svg" alt=""></a>
             </div>
         </nav>
-        <!-- Конец навигационного меню -->
     </div>
+</header>
 
 
     <div class="container_chat container chat_block_help">

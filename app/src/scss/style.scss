@@ -63,6 +63,21 @@ button{
     outline: none;
 }
 
+.pt-10{padding-top: 10px}
+.pt-20{padding-top: 20px}
+.pt-30{padding-top: 30px}
+.pt-40{padding-top: 40px}
+
+.pb-10{padding-bottom: 10px}
+.pb-20{padding-bottom: 20px}
+.pb-30{padding-bottom: 30px}
+.pb-40{padding-bottom: 40px}
+
+
+.transparent-bg{
+    background: transparent;
+}
+
 .d-flex{
     display: flex;
   }
@@ -369,7 +384,9 @@ button{
     color: #fff;
 }
 
-
+.slick-slider .slick-track, .slick-slider .slick-list{
+    transition: none;
+}
 
 
 @font-face {

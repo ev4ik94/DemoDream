@@ -158,83 +158,83 @@ $('button[data-item="like"]').on('click', function(e){
 
 /*--------- Authentication Functions--------*/
 /*------ Toggle Buttons Forms-----*/
-// const registerForm = document.getElementById('signUp-from');
-// const registerFormArr = registerForm.querySelectorAll('form')
-// const btnsArr = registerForm.querySelectorAll('button[data-button]');
-//
-// btnsArr.forEach(btn => btn.addEventListener('click', ToggleForms))
-//
-// function ToggleForms(e) {
-//     const buttonClick = e.target;
-//     btnsArr.forEach(btn => {
-//         btn.classList.remove('active')
-//     })
-//     registerFormArr.forEach(form => form.classList.remove('d-block'))
-//     buttonClick.classList.add('active')
-//     const btnId = buttonClick.getAttribute('data-button')
-//     const form = document.getElementById(btnId)
-//     form.classList.add('d-block')
-// }
-//
-//
-// /*-----Show Password--------*/
-//
-// const btnsShowPass = document.querySelectorAll('.button__show_password');
-// btnsShowPass.forEach(item => {
-//     item.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         const btn = e.currentTarget;
-//         const input = btn.parentElement.querySelector('input');
-//         if (input.getAttribute('type') === 'password') {
-//             input.setAttribute('type', 'text')
-//         } else {
-//             input.setAttribute('type', 'password')
-//         }
-//
-//     })
-// })
-//
-//
-// /*------Open modal window Authentication-----*/
-//
-// const buttonsAuth = Array.from(document.getElementsByClassName('open__modalWindow_form'));
-// const modalWindow = document.getElementById('modal-window-auth');
-// const btnClose = Array.from(document.getElementsByClassName('btn__close'));
-//
-// buttonsAuth.forEach(item => {
-//     item.addEventListener('click', (e) => {
-//
-//         e.preventDefault();
-//         const typeForm = item.getAttribute('data-form');
-//         modalWindow.classList.add('show');
-//         const form1 = document.getElementById('signIn-from');
-//         const form2 = document.getElementById('signUp-from');
-//         const form3 = document.getElementById('forgot_pass_form');
-//
-//         if (typeForm === 'sign-in') {
-//             form1.classList.add('show');
-//             form3.classList.remove('show');
-//             form2.classList.remove('show');
-//         } else if (typeForm === 'sign-up') {
-//             form2.classList.add('show');
-//             form3.classList.remove('show');
-//             form1.classList.remove('show');
-//         } else if (typeForm === 'forgot_pass_form') {
-//             form2.classList.remove('show');
-//             form1.classList.remove('show');
-//             form3.classList.add('show');
-//         }
-//
-//     });
-// });
-//
-// btnClose.forEach(item => item.addEventListener('click', closeModal))
-//
-//
-// function closeModal() {
-//     console.log('click')
-//     modalWindow.classList.remove('show');
-// }
+const registerForm = document.getElementById('signUp-from');
+const registerFormArr = registerForm.querySelectorAll('form')
+const btnsArr = registerForm.querySelectorAll('button[data-button]');
+
+btnsArr.forEach(btn => btn.addEventListener('click', ToggleForms))
+
+function ToggleForms(e) {
+    const buttonClick = e.target;
+    btnsArr.forEach(btn => {
+        btn.classList.remove('active')
+    })
+    registerFormArr.forEach(form => form.classList.remove('d-block'))
+    buttonClick.classList.add('active')
+    const btnId = buttonClick.getAttribute('data-button')
+    const form = document.getElementById(btnId)
+    form.classList.add('d-block')
+}
+
+
+/*-----Show Password--------*/
+
+const btnsShowPass = document.querySelectorAll('.button__show_password');
+btnsShowPass.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const btn = e.currentTarget;
+        const input = btn.parentElement.querySelector('input');
+        if (input.getAttribute('type') === 'password') {
+            input.setAttribute('type', 'text')
+        } else {
+            input.setAttribute('type', 'password')
+        }
+
+    })
+})
+
+
+/*------Open modal window Authentication-----*/
+
+const buttonsAuth = Array.from(document.getElementsByClassName('open__modalWindow_form'));
+const modalWindow = document.getElementById('modal-window-auth');
+const btnClose = Array.from(document.getElementsByClassName('btn__close'));
+
+buttonsAuth.forEach(item => {
+    item.addEventListener('click', (e) => {
+
+        e.preventDefault();
+        const typeForm = item.getAttribute('data-form');
+        modalWindow.classList.add('show');
+        const form1 = document.getElementById('signIn-from');
+        const form2 = document.getElementById('signUp-from');
+        const form3 = document.getElementById('forgot_pass_form');
+
+        if (typeForm === 'sign-in') {
+            form1.classList.add('show');
+            form3.classList.remove('show');
+            form2.classList.remove('show');
+        } else if (typeForm === 'sign-up') {
+            form2.classList.add('show');
+            form3.classList.remove('show');
+            form1.classList.remove('show');
+        } else if (typeForm === 'forgot_pass_form') {
+            form2.classList.remove('show');
+            form1.classList.remove('show');
+            form3.classList.add('show');
+        }
+
+    });
+});
+
+btnClose.forEach(item => item.addEventListener('click', closeModal))
+
+
+function closeModal() {
+    console.log('click')
+    modalWindow.classList.remove('show');
+}
 
 
 /*------Sliders Carousel-------*/
