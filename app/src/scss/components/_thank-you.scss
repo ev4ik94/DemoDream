@@ -121,3 +121,21 @@
     }
 }
 
+@media (max-width: 321px){
+    .thank-you {
+        
+        &__title {
+            font-size: 35px !important;
+        }
+        
+        &__button-pink {
+            font-size: 13px;
+            width: 96%;
+        }
+        
+        &__text-gray {
+            font-size: 14px;
+        }
+    }
+}
+

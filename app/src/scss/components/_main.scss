@@ -232,10 +232,13 @@
             }
         }
     }
+    .main-nav__btn {
+        display: none;
+    }
 }
 
 @media (max-width:361px) {
     .main__title {
-        font-size: 77px;
+        font-size: 63px;
     }
 }

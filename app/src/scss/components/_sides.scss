@@ -245,3 +245,13 @@
         }
     }
 }
+
+
+@media (max-width: 321px){
+    .sides {
+        
+        &__title-content {
+            font-size: 33px !important;
+        }
+    }
+}

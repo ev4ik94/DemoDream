@@ -27,6 +27,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+
         &>div {
             flex-direction: column;
             width: 100%;
@@ -63,60 +64,62 @@
     }
 
     &__link {
-    margin-bottom: 25px;
-    font-size: 26px;
-    line-height: 32px;
-    color: #fff;
-    text-decoration: none;
-
-    &:hover {
-        color: #868686;
-    }
-}
-
-&__buttons {
-    margin-top: 45px;
-    display: flex;
-    justify-content: space-between;
-
-    &>div {
-        width: var(--col-3);
-    }
-}
-
-&__button_red {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #fff;
-    border: none;
-    padding: 8px 21px 10px 21px;
-    background: #F70E4D;
-    border-radius: 5px;
-
-    &:hover {
-        background: #fff;
-        color: rgba(0, 0, 0, 0.7);
-    }
-}
-
-&__button_blue {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #37E7FF;
-    background: transparent;
-    border: 1px solid #37E7FF;
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 8px 21px 8px 21px;
-
-    &:hover {
-        border: 1px solid #FFFFFF;
+        margin-bottom: 25px;
+        font-size: 26px;
+        line-height: 32px;
         color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: #868686;
+        }
+    }
+    
+    &__buttons {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+
+        &>div {
+            width: var(--col-3);
+        }
+    }
+
+    &__button_red {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #fff;
+        border: none;
+        padding: 8px 21px 10px 21px;
+        background: #F70E4D;
+        border-radius: 5px;
+
+        &:hover {
+            background: #fff;
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+
+    &__button_blue {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #37E7FF;
+        background: transparent;
+        border: 1px solid #37E7FF;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 8px 21px 8px 21px;
+
+        &:hover {
+            border: 1px solid #FFFFFF;
+            color: #fff;
+        }
     }
 }
-}
+
+
 
 
 
