@@ -28,7 +28,7 @@ $(".subscribe__slider").slick({
 });
 
 $(".donate-slider").slick({
-    dots:true,
+    dots: true,
     arrows: false,
     infinite: false,
     slidesToShow: 1,
@@ -37,7 +37,7 @@ $(".donate-slider").slick({
 });
 
 $(".sides__slider--three").slick({
-    dots:true,
+    dots: true,
     arrows: false,
     appendDots: $('.sides__item[data-index="1"] .sides__dots'),
     slidesToShow: 3,
@@ -45,7 +45,7 @@ $(".sides__slider--three").slick({
 });
 
 $(".sides__slider-two").slick({
-    dots:true,
+    dots: true,
     arrows: false,
     appendDots: $('.sides__item[data-index="2"] .sides__dots_vertical'),
     slidesToShow: 1,
@@ -54,7 +54,7 @@ $(".sides__slider-two").slick({
 });
 
 $(".sides__slider-one").slick({
-    dots:true,
+    dots: true,
     arrows: false,
     appendDots: $('.sides__item[data-index="3"] .sides__dots'),
     slidesToShow: 1,
@@ -62,73 +62,73 @@ $(".sides__slider-one").slick({
 });
 
 function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+    // Declare all variables
+    var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
 }
 
 function sortThing(event, thing) {
     var z, innerTabcontect, innerTabLinks;
-    
+
     // Get all elements with class="tabcontent" and hide them
-  innerTabcontect = document.getElementsByClassName("inner-tabcontent");
-  for (z = 0; z < innerTabcontect.length; z++) {
-    innerTabcontect[z].style.display = "none";
-  }
+    innerTabcontect = document.getElementsByClassName("inner-tabcontent");
+    for (z = 0; z < innerTabcontect.length; z++) {
+        innerTabcontect[z].style.display = "none";
+    }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  innerTabLinks = document.getElementsByClassName("inner-tablinks");
-  for (z = 0; z < innerTabLinks.length; z++) {
-    innerTabLinks[z].className = innerTabLinks[z].className.replace(" active", "");
-  }
+    // Get all elements with class="tablinks" and remove the class "active"
+    innerTabLinks = document.getElementsByClassName("inner-tablinks");
+    for (z = 0; z < innerTabLinks.length; z++) {
+        innerTabLinks[z].className = innerTabLinks[z].className.replace(" active", "");
+    }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(thing).style.display = "block";
-  event.currentTarget.className += " active";
-        
-  }
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(thing).style.display = "block";
+    event.currentTarget.className += " active";
+
+}
 
 function sortThingByDate(sevent, sthing) {
     var y, sInnerTabcontect, sInnerTabLinks;
-    
+
     // Get all elements with class="tabcontent" and hide them
-  sInnerTabcontect = document.getElementsByClassName("sinner-tabcontent");
-  for (y = 0; y < sInnerTabcontect.length; y++) {
-    sInnerTabcontect[y].style.display = "none";
-  }
+    sInnerTabcontect = document.getElementsByClassName("sinner-tabcontent");
+    for (y = 0; y < sInnerTabcontect.length; y++) {
+        sInnerTabcontect[y].style.display = "none";
+    }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  sInnerTabLinks = document.getElementsByClassName("sinner-tablinks");
-  for (y = 0; y < sInnerTabLinks.length; y++) {
-    sInnerTabLinks[y].className = sInnerTabLinks[y].className.replace(" active", "");
-  }
+    // Get all elements with class="tablinks" and remove the class "active"
+    sInnerTabLinks = document.getElementsByClassName("sinner-tablinks");
+    for (y = 0; y < sInnerTabLinks.length; y++) {
+        sInnerTabLinks[y].className = sInnerTabLinks[y].className.replace(" active", "");
+    }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(sthing).style.display = "block";
-  sevent.currentTarget.className += " active";
-        
-  }
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(sthing).style.display = "block";
+    sevent.currentTarget.className += " active";
+
+}
 
 // menu 
 
 const closeMenuBtn = document.querySelector(".close"),
-      openMenuBtn = document.querySelector(".main-nav__burger"),
-      menu = document.querySelector(".menu-block");
+    openMenuBtn = document.querySelector(".main-nav__burger"),
+    menu = document.querySelector(".menu-block");
 
 closeMenuBtn.addEventListener("click", function(e) {
     e.preventDefault();
@@ -137,9 +137,9 @@ closeMenuBtn.addEventListener("click", function(e) {
 });
 
 openMenuBtn.addEventListener("click", function(e) {
-   e.preventDefault();
-   menu.style.display = "flex";
-   document.body.style.overflowY = "hidden";
+    e.preventDefault();
+    menu.style.display = "flex";
+    document.body.style.overflowY = "hidden";
 });
 
 
@@ -150,9 +150,21 @@ const elem = $('[data-id="current-date-year"]').append(year)
 
 /*---------MODAL WINDOW TRACK-LIST-------*/
 
+/*------Open Modal Track List---------*/
+
+$('.chart-tracks__buttons a').on('click', (e) => {
+    console.log('click')
+    e.preventDefault()
+    $('#modal-tracks').addClass('show')
+})
+
+$('.btn__close').on('click', (e) => {
+    $('#modal-tracks').removeClass('show')
+})
+
 /*------Click like-------*/
 const buttonsLike = $('button[data-item="like"]')
-$('button[data-item="like"]').on('click', function(e){
+$('button[data-item="like"]').on('click', function(e) {
     e.currentTarget.classList.toggle('liked')
 })
 
@@ -274,54 +286,54 @@ inputs.forEach(item => {
 
 
 
- /*-----Create data options for select-----*/
-        const selectDate = Array.from(document.querySelectorAll('select[data-id="pick_date_select"]'));
-        const selectMonth = Array.from(document.querySelectorAll('select[data-id="pick_month_select"]'));
-        const selectYear = Array.from(document.querySelectorAll('select[data-id="pick_year_select"]'));
+/*-----Create data options for select-----*/
+const selectDate = Array.from(document.querySelectorAll('select[data-id="pick_date_select"]'));
+const selectMonth = Array.from(document.querySelectorAll('select[data-id="pick_month_select"]'));
+const selectYear = Array.from(document.querySelectorAll('select[data-id="pick_year_select"]'));
 
-        const arrDate = [];
-        const arrMonth = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь',
-            'Ноябрь', 'Декабрь'
-        ];
-        const arrYear = [];
+const arrDate = [];
+const arrMonth = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь',
+    'Ноябрь', 'Декабрь'
+];
+const arrYear = [];
 
-        for (let d = 1; d <= 31; d++) {
-            arrDate.push(d);
-        }
-        for (let d = 2007; d >= 1956; d--) {
-            arrYear.push(d);
-        }
+for (let d = 1; d <= 31; d++) {
+    arrDate.push(d);
+}
+for (let d = 2007; d >= 1956; d--) {
+    arrYear.push(d);
+}
 
-        selectDate.forEach(item => createOptions(arrDate, item));
-        selectMonth.forEach(item => createOptions(arrMonth, item));
-        selectYear.forEach(item => createOptions(arrYear, item));
+selectDate.forEach(item => createOptions(arrDate, item));
+selectMonth.forEach(item => createOptions(arrMonth, item));
+selectYear.forEach(item => createOptions(arrYear, item));
 
 
-        function createOptions(arr, elem) {
-            const option = arr.map(item => {
-                const optionItem = document.createElement('option');
-                optionItem.setAttribute('value', item);
-                optionItem.innerText = item;
-                return optionItem;
-            })
-            option.forEach(opt => {
-                elem.appendChild(opt)
-            })
-        }
+function createOptions(arr, elem) {
+    const option = arr.map(item => {
+        const optionItem = document.createElement('option');
+        optionItem.setAttribute('value', item);
+        optionItem.innerText = item;
+        return optionItem;
+    })
+    option.forEach(opt => {
+        elem.appendChild(opt)
+    })
+}
 
 
 /*------Show Password Button---------*/
-function toggleShowPassword(e){
+function toggleShowPassword(e) {
     const input = e.parentElement.querySelector('input')
     const show = input.getAttribute('type') === 'text'
-    input.setAttribute('type', show?'password':'text')
+    input.setAttribute('type', show ? 'password' : 'text')
 }
 
 
 /*-------Set Mask Input-----*/
-function setMask(){
+function setMask() {
     const inputMask = Array.from(document.querySelectorAll('input[data-type="mask-number"]'))
-    inputMask.forEach(item=>{
+    inputMask.forEach(item => {
         const phoneMask = IMask(
             item, {
                 mask: '+{7}(000)000-00-00',
@@ -332,34 +344,34 @@ function setMask(){
 }
 
 /*-------Select Country------*/
-function selectCountryRender(){
+function selectCountryRender() {
     const countries = ['rus', 'uzb']
     const containers = Array.from($('div[data-id="select-country"] .dropdown_select'))
     $('div[data-type="selected"] img').attr('src', `./img/country_flags/${countries[0]}.png`)
-    countries.forEach(item=>{
+    countries.forEach(item => {
         const img = `./img/country_flags/${item}.png`
-        containers.forEach(select=>{
+        containers.forEach(select => {
             $(select).append(`<div onclick='selectCountry(this)'><img src=${img} alt="" /></div>`)
         })
     })
 }
 
-function selectCountry(e){
+function selectCountry(e) {
     const img = e.querySelector('img')
-    const src = img?img.getAttribute('src'):''
+    const src = img ? img.getAttribute('src') : ''
     const selectDiv = $('div[data-type="selected"] img')
     $(selectDiv).attr('src', src)
     dropDown()
 }
 
-function dropDown(){
+function dropDown() {
     $('.dropdown_select').toggleClass('d-none')
 }
 
 
 
 
-$(document).ready(()=>{
+$(document).ready(() => {
     setMask()
     selectCountryRender()
 })

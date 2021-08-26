@@ -3,23 +3,18 @@
     padding-top: 58px;
     padding-bottom: 63px;
     margin-top: 85px;
-
     &__info {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
     &__more {
         display: flex;
     }
-    
     &__all {
         display: flex;
     }
-
     &__logo {
-
         & p {
             font-weight: 600;
             font-size: 14px;
@@ -27,74 +22,42 @@
             margin-top: 38px;
             margin-bottom: 10px;
         }
-
         & a {
             font-weight: 500;
             font-size: 14px;
             color: rgba(255, 255, 255, 0.7);
         }
     }
-
     &__img {
         max-width: 131px;
         max-height: 43px;
-
         & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     &__menu {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         margin-left: 100px;
-
         & a {
+            padding-bottom: 15px;
             font-size: 20px;
             line-height: 25px;
             color: #fff;
             text-decoration: none;
             transition: 0.5s;
-
             &:hover {
                 color: #868686;
             }
-
             &:active {
                 color: #868686;
             }
         }
     }
-
-    &__link {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-left: 100px;
-
-        & a {
-            font-size: 20px;
-            line-height: 25px;
-            color: #fff;
-            text-decoration: none;
-            transition: 0.5s;
-
-            &:hover {
-                color: #868686;
-            }
-
-            &:active {
-                color: #868686;
-            }
-        }
-    }
-
     &__button {
         display: flex;
-
         & p {
             max-width: 180px;
             width: 100%;
@@ -105,7 +68,6 @@
             margin-right: 85px;
             letter-spacing: 0.17em;
         }
-
         & button {
             border: 1px solid #FFFFFF;
             box-sizing: border-box;
@@ -117,23 +79,19 @@
             padding: 8px 23px 10px 21px;
         }
     }
-
     &__end {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-
     &__raw {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
     &__tel {
         display: flex;
         align-items: baseline;
-
         & a {
             font-weight: 600;
             font-size: 14px;
@@ -142,28 +100,23 @@
             text-decoration: none;
         }
     }
-    
-    
-
     &__tel_img {
         width: 18px;
         height: 18px;
         margin-right: 13px;
-
         & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-    
     &__social {
         display: flex;
         align-items: center;
         & a {
             margin-left: 6px;
             display: block;
-            & > img{
+            &>img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
@@ -177,11 +130,9 @@
 
 @media (max-width: 1041px) {
     .footer {
-        
         &__menu {
             margin-left: 20px;
         }
-        
         &__link {
             margin-left: 30px;
         }
@@ -190,26 +141,21 @@
 
 @media (max-width: 892px) {
     .footer {
-        
         &__menu {
             margin-left: 40px;
         }
-        
         &__link {
             margin-left: 50px;
         }
-        
         &__more {
             margin-bottom: 40px;
         }
-        
         &__end {
             flex-direction: column-reverse;
         }
-        
         &__raw {
             margin-bottom: 30px;
-        } 
+        }
     }
 }
 
@@ -218,7 +164,6 @@
         &__more {
             flex-direction: column;
         }
-        
         &__menu {
             margin-left: 0;
             width: 180px;
@@ -226,40 +171,33 @@
                 margin-bottom: 20px;
             }
         }
-        
         &__all {
             margin-top: 65px;
         }
-        
         &__link {
             margin-left: 0;
             & a {
                 margin-bottom: 20px;
             }
         }
-        
         &__tel {
             margin-left: 50px;
         }
-        
         &__end {
             flex-direction: column-reverse;
             margin-top: 45px;
         }
-        
         &__raw {
             flex-direction: row-reverse;
             margin-bottom: 80px;
         }
-        
         &__social {
             & a {
-               width: 20px;
-               height: 20px;
+                width: 20px;
+                height: 20px;
             }
         }
     }
-    
     .footer__button p {
         margin-right: 0;
     }

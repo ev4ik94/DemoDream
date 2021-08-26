@@ -15,175 +15,285 @@
 </head>
 
 <body>
-<!--Начало блока-меню-->
-<div class="menu-block">
-    <div class="menu-block__items">
-        <div class="menu-block__item">
-            <a href="/"><img src="img/logo.svg" alt="" class="logo"></a>
+    <!--Начало блока-меню-->
+    <div class="menu-block container">
+        <div class="menu-block__items">
+            <div class="menu-block__item">
+                <a href="/"><img src="img/logo.svg" alt="" class="logo"></a>
+            </div>
+            <div class="menu-block__item">
+                <a href="#" class="close"><img src="img/close.svg" alt=""></a>
+            </div>
         </div>
-        <div class="menu-block__item">
-            <a href="#" class="close"><img src="img/close.svg" alt=""></a>
-        </div>
-    </div>
-    <div class="menu-block__column">
-        <div class="d-flex">
+        <div class="menu-block__column">
             <div class="d-flex">
-                <div class="menu-block__row">
-                    <a href="#" class="menu-block__link">Чарт</a>
-                    <a href="#" class="menu-block__link">Платформа</a>
-                    <a href="#" class="menu-block__link">Авторство</a>
-                </div>
-                <div class="menu-block__row">
-                    <a href="#" class="menu-block__link">Тарифы</a>
-                    <a href="#" class="menu-block__link">Отзывы</a>
-                    <a href="#" class="menu-block__link">Контакты</a>
-                </div>
-                <!----- Авторизованный пользователь вид START--------->
-                <div class="mask_menu d-none">
-                    <div class="d-flex">
-                        <div class="mask_menu__img">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                        <div class="mask_menu__content">
-                            <div class="mask_menu__info">
-                                <div class="mask_menu__name">
-                                    <p>Mike Fliper</p>
-                                    <div>
-                                        <img src="./img/online.svg" alt="">
+                <div class="d-flex">
+                    <div class="menu-block__row">
+                        <a href="track-generator.html" class="menu-block__link">Чарт</a>
+                        <a href="broadcast.html" class="menu-block__link">Платформа</a>
+
+                    </div>
+                    <div class="menu-block__row">
+                        <a href="help.html" class="menu-block__link">Помощь</a>
+                        <a href="setting.html" class="menu-block__link">Настройки</a>
+                        <a href="#" class="menu-block__link">Контакты</a>
+                    </div>
+                    <!----- Авторизованный пользователь вид START--------->
+                    <div class="mask_menu d-none">
+                        <div class="d-flex">
+                            <div class="mask_menu__img">
+                                <img src="./img/default-avatar.jpg" alt="">
+                            </div>
+                            <div class="mask_menu__content">
+                                <div class="mask_menu__info">
+                                    <div class="mask_menu__name">
+                                        <p>Mike Fliper</p>
+                                        <div>
+                                            <img src="./img/online.svg" alt="">
+                                        </div>
                                     </div>
+                                    <span>Исполнитель</span>
                                 </div>
-                                <span>Исполнитель</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="mask_menu__bell">
-                        <button>
+                        <div class="mask_menu__bell">
+                            <button>
                             <img src="./img/letter.svg" alt="">
                         </button>
-                        <button>
+                            <button>
                             <img src="./img/bell.svg" alt="">
                         </button>
+                        </div>
+                        <button class="mask_menu__come">Войти</button>
                     </div>
-                    <button class="mask_menu__come">Войти</button>
+                    <!----- Авторизованный пользователь вид END--------->
                 </div>
-                <!----- Авторизованный пользователь вид END--------->
+                <div class="menu-block__buttons">
+                    <div>
+                        <button class="menu-block__button_red open__modalWindow_form" data-form="sign-up">Зарегистрироваться</button>
+                    </div>
+                    <div>
+                        <button class="menu-block__button_blue open__modalWindow_form" data-form="sign-in">Войти</button>
+                    </div>
+                </div>
             </div>
-            <div class="menu-block__buttons">
-                <div>
-                    <button class="menu-block__button_red open__modalWindow_form" data-form="sign-up">Зарегистрироваться</button>
+
+        </div>
+        <div class="menu-block__column-below">
+            <div class="menu-block__list">
+                <div class="menu-block__social">
+                    <a href="#"><img src="img/instagram.svg" alt=""></a>
+                    <a href="#"><img src="img/facebook.svg" alt=""></a>
+                    <a href="#"><img src="img/telegram.svg" alt=""></a>
+                    <a href="#"><img src="img/youtube.svg" alt=""></a>
                 </div>
-                <div>
-                    <button class="menu-block__button_blue open__modalWindow_form" data-form="sign-in">Войти</button>
+                <div class="menu-block__call">
+                    <img src="img/phone-call.svg" alt="">
+                    <a href="tel:+79152328018" class="menu-block__phone phone">+7(915)-232-80-18</a>
                 </div>
+            </div>
+            <div class="menu-block__end">
+                <p class="menu-block__small small"><span data-id="current-date-year"></span> &#169; Все права защищены</p>
+                <a href="#" class="menu-block__link-underline link-underline">Политика конфиденциальности</a>
             </div>
         </div>
-
     </div>
-    <div class="menu-block__column-below">
-        <div class="menu-block__list">
-            <div class="menu-block__social">
-                <a href="#"><img src="img/instagram.svg" alt=""></a>
-                <a href="#"><img src="img/facebook.svg" alt=""></a>
-                <a href="#"><img src="img/telegram.svg" alt=""></a>
-                <a href="#"><img src="img/youtube.svg" alt=""></a>
-            </div>
-            <div class="menu-block__call">
-                <img src="img/phone-call.svg" alt="">
-                <a href="tel:+79152328018" class="menu-block__phone phone">+7(915)-232-80-18</a>
-            </div>
-        </div>
-        <div class="menu-block__end">
-            <p class="menu-block__small small"><span data-id="current-date-year"></span> &#169; Все права защищены</p>
-            <a href="#" class="menu-block__link-underline link-underline">Политика конфиденциальности</a>
-        </div>
-    </div>
-</div>
-<!--Конец блока-меню-->
+    <!--Конец блока-меню-->
 
-<!----- модальное окно: вход в личный кобинет Начало------->
+    <!----- модальное окно: вход в личный кобинет Начало------->
 
-<div class="cabinet" id="modal-window-auth">
-    <div class="modal" id="signIn-from">
-        <button class="btn__close close-modal-window">
+    <div class="cabinet" id="modal-window-auth">
+        <div class="modal" id="signIn-from">
+            <button class="btn__close close-modal-window">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                         d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
                         fill="#F70E4D" />
             </svg>
         </button>
-        <div class="check d-flex justify-content-between">
-            <div class="check__logo position-absolute">
-                <a href="#">
-                    <img src="./img/logo.svg" alt="">
-                </a>
-            </div>
-            <div class="check__main">
-                <div class="check__start">
-                    <h1 class="check__title">Вход в личный кабинет</h1>
+            <div class="check d-flex justify-content-between">
+                <div class="check__logo position-absolute">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="check__main">
+                    <div class="check__start">
+                        <h1 class="check__title">Вход в личный кабинет</h1>
 
-                </div>
-                <div class="check__stars">
-                    <img src="./img/star.svg" alt="">
-                    <img src="./img/star-active.svg" alt="">
-                    <img src="./img/star.svg" alt="">
-                </div>
-                <div class="ring__end_1">
-                    <img src="./img/rings-blue.svg" alt="">
-                </div>
-
-                <div class="check__social">
-                    <p>Быстрый вход с помощью:</p>
-                    <div class="social__img">
-                        <a href=""><img src="./img/google.svg" alt=""></a>
-                        <a href=""><img src="./img/apple.svg" alt=""></a>
-                        <a href=""><img src="./img/facebook2.svg" alt=""></a>
-                        <a href=""><img src="./img/vk1.svg" alt=""></a>
                     </div>
-                </div>
+                    <div class="check__stars">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star-active.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                    <div class="ring__end_1">
+                        <img src="./img/rings-blue.svg" alt="">
+                    </div>
 
-                <form class="check__input">
-                    <p>Введите свои данные</p>
-                    <div class="input__data">
-                        <div>
-                            <input placeholder="E-mail" type="text" name="email">
-                            <p class="input__desc">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                    <div class="check__social">
+                        <p>Быстрый вход с помощью:</p>
+                        <div class="social__img">
+                            <a href=""><img src="./img/google.svg" alt=""></a>
+                            <a href=""><img src="./img/apple.svg" alt=""></a>
+                            <a href=""><img src="./img/facebook2.svg" alt=""></a>
+                            <a href=""><img src="./img/vk1.svg" alt=""></a>
                         </div>
-                        <div>
-                            <input placeholder="Пароль" type="password" name="password">
-                            <button class="button__show_password">
+                    </div>
+
+                    <form class="check__input">
+                        <p>Введите свои данные</p>
+                        <div class="input__data">
+                            <div>
+                                <input placeholder="E-mail" type="text" name="email">
+                                <p class="input__desc">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                            </div>
+                            <div>
+                                <input placeholder="Пароль" type="password" name="password">
+                                <button class="button__show_password">
                                 <img src="./img/eye.svg" alt="">
                             </button>
-                            <button id="forget-password" class="open__modalWindow_form"
-                                    data-form="forgot_pass_form">Забыли пароль?</button>
-                        </div>
-                    </div>
-                    <div class="check__form_button">
-                        <div class="check__button">
-                            <div class="check__link">
-                                <button type="submit">Войти</button>
-                            </div>
-
-                            <div class="check__checkbox">
-                                <input type="checkbox">
-                                <p>Запомнить меня</p>
+                                <button id="forget-password" class="open__modalWindow_form" data-form="forgot_pass_form">Забыли пароль?</button>
                             </div>
                         </div>
+                        <div class="check__form_button">
+                            <div class="check__button">
+                                <div class="check__link">
+                                    <button type="submit">Войти</button>
+                                </div>
+
+                                <div class="check__checkbox">
+                                    <input type="checkbox">
+                                    <p>Запомнить меня</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div class="confidentiality">
+                        <div class="check__confidentiality">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с
+                                <a class="link__confidentiality" href="">условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
+
                     </div>
-
-                </form>
-
-                <div class="confidentiality">
-                    <div class="check__confidentiality">
-                        <p>Нажимая на данную кнопку, вы соглашаетесь с
-                            <a class="link__confidentiality" href="">условиями политики конфиденциальности</a>
-                        </p>
-                    </div>
-
                 </div>
-            </div>
 
-            <div class="position-relative check__right_block">
-                <div class="position-relative authentication__group_images">
+                <div class="position-relative check__right_block">
+                    <div class="position-relative authentication__group_images">
+                        <div class="taylor__img">
+                            <img src="./img/taylor-IuckVlGbnOY-unsplash 1.png" alt="">
+                        </div>
+                        <div class="israel__img">
+                            <img src="./img/israel-palacio-BuiBnE4N31U-unsplash 1.png" alt="">
+                        </div>
+                        <div class="emiliano__img">
+                            <img src="./img/emiliano-vittoriosi-ViYQ4VsAnaw-unsplash 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="check__end">
+                        <div class="social__link">
+                            <a href="#">
+                                <img src="./img/instagram2.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/facebook3.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/telegram2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="check__right">
+                            <p>2020 © Все права защищены</p>
+                            <a href="" class="link-underline">Политика конфиденциальности</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="ring__end">
+                <img src="./img/rings-blue.svg" alt="">
+            </div>
+        </div>
+
+
+        <!------------FORM FORGOT PASSWORD------------------------------>
+
+        <div class="modal" id="forgot_pass_form">
+            <button class="btn__close close-modal-window">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
+                        fill="#F70E4D" />
+            </svg>
+        </button>
+            <div class="check d-flex justify-content-between">
+                <div class="check__logo position-absolute">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="check__main">
+                    <div class="check__start">
+                        <h1 class="check__title">Восстановление пароля</h1>
+
+                    </div>
+                    <div class="check__stars">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star-active.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                    <div class="ring__end_1">
+                        <img src="./img/rings-blue.svg" alt="">
+                    </div>
+
+
+                    <form class="check__input">
+
+                        <div class="input__data">
+                            <p>На почту привязанную к аккаунту будет выслано письмо с ссылкой для подтверждения смены пароля
+                            </p>
+                            <div>
+                                <input placeholder="E-mail" type="email" name="email">
+                                <p class="input__desc">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                            </div>
+                            <div class="position-relative">
+                                <input placeholder="Пароль" type="password" name="password">
+                                <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                            </div>
+                            <div class="position-relative">
+                                <input placeholder="Повторить пароль" type="password" name="repeat_password">
+                                <button class="button__show_password">
+                                <img src="./img/eye.svg" alt="">
+                            </button>
+                            </div>
+                        </div>
+                        <div class="check__form_button">
+                            <div class="check__button">
+                                <div class="check__link">
+                                    <button type="submit">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div class="confidentiality">
+                        <div class="check__confidentiality">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с
+                                <a class="link__confidentiality" href="">условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="position-relative check__right_block">
                     <div class="taylor__img">
                         <img src="./img/taylor-IuckVlGbnOY-unsplash 1.png" alt="">
                     </div>
@@ -193,581 +303,458 @@
                     <div class="emiliano__img">
                         <img src="./img/emiliano-vittoriosi-ViYQ4VsAnaw-unsplash 1.png" alt="">
                     </div>
-                </div>
-                <div class="check__end">
-                    <div class="social__link">
-                        <a href="#">
-                            <img src="./img/instagram2.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="./img/facebook3.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="./img/telegram2.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="check__right">
-                        <p>2020 © Все права защищены</p>
-                        <a href="" class="link-underline">Политика конфиденциальности</a>
-                    </div>
+                    <div class="check__end">
+                        <div class="social__link">
+                            <a href="#">
+                                <img src="./img/instagram2.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/facebook3.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/telegram2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="check__right">
+                            <p>2020 © Все права защищены</p>
+                            <a href="" class="link-underline">Политика конфиденциальности</a>
+                        </div>
 
+                    </div>
                 </div>
+
             </div>
-
+            <div class="ring__end">
+                <img src="./img/rings-blue.svg" alt="">
+            </div>
         </div>
-        <div class="ring__end">
-            <img src="./img/rings-blue.svg" alt="">
-        </div>
-    </div>
 
+        <!-----------------FORM SIGN-UP------------------------------->
 
-    <!------------FORM FORGOT PASSWORD------------------------------>
-
-    <div class="modal" id="forgot_pass_form">
-        <button class="btn__close close-modal-window">
+        <div class="modal" id="signUp-from">
+            <button class="btn__close close-modal-window">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                         d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
                         fill="#F70E4D" />
             </svg>
         </button>
-        <div class="check d-flex justify-content-between">
-            <div class="check__logo position-absolute">
-                <a href="#">
-                    <img src="./img/logo.svg" alt="">
-                </a>
-            </div>
-            <div class="check__main">
-                <div class="check__start">
-                    <h1 class="check__title">Восстановление пароля</h1>
-
+            <div class="registor__executor d-flex">
+                <div class="check__logo position-absolute">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
                 </div>
-                <div class="check__stars">
-                    <img src="./img/star.svg" alt="">
-                    <img src="./img/star-active.svg" alt="">
-                    <img src="./img/star.svg" alt="">
-                </div>
-                <div class="ring__end_1">
-                    <img src="./img/rings-blue.svg" alt="">
-                </div>
+                <div class="registor__main">
+                    <div class="check__start">
+                        <h1 class="check__title">Регистрация в личном кабинете</h1>
 
-
-                <form class="check__input">
-
-                    <div class="input__data">
-                        <p>На почту привязанную к аккаунту будет выслано письмо с ссылкой для подтверждения смены
-                            пароля</p>
-                        <div>
-                            <input placeholder="E-mail" type="email" name="email">
-                            <p class="input__desc">Введите адрес электронной почты, к которой у Вас есть доступ</p>
-                        </div>
-                        <div class="position-relative">
-                            <input placeholder="Пароль" type="password" name="password">
-                            <button class="button__show_password">
-                                <img src="./img/eye.svg" alt="">
-                            </button>
-                        </div>
-                        <div class="position-relative">
-                            <input placeholder="Повторить пароль" type="password" name="repeat_password">
-                            <button class="button__show_password">
-                                <img src="./img/eye.svg" alt="">
-                            </button>
+                    </div>
+                    <div class="check__stars">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star-active.svg" alt="">
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                    <div class="register__toggle_forms">
+                        <h1>Создайте собственный аккаунт на платформе и используйте все ее возможности</h1>
+                        <div class="registor__button">
+                            <button class="active" data-button="executor">Исполнитель</button>
+                            <button data-button="label">Лейбл</button>
+                            <button data-button="listener">Слушатель</button>
                         </div>
                     </div>
-                    <div class="check__form_button">
+                    <div class="check__social position-relative">
+                        <p>Быстрый вход с помощью:</p>
+                        <div class="social__img">
+                            <a href="" target="_blank"><img src="./img/google.svg" alt=""></a>
+                            <a href="" target="_blank"><img src="./img/apple.svg" alt=""></a>
+                            <a href="" target="_blank"><img src="./img/facebook2.svg" alt=""></a>
+                            <a href="" target="_blank"><img src="./img/vk1.svg" alt=""></a>
+                        </div>
+                        <div class="ring__end">
+                            <img src="./img/rings-blue.svg" alt="">
+                        </div>
+                    </div>
+                    <p class="registor__data">Введите свои данные</p>
+                    <form action="" class="registor__input input__data d-block" id="executor">
+
+                        <div class="input__group">
+                            <input class="registor__nick" type="text" name="nick_name" placeholder="Ваш Никнейм">
+                        </div>
+                        <div class="input__group">
+                            <input class="registor__name" type="text" name="fio" placeholder="Укажите ваше ФИО">
+                        </div>
+                        <div class="input__group">
+                            <input class="registor__mail" type="email" name="email" placeholder="E-mail">
+                            <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                            <input type="password" class="register__pasword" name="password" placeholder="Пароль">
+                            <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя: латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                            <input type="password" class="register__pasword-repeat" name="password_repeat" placeholder="Повторить Пароль">
+
+                        </div>
+
+                        <div class="group__input_date">
+                            <p class="title__input_data">Дата Рождения:</p>
+                            <div class="group__input_selectors d-flex">
+                                <select data-id="pick_date_select">
+                                <option value="" selected>День</option>
+                            </select>
+                                <select data-id="pick_month_select">
+                                <option value="" selected>Месяц</option>
+                            </select>
+                                <select data-id="pick_year_select">
+                                <option value="" selected>Год</option>
+                            </select>
+                            </div>
+                            <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем, это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения ваших авторских прав</p>
+                        </div>
+
                         <div class="check__button">
                             <div class="check__link">
-                                <button type="submit">Отправить</button>
+                                <button type="submit">Завершить</button>
+                            </div>
+
+                            <div class="check__checkbox">
+                                <input type="checkbox">
+                                <p>Запомнить меня</p>
                             </div>
                         </div>
-                    </div>
+                        <div class="input__data">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
 
-                </form>
+                    </form>
 
-                <div class="confidentiality">
-                    <div class="check__confidentiality">
-                        <p>Нажимая на данную кнопку, вы соглашаетесь с
-                            <a class="link__confidentiality" href="">условиями политики конфиденциальности</a>
-                        </p>
-                    </div>
+                    <form action="" class="registor__input input__data" id="label">
 
+                        <div class="input__group">
+                            <input type="text" name="label_name" placeholder="Название лейбла">
+                        </div>
+                        <div class="input__group">
+                            <input type="text" name="fio" placeholder="Укажите ФИО руководителя">
+                        </div>
+                        <div class="input__group">
+                            <input type="email" name="email" placeholder="E-mail">
+                            <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                            <input type="password" name="password" placeholder="Пароль">
+                            <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя: латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                            <input type="password" name="password_repeat" placeholder="Повторить Пароль">
+
+                        </div>
+
+                        <div class="group__input_date">
+                            <p class="title__input_data">Дата Рождения:</p>
+                            <div class="group__input_selectors d-flex">
+                                <select data-id="pick_date_select">
+                                <option value="" selected>День</option>
+                            </select>
+                                <select data-id="pick_month_select">
+                                <option value="" selected>Месяц</option>
+                            </select>
+                                <select data-id="pick_year_select">
+                                <option value="" selected>Год</option>
+                            </select>
+                            </div>
+                            <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем, это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения ваших авторских прав</p>
+                        </div>
+
+                        <div class="check__button">
+                            <div class="check__link">
+                                <button type="submit">Завершить</button>
+                            </div>
+
+                            <div class="check__checkbox">
+                                <input type="checkbox">
+                                <p>Запомнить меня</p>
+                            </div>
+                        </div>
+                        <div class="input__data">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
+
+                    </form>
+
+                    <form action="" class="registor__input input__data" id="listener">
+
+                        <div class="input__group">
+                            <input type="text" name="user_name" placeholder="Укажите ваше имя">
+                        </div>
+                        <div class="input__group">
+                            <input type="email" name="email" placeholder="E-mail">
+                            <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                            <input type="password" name="password" placeholder="Пароль">
+                            <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя: латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
+                        </div>
+                        <div class="position-relative input__group">
+                            <button class="button__show_password">
+                            <img src="./img/eye.svg" alt="">
+                        </button>
+                            <input type="password" name="password_repeat" placeholder="Повторить Пароль">
+
+                        </div>
+
+                        <div class="group__input_date">
+                            <p class="title__input_data">Дата Рождения:</p>
+                            <div class="group__input_selectors d-flex">
+                                <select data-id="pick_date_select">
+                                <option value="" selected>День</option>
+                            </select>
+                                <select data-id="pick_month_select">
+                                <option value="" selected>Месяц</option>
+                            </select>
+                                <select data-id="pick_year_select">
+                                <option value="" selected>Год</option>
+                            </select>
+                            </div>
+                            <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем, это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения ваших авторских прав</p>
+                        </div>
+
+                        <div class="check__button">
+                            <div class="check__link">
+                                <button type="submit">Завершить</button>
+                            </div>
+
+                            <div class="check__checkbox">
+                                <input type="checkbox">
+                                <p>Запомнить меня</p>
+                            </div>
+                        </div>
+                        <div class="input__data">
+                            <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
+                            </p>
+                        </div>
+
+                    </form>
                 </div>
-            </div>
 
-            <div class="position-relative check__right_block">
-                <div class="taylor__img">
-                    <img src="./img/taylor-IuckVlGbnOY-unsplash 1.png" alt="">
-                </div>
-                <div class="israel__img">
-                    <img src="./img/israel-palacio-BuiBnE4N31U-unsplash 1.png" alt="">
-                </div>
-                <div class="emiliano__img">
-                    <img src="./img/emiliano-vittoriosi-ViYQ4VsAnaw-unsplash 1.png" alt="">
-                </div>
-                <div class="check__end">
-                    <div class="social__link">
-                        <a href="#">
-                            <img src="./img/instagram2.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="./img/facebook3.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="./img/telegram2.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="check__right">
-                        <p>2020 © Все права защищены</p>
-                        <a href="" class="link-underline">Политика конфиденциальности</a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="ring__end">
-            <img src="./img/rings-blue.svg" alt="">
-        </div>
-    </div>
-
-    <!-----------------FORM SIGN-UP------------------------------->
-
-    <div class="modal" id="signUp-from">
-        <button class="btn__close close-modal-window">
-            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                        d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
-                        fill="#F70E4D" />
-            </svg>
-        </button>
-        <div class="registor__executor d-flex">
-            <div class="check__logo position-absolute">
-                <a href="#">
-                    <img src="./img/logo.svg" alt="">
-                </a>
-            </div>
-            <div class="registor__main">
-                <div class="check__start">
-                    <h1 class="check__title">Регистрация в личном кабинете</h1>
-
-                </div>
-                <div class="check__stars">
-                    <img src="./img/star.svg" alt="">
-                    <img src="./img/star-active.svg" alt="">
-                    <img src="./img/star.svg" alt="">
-                </div>
-                <div class="register__toggle_forms">
-                    <h1>Создайте собственный аккаунт на платформе и используйте все ее возможности</h1>
-                    <div class="registor__button">
-                        <button class="active" data-button="executor">Исполнитель</button>
-                        <button data-button="label">Лейбл</button>
-                        <button data-button="listener">Слушатель</button>
-                    </div>
-                </div>
-                <div class="check__social position-relative">
-                    <p>Быстрый вход с помощью:</p>
-                    <div class="social__img">
-                        <a href="" target="_blank"><img src="./img/google.svg" alt=""></a>
-                        <a href="" target="_blank"><img src="./img/apple.svg" alt=""></a>
-                        <a href="" target="_blank"><img src="./img/facebook2.svg" alt=""></a>
-                        <a href="" target="_blank"><img src="./img/vk1.svg" alt=""></a>
-                    </div>
+                <div class="register__right_block position-relative">
                     <div class="ring__end">
                         <img src="./img/rings-blue.svg" alt="">
                     </div>
-                </div>
-                <p class="registor__data">Введите свои данные</p>
-                <form action="" class="registor__input input__data d-block" id="executor">
-
-                    <div class="input__group">
-                        <input class="registor__nick" type="text" name="nick_name" placeholder="Ваш Никнейм">
-                    </div>
-                    <div class="input__group">
-                        <input class="registor__name" type="text" name="fio" placeholder="Укажите ваше ФИО">
-                    </div>
-                    <div class="input__group">
-                        <input class="registor__mail" type="email" name="email" placeholder="E-mail">
-                        <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
-                    </div>
-                    <div class="position-relative input__group">
-                        <button class="button__show_password">
-                            <img src="./img/eye.svg" alt="">
-                        </button>
-                        <input type="password" class="register__pasword" name="password" placeholder="Пароль">
-                        <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя:
-                            латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
-                    </div>
-                    <div class="position-relative input__group">
-                        <button class="button__show_password">
-                            <img src="./img/eye.svg" alt="">
-                        </button>
-                        <input type="password" class="register__pasword-repeat" name="password_repeat"
-                               placeholder="Повторить Пароль">
-
-                    </div>
-
-                    <div class="group__input_date">
-                        <p class="title__input_data">Дата Рождения:</p>
-                        <div class="group__input_selectors d-flex">
-                            <select data-id="pick_date_select">
-                                <option value="" selected>День</option>
-                            </select>
-                            <select data-id="pick_month_select">
-                                <option value="" selected>Месяц</option>
-                            </select>
-                            <select data-id="pick_year_select">
-                                <option value="" selected>Год</option>
-                            </select>
+                    <div class="register__group_images position-relative">
+                        <div class="position-absolute">
+                            <img src="./img/taylor-IuckVlGbnOY-unsplash%201.png" alt="">
                         </div>
-                        <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем,
-                            это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения
-                            ваших авторских прав</p>
-                    </div>
-
-                    <div class="check__button">
-                        <div class="check__link">
-                            <button type="submit">Завершить</button>
+                        <div class="position-absolute">
+                            <img src="./img/israel-palacio-BuiBnE4N31U-unsplash%201.png" alt="">
                         </div>
-
-                        <div class="check__checkbox">
-                            <input type="checkbox">
-                            <p>Запомнить меня</p>
+                        <div class="position-absolute">
+                            <img src="./img/pic1.png" alt="">
                         </div>
                     </div>
-                    <div class="input__data">
-                        <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
-                        </p>
+                    <div class="check__stars">
+                        <img src="./img/star.svg" alt="">
+                        <img src="./img/star-active.svg" alt="">
+                        <img src="./img/star.svg" alt="">
                     </div>
-
-                </form>
-
-                <form action="" class="registor__input input__data" id="label">
-
-                    <div class="input__group">
-                        <input type="text" name="label_name" placeholder="Название лейбла">
-                    </div>
-                    <div class="input__group">
-                        <input type="text" name="fio" placeholder="Укажите ФИО руководителя">
-                    </div>
-                    <div class="input__group">
-                        <input type="email" name="email" placeholder="E-mail">
-                        <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
-                    </div>
-                    <div class="position-relative input__group">
-                        <button class="button__show_password">
-                            <img src="./img/eye.svg" alt="">
-                        </button>
-                        <input type="password" name="password" placeholder="Пароль">
-                        <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя:
-                            латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
-                    </div>
-                    <div class="position-relative input__group">
-                        <button class="button__show_password">
-                            <img src="./img/eye.svg" alt="">
-                        </button>
-                        <input type="password" name="password_repeat" placeholder="Повторить Пароль">
-
-                    </div>
-
-                    <div class="group__input_date">
-                        <p class="title__input_data">Дата Рождения:</p>
-                        <div class="group__input_selectors d-flex">
-                            <select data-id="pick_date_select">
-                                <option value="" selected>День</option>
-                            </select>
-                            <select data-id="pick_month_select">
-                                <option value="" selected>Месяц</option>
-                            </select>
-                            <select data-id="pick_year_select">
-                                <option value="" selected>Год</option>
-                            </select>
+                    <div class="group__privacy">
+                        <div class="social__link">
+                            <a href="#">
+                                <img src="./img/instagram2.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/facebook3.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/telegram2.svg" alt="">
+                            </a>
                         </div>
-                        <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем,
-                            это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения
-                            ваших авторских прав</p>
-                    </div>
-
-                    <div class="check__button">
-                        <div class="check__link">
-                            <button type="submit">Завершить</button>
+                        <div class="check__right">
+                            <p>2020 © Все права защищены</p>
+                            <a href="" class="link-underline">Политика конфиденциальности</a>
                         </div>
-
-                        <div class="check__checkbox">
-                            <input type="checkbox">
-                            <p>Запомнить меня</p>
-                        </div>
-                    </div>
-                    <div class="input__data">
-                        <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
-                        </p>
-                    </div>
-
-                </form>
-
-                <form action="" class="registor__input input__data" id="listener">
-
-                    <div class="input__group">
-                        <input type="text" name="user_name" placeholder="Укажите ваше имя">
-                    </div>
-                    <div class="input__group">
-                        <input type="email" name="email" placeholder="E-mail">
-                        <p class="input__label">Введите адрес электронной почты, к которой у Вас есть доступ</p>
-                    </div>
-                    <div class="position-relative input__group">
-                        <button class="button__show_password">
-                            <img src="./img/eye.svg" alt="">
-                        </button>
-                        <input type="password" name="password" placeholder="Пароль">
-                        <p class="input__label">Пароль должен содержать не менее 9 символов, включающих в себя:
-                            латинские буквы нижнего (a..z) или верхнего (A..Z) регистров, цифры (0..9)</p>
-                    </div>
-                    <div class="position-relative input__group">
-                        <button class="button__show_password">
-                            <img src="./img/eye.svg" alt="">
-                        </button>
-                        <input type="password" name="password_repeat" placeholder="Повторить Пароль">
-
-                    </div>
-
-                    <div class="group__input_date">
-                        <p class="title__input_data">Дата Рождения:</p>
-                        <div class="group__input_selectors d-flex">
-                            <select data-id="pick_date_select">
-                                <option value="" selected>День</option>
-                            </select>
-                            <select data-id="pick_month_select">
-                                <option value="" selected>Месяц</option>
-                            </select>
-                            <select data-id="pick_year_select">
-                                <option value="" selected>Год</option>
-                            </select>
-                        </div>
-                        <p>Мы просим вас ознакомиться и поставить электронную подпись на данный документ. Уверяем,
-                            это для вашей же безопасности. Мы несем полную правовую ответственность за сохранения
-                            ваших авторских прав</p>
-                    </div>
-
-                    <div class="check__button">
-                        <div class="check__link">
-                            <button type="submit">Завершить</button>
-                        </div>
-
-                        <div class="check__checkbox">
-                            <input type="checkbox">
-                            <p>Запомнить меня</p>
-                        </div>
-                    </div>
-                    <div class="input__data">
-                        <p>Нажимая на данную кнопку, вы соглашаетесь с <a>условиями политики конфиденциальности</a>
-                        </p>
-                    </div>
-
-                </form>
-            </div>
-
-            <div class="register__right_block position-relative">
-                <div class="ring__end">
-                    <img src="./img/rings-blue.svg" alt="">
-                </div>
-                <div class="register__group_images position-relative">
-                    <div class="position-absolute">
-                        <img src="./img/taylor-IuckVlGbnOY-unsplash%201.png" alt="">
-                    </div>
-                    <div class="position-absolute">
-                        <img src="./img/israel-palacio-BuiBnE4N31U-unsplash%201.png" alt="">
-                    </div>
-                    <div class="position-absolute">
-                        <img src="./img/pic1.png" alt="">
-                    </div>
-                </div>
-                <div class="check__stars">
-                    <img src="./img/star.svg" alt="">
-                    <img src="./img/star-active.svg" alt="">
-                    <img src="./img/star.svg" alt="">
-                </div>
-                <div class="group__privacy">
-                    <div class="social__link">
-                        <a href="#">
-                            <img src="./img/instagram2.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="./img/facebook3.svg" alt="">
-                        </a>
-                        <a href="#">
-                            <img src="./img/telegram2.svg" alt="">
-                        </a>
-                    </div>
-                    <div class="check__right">
-                        <p>2020 © Все права защищены</p>
-                        <a href="" class="link-underline">Политика конфиденциальности</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-</div>
-<!--   Главный блок: начало-->
-<header class="main transparent-bg">
-    <div class="container">
-        <nav class="main-nav">
-            <div class="main-nav__logo">
-                <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
-            </div>
-            <div class="main-center">
-                <div class="nav__right">
-                    <div class="nav__search">
-                        <label for="">
+    </div>
+    <!--   Главный блок: начало-->
+    <header class="main transparent-bg">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="main-nav__logo">
+                    <a href="/"><img src="img/logo.svg" alt="Логотип" class="logo"></a>
+                </div>
+                <div class="main-center">
+                    <div class="nav__right">
+                        <div class="nav__search">
+                            <label for="">
                             <input type="text" class="nav__search-input input-bottom"
                                    placeholder="Поиск артистов, лейблов, треков">
                             <a href="#"><img src="img/search.svg" alt=""></a>
                         </label>
-                    </div>
-                </div>
-                <div class="main-nav__btn">
-                    <a href="#" class="main-nav__button button-blue open__modalWindow_form"
-                       data-form="sign-in">Войти</a>
-                    <a href="#" class="main-nav__button--white button-white open__modalWindow_form"
-                       data-form="sign-up">Зарегистрироваться</a>
-                </div>
-                <!----- Авторизованный пользователь вид START--------->
-                <div class="mask d-none">
-                    <div class="mask__img">
-                        <img src="./img/default-avatar.jpg" alt="">
-                    </div>
-                    <div class="mask__content">
-                        <div class="mask__info">
-                            <div class="mask__name">
-                                <p>Mike Fliper</p>
-                                <div>
-                                    <img src="./img/online.svg" alt="">
-                                </div>
-                            </div>
-                            <span>Исполнитель</span>
                         </div>
                     </div>
-                    <div class="mask__bell">
-                        <button>
+                    <div class="main-nav__btn">
+                        <a href="#" class="main-nav__button button-blue open__modalWindow_form" data-form="sign-in">Войти</a>
+                        <a href="#" class="main-nav__button--white button-white open__modalWindow_form" data-form="sign-up">Зарегистрироваться</a>
+                    </div>
+                    <!----- Авторизованный пользователь вид START--------->
+                    <div class="mask d-none">
+                        <div class="mask__img">
+                            <img src="./img/default-avatar.jpg" alt="">
+                        </div>
+                        <div class="mask__content">
+                            <div class="mask__info">
+                                <div class="mask__name">
+                                    <p>Mike Fliper</p>
+                                    <div>
+                                        <img src="./img/online.svg" alt="">
+                                    </div>
+                                </div>
+                                <span>Исполнитель</span>
+                            </div>
+                        </div>
+                        <div class="mask__bell">
+                            <button>
                             <img src="./img/letter.svg" alt="">
                         </button>
-                        <button>
+                            <button>
                             <img src="./img/bell.svg" alt="">
                         </button>
 
-                    </div>
-                </div>
-                <!----- Авторизованный пользователь вид END--------->
-            </div>
-            <div class="main-nav__buttons">
-                <a href="#" class="main-nav__burger"><img src="img/burger.svg" alt=""></a>
-            </div>
-        </nav>
-    </div>
-</header>
-
-
-        <!------- Section Top Banners slider---------->
-
-        <section class="section-one">
-            <div class="account">
-                <div class="account__bg">
-                    <div>
-                        <img src="./img/yvette-de-wit.png" alt="">
-                    </div>
-                    <div>
-                        <img src="./img/content4.png" alt="">
-                    </div>
-                </div>
-
-                <div class="account__info">
-                    <div class="d-flex account__upload_image">
-                        <div>
-                            <p>Исполнитель</p>
                         </div>
-                        <button class="upload-banner-image button__upload_banner_desk">
+                    </div>
+                    <!----- Авторизованный пользователь вид END--------->
+                </div>
+                <div class="main-nav__buttons">
+                    <a href="#" class="main-nav__burger"><img src="img/burger.svg" alt=""></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!------- Section Top Banners slider---------->
+
+    <section class="section-one">
+        <div class="account">
+            <div class="account__bg">
+                <div>
+                    <img src="./img/yvette-de-wit.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/content4.png" alt="">
+                </div>
+            </div>
+
+            <div class="account__info">
+                <div class="d-flex account__upload_image">
+                    <div>
+                        <p>Исполнитель</p>
+                    </div>
+                    <button class="upload-banner-image button__upload_banner_desk">
                             Загрузить изображение
                         </button>
-                        <button class="upload-banner-image button__upload_banner_mobile">+</button>
-                    </div>
-                    <div class="d-flex account__name_rename_block">
-                        <div class="account__desc">
-                            <div class="account__profile_img position-relative">
-                                <button class="position-absolute" id="upload-avatar"><img src="./img/upload-img.svg"
+                    <button class="upload-banner-image button__upload_banner_mobile">+</button>
+                </div>
+                <div class="d-flex account__name_rename_block">
+                    <div class="account__desc">
+                        <div class="account__profile_img position-relative">
+                            <button class="position-absolute" id="upload-avatar"><img src="./img/upload-img.svg"
                                         alt=""></button>
-                                <img src="./img/default-avatar.jpg" alt="" id="image-upload-avatar">
-                            </div>
-                            <div class="account__name">
-                                <div class="account__status">
-                                    <div class="account__service">
-                                        <p>Mike Fliper</p>
-                                        <button id="change-name"><img src="./img/pen.svg" alt=""></button>
-                                    </div>
-                                    <span>Статус</span>
-                                </div>
-                                <div class="account__rename d-none">
-                                    <div class="account__input">
-                                        <input class="account__input_name" value="Mike Fliper" type="text">
-                                        <input class="account__status_re" value="" type="text" placeholder="Статус">
-                                    </div>
-                                    <div class="account__rename_btn">
-                                        <button class="account__edit_button" id="account-edit-save">Сохранить</button>
-                                        <button class="account__edit_button" id="account-edit-cancel">Отмена</button>
-                                    </div>
-                                </div>
-                                <div class="account__btn">
-                                    <div class="account__button">
-                                        <button class="account__button_1" data-id="chat-block">Чат с лейблами</button>
-                                        <button class="account__button_2" data-id="upload-track-form">Загрузить</button>
-                                    </div>
-                                    <div class="account__buttons-slider"></div>
-                                </div>
-
-                            </div>
+                            <img src="./img/default-avatar.jpg" alt="" id="image-upload-avatar">
                         </div>
-                        <div class="account__social">
-                            <p>Соц. сети исполнителя</p>
-                            <div class="account__link">
-                                <a href=""><img src="./img/instagram2.svg" alt=""></a>
-                                <a href=""><img src="./img/facebook3.svg" alt=""></a>
-                                <a href=""><img src="./img/telegram2.svg" alt=""></a>
+                        <div class="account__name">
+                            <div class="account__status">
+                                <div class="account__service">
+                                    <p>Mike Fliper</p>
+                                    <button id="change-name"><img src="./img/pen.svg" alt=""></button>
+                                </div>
+                                <span>Статус</span>
                             </div>
-                            <div class="mask__bells d-none">
-                                <button>
+                            <div class="account__rename d-none">
+                                <div class="account__input">
+                                    <input class="account__input_name" value="Mike Fliper" type="text">
+                                    <input class="account__status_re" value="" type="text" placeholder="Статус">
+                                </div>
+                                <div class="account__rename_btn">
+                                    <button class="account__edit_button" id="account-edit-save">Сохранить</button>
+                                    <button class="account__edit_button" id="account-edit-cancel">Отмена</button>
+                                </div>
+                            </div>
+                            <div class="account__btn">
+                                <div class="account__button">
+                                    <button class="account__button_1" data-id="chat-block">Чат с лейблами</button>
+                                    <button class="account__button_2" data-id="upload-track-form">Загрузить</button>
+                                </div>
+                                <div class="account__buttons-slider"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="account__social">
+                        <p>Соц. сети исполнителя</p>
+                        <div class="account__link">
+                            <a href=""><img src="./img/instagram2.svg" alt=""></a>
+                            <a href=""><img src="./img/facebook3.svg" alt=""></a>
+                            <a href=""><img src="./img/telegram2.svg" alt=""></a>
+                        </div>
+                        <div class="mask__bells d-none">
+                            <button>
                                     <img src="./img/letter.svg" alt="">
                                 </button>
-                                <button>
+                            <button>
                                     <img src="./img/bell.svg" alt="">
                                 </button>
 
-                            </div>
                         </div>
                     </div>
-                    <div class="account__button_mobile">
-                        <button class="account__button_1" data-id="chat-block">Чат с лейблами</button>
-                        <button class="account__button_2" data-id="upload-track-form">Загрузить</button>
-                    </div>
+                </div>
+                <div class="account__button_mobile">
+                    <button class="account__button_1" data-id="chat-block">Чат с лейблами</button>
+                    <button class="account__button_2" data-id="upload-track-form">Загрузить</button>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <div class="blocks_chat_uploadTrack">
-            <!-----BLOCK TRACK UPLOAD START-------------->
-            <div class="form__track_upload d-none position-relative" data-id="upload-track-form">
-                <button id="close_track_upload"></button>
-                <div class="form__track_upload__player d-flex">
-                    <div>
-                        <div class="form__track_upload__buttons_player d-flex">
-                            <button class="form__track_upload__button_upload_track">
+    <div class="blocks_chat_uploadTrack">
+        <!-----BLOCK TRACK UPLOAD START-------------->
+        <div class="form__track_upload d-none position-relative" data-id="upload-track-form">
+            <button id="close_track_upload"></button>
+            <div class="form__track_upload__player d-flex">
+                <div>
+                    <div class="form__track_upload__buttons_player d-flex">
+                        <button class="form__track_upload__button_upload_track">
                                 <img src="./img/upload-img.svg" alt="">
                             </button>
-                            <div class="d-flex">
-                                <button>
+                        <div class="d-flex">
+                            <button>
                                     <svg width="26" height="28" viewBox="0 0 26 28" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M24.6033 12.0408C26.1023 12.9063 26.1023 15.0699 24.6033 15.9354L4.3667 27.619C2.86769 28.4844 0.993931 27.4026 0.993931 25.6717V2.30448C0.993931 0.573578 2.86769 -0.508236 4.3667 0.357217L24.6033 12.0408Z" />
                                     </svg>
                                 </button>
-                                <button>
+                            <button>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0)">
@@ -788,7 +775,7 @@
 
                                 </button>
 
-                                <button>
+                            <button>
                                     <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0)">
@@ -810,52 +797,96 @@
                                         </defs>
                                     </svg>
                                 </button>
-                                <div>
-                                    <input type="range" min="0" max="100" value="100">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="time_line">
                             <div>
                                 <input type="range" min="0" max="100" value="100">
                             </div>
                         </div>
                     </div>
-                    <div class="add_new_axecutor_inputs">
-                        <div id="inputs_new_executor">
-                            <input type="text" placeholder="исполнитель">
-                            <input type="text" placeholder="исполнитель">
-                        </div>
+                    <div class="time_line">
                         <div>
-                            <button id="add_new_executor">
+                            <input type="range" min="0" max="100" value="100">
+                        </div>
+                    </div>
+                </div>
+                <div class="add_new_axecutor_inputs">
+                    <div id="inputs_new_executor">
+                        <input type="text" placeholder="исполнитель">
+                        <input type="text" placeholder="исполнитель">
+                    </div>
+                    <div>
+                        <button id="add_new_executor">
                                 <div>+</div>
                                 <p>Добавить исполнителя</p>
                             </button>
-                        </div>
-                    </div>
-                    <div class="name_track_executor">
-                        <textarea name="name_track" id="" rows="5" placeholder="Название трека"></textarea>
-                        <input type="text" placeholder="Пропишите хэштеги">
-                    </div>
-                    <div class="upload_track_overlay">
-                        <div>
-                            <div>
-                                <img src="img/upload-image-default.svg" alt="" id="overlay_track_image">
-                            </div>
-                        </div>
-                        <button>Загрузить обложку</button>
                     </div>
                 </div>
+                <div class="name_track_executor">
+                    <textarea name="name_track" id="" rows="5" placeholder="Название трека"></textarea>
+                    <input type="text" placeholder="Пропишите хэштеги">
+                </div>
+                <div class="upload_track_overlay">
+                    <div>
+                        <div>
+                            <img src="img/upload-image-default.svg" alt="" id="overlay_track_image">
+                        </div>
+                    </div>
+                    <button>Загрузить обложку</button>
+                </div>
             </div>
-            <!-----BLOCK TRACK UPLOAD END-------------->
+        </div>
+        <!-----BLOCK TRACK UPLOAD END-------------->
 
-            <!-----BLOCK CHAT START---------------->
-            <div class="container_chat d-none" data-id="chat-block">
-                <button id="close_chat"></button>
-                <div class="d-flex wrap_chat_block position-relative">
+        <!-----BLOCK CHAT START---------------->
+        <div class="container_chat d-none" data-id="chat-block">
+            <button id="close_chat"></button>
+            <div class="d-flex wrap_chat_block position-relative">
 
-                    <div class="chat_block_messages">
-                        <div class="d-flex user_name_chat">
+                <div class="chat_block_messages">
+                    <div class="d-flex user_name_chat">
+                        <div>
+                            <img src="./img/default-avatar.jpg" alt="">
+                        </div>
+                        <div>
+                            <div class="d-flex">
+                                <p>Music Label</p>
+                                <div></div>
+                            </div>
+                            <p>Был(-а) сегодня в 13:00</p>
+                        </div>
+                    </div>
+                    <div class="chats_window">
+                        <div class="chat_balloon chat_balloon_message" data-time="14:20">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum, deleniti dignissimos, eaque eius error illum magni minima mollitia nihil nobis obcaecati optio placeat praesentium provident quaerat quidem ullam?
+                            </p>
+                        </div>
+                        <div class="chat_balloon chat_balloon_response" data-time="15:20">
+                            <p>Amet dicta distinctio dolores ducimus earum eos error esse est et ex fuga illo in laborum magnam maxime nihil obcaecati pariatur quidem quis quos rem saepe ut veritatis, voluptas voluptate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="input_write_chat d-flex">
+                        <button>
+                                <img src="./img/smile.svg" alt="">
+                            </button>
+                        <button>
+                                <img src="./img/paper-clip.svg" alt="">
+                            </button>
+                        <div>
+                            <input type="text" placeholder="Введите сообщение">
+                        </div>
+                        <button>
+                                <img src="./img/mikrophone.svg" alt="">
+                            </button>
+                    </div>
+                </div>
+                <div class="block_users_chat">
+                    <div class="input_search_users">
+                        <div class="position-relative">
+                            <input type="text" placeholder="Поиск чатов по ключевым словам ">
+                        </div>
+                    </div>
+                    <div class="block_chat_list">
+                        <div class="item_chat d-flex">
                             <div>
                                 <img src="./img/default-avatar.jpg" alt="">
                             </div>
@@ -864,603 +895,533 @@
                                     <p>Music Label</p>
                                     <div></div>
                                 </div>
-                                <p>Был(-а) сегодня в 13:00</p>
+                                <div class="chat_message_reade d-flex">
+                                    <div>
+                                        <img src="./img/check.svg" alt="">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum, deleniti dignissimos, eaque eius error illum magni minima mollitia nihil nobis obcaecati optio placeat praesentium provident quaerat quidem
+                                        ullam?
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="chats_window">
-                            <div class="chat_balloon chat_balloon_message" data-time="14:20">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
-                                    deleniti
-                                    dignissimos, eaque eius error illum magni minima mollitia nihil nobis obcaecati
-                                    optio
-                                    placeat praesentium provident quaerat quidem ullam?
-                                </p>
-                            </div>
-                            <div class="chat_balloon chat_balloon_response" data-time="15:20">
-                                <p>Amet dicta distinctio dolores ducimus earum eos error esse est et ex fuga illo in
-                                    laborum magnam maxime nihil obcaecati pariatur quidem quis quos rem saepe ut
-                                    veritatis,
-                                    voluptas voluptate.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="input_write_chat d-flex">
-                            <button>
-                                <img src="./img/smile.svg" alt="">
-                            </button>
-                            <button>
-                                <img src="./img/paper-clip.svg" alt="">
-                            </button>
+
+                        <div class="item_chat d-flex">
                             <div>
-                                <input type="text" placeholder="Введите сообщение">
+                                <img src="./img/default-avatar.jpg" alt="">
                             </div>
-                            <button>
-                                <img src="./img/mikrophone.svg" alt="">
-                            </button>
+                            <div>
+                                <div class="d-flex">
+                                    <p>Music Label</p>
+                                    <div></div>
+                                </div>
+                                <div class="chat_message_unreade d-flex">
+                                    <div>
+                                        <img src="./img/check.svg" alt="">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum, deleniti dignissimos, eaque eius error illum magni minima mollitia nihil nobis obcaecati optio placeat praesentium provident quaerat quidem
+                                        ullam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item_chat d-flex">
+                            <div>
+                                <img src="./img/default-avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <p>Music Label</p>
+                                    <div></div>
+                                </div>
+                                <div class="chat_message_unreade d-flex">
+                                    <div>
+                                        <img src="./img/check.svg" alt="">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum, deleniti dignissimos, eaque eius error illum magni minima mollitia nihil nobis obcaecati optio placeat praesentium provident quaerat quidem
+                                        ullam?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item_chat d-flex">
+                            <div>
+                                <img src="./img/default-avatar.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <p>Music Label</p>
+                                    <div></div>
+                                </div>
+                                <div class="chat_message_unreade d-flex">
+                                    <div>
+                                        <img src="./img/check.svg" alt="">
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum, deleniti dignissimos, eaque eius error illum magni minima mollitia nihil nobis obcaecati optio placeat praesentium provident quaerat quidem
+                                        ullam?
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="block_users_chat">
-                        <div class="input_search_users">
-                            <div class="position-relative">
-                                <input type="text" placeholder="Поиск чатов по ключевым словам ">
-                            </div>
-                        </div>
-                        <div class="block_chat_list">
-                            <div class="item_chat d-flex">
-                                <div>
-                                    <img src="./img/default-avatar.jpg" alt="">
-                                </div>
-                                <div>
-                                    <div class="d-flex">
-                                        <p>Music Label</p>
-                                        <div></div>
-                                    </div>
-                                    <div class="chat_message_reade d-flex">
-                                        <div>
-                                            <img src="./img/check.svg" alt="">
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
-                                            deleniti
-                                            dignissimos, eaque eius error illum magni minima mollitia nihil nobis
-                                            obcaecati optio
-                                            placeat praesentium provident quaerat quidem ullam?</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item_chat d-flex">
-                                <div>
-                                    <img src="./img/default-avatar.jpg" alt="">
-                                </div>
-                                <div>
-                                    <div class="d-flex">
-                                        <p>Music Label</p>
-                                        <div></div>
-                                    </div>
-                                    <div class="chat_message_unreade d-flex">
-                                        <div>
-                                            <img src="./img/check.svg" alt="">
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
-                                            deleniti
-                                            dignissimos, eaque eius error illum magni minima mollitia nihil nobis
-                                            obcaecati optio
-                                            placeat praesentium provident quaerat quidem ullam?</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item_chat d-flex">
-                                <div>
-                                    <img src="./img/default-avatar.jpg" alt="">
-                                </div>
-                                <div>
-                                    <div class="d-flex">
-                                        <p>Music Label</p>
-                                        <div></div>
-                                    </div>
-                                    <div class="chat_message_unreade d-flex">
-                                        <div>
-                                            <img src="./img/check.svg" alt="">
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
-                                            deleniti
-                                            dignissimos, eaque eius error illum magni minima mollitia nihil nobis
-                                            obcaecati optio
-                                            placeat praesentium provident quaerat quidem ullam?</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item_chat d-flex">
-                                <div>
-                                    <img src="./img/default-avatar.jpg" alt="">
-                                </div>
-                                <div>
-                                    <div class="d-flex">
-                                        <p>Music Label</p>
-                                        <div></div>
-                                    </div>
-                                    <div class="chat_message_unreade d-flex">
-                                        <div>
-                                            <img src="./img/check.svg" alt="">
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam beatae cum,
-                                            deleniti
-                                            dignissimos, eaque eius error illum magni minima mollitia nihil nobis
-                                            obcaecati optio
-                                            placeat praesentium provident quaerat quidem ullam?</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button id="show_more_chats">
+                    <button id="show_more_chats">
                             <div>
                                 <img src="./img/chevron_down.svg" alt="">
                             </div>
                         </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section_two">
+        <div class="d-flex info">
+            <div class="info__executor">
+                <p>Об исполнителе:</p>
+                <div class="info__descript short_descript">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eligendi iste asperiores explicabo, dicta, nulla magni fugiat accusamus quisquam qui voluptas eaque. A dignissimos quibusdam repudiandae consequatur est mollitia temporibus.
+                        Odit est excepturi tenetur officiis. Explicabo voluptatem accusantium iste blanditiis totam fugit odit molestias temporibus perspiciatis laborum. Odio natus neque, incidunt iste doloremque quia. Repellendus qui totam dicta nostrum
+                        earum. Quam nemo cum repudiandae magnam similique modi recusandae in quisquam, quod dolorem ratione voluptatum voluptatem quidem repellat perferendis doloribus, placeat dicta, possimus beatae ad alias quas. Rem incidunt sit numquam?
+                        Consequuntur laborum inventore recusandae est, quidem dolores aut perspiciatis. Debitis qui ullam aspernatur iusto, doloribus tenetur facilis quis obcaecati porro excepturi quae voluptate ipsam, non voluptates nam doloremque eaque
+                        rerum! Laboriosam numquam dolorem earum iusto eos necessitatibus pariatur beatae est modi sapiente expedita iure optio consequuntur non dicta tempore corrupti rem fuga labore aliquid, nulla sunt? Harum eius laudantium et!</p>
+                </div>
+                <div class="d-flex info__stars">
+                    <div>
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/star-active.svg" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/star.svg" alt="">
+                    </div>
+                </div>
+                <div class="info__tools_bottom d-flex">
+                    <div class="info__reatings d-flex">
+                        <p>Голоса: <span>735</span></p>
+                        <p>Слушатели: <span>28</span></p>
+                        <p>Ваш счет: <span>532 $</span></p>
+                    </div>
+                    <div class="info__tools_bottom_buttons d-flex">
+                        <button id="change-info"><img src="./img/pen.svg" alt=""></button>
+                        <button id="show-more-info">
+                                <img src="./img/button-list.svg" alt="">
+                            </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="info__gallery">
+                <div class="info__gallery_top d-flex">
+                    <p>Фотографии: 24</p>
+                    <button>Загрузить фото</button>
+                </div>
+                <div class="info__gallery_list">
+                    <div class="item-gallery">
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <div class="item-gallery">
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <div class="item-gallery">
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <div class="item-gallery">
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <div class="item-gallery">
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <div class="item-gallery">
+                        <img src="./img/sides-lable.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <section class="section_two">
-            <div class="d-flex info">
-                <div class="info__executor">
-                    <p>Об исполнителе:</p>
-                    <div class="info__descript short_descript">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eligendi iste asperiores
-                            explicabo, dicta, nulla magni fugiat accusamus quisquam qui voluptas eaque. A dignissimos
-                            quibusdam repudiandae consequatur est mollitia temporibus.
-                            Odit est excepturi tenetur officiis. Explicabo voluptatem accusantium iste blanditiis totam
-                            fugit odit molestias temporibus perspiciatis laborum. Odio natus neque, incidunt iste
-                            doloremque quia. Repellendus qui totam dicta nostrum earum.
-                            Quam nemo cum repudiandae magnam similique modi recusandae in quisquam, quod dolorem ratione
-                            voluptatum voluptatem quidem repellat perferendis doloribus, placeat dicta, possimus beatae
-                            ad alias quas. Rem incidunt sit numquam?
-                            Consequuntur laborum inventore recusandae est, quidem dolores aut perspiciatis. Debitis qui
-                            ullam aspernatur iusto, doloribus tenetur facilis quis obcaecati porro excepturi quae
-                            voluptate ipsam, non voluptates nam doloremque eaque rerum!
-                            Laboriosam numquam dolorem earum iusto eos necessitatibus pariatur beatae est modi sapiente
-                            expedita iure optio consequuntur non dicta tempore corrupti rem fuga labore aliquid, nulla
-                            sunt? Harum eius laudantium et!</p>
-                    </div>
-                    <div class="d-flex info__stars">
-                        <div>
-                            <img src="./img/star.svg" alt="">
-                        </div>
-                        <div>
-                            <img src="./img/star-active.svg" alt="">
-                        </div>
-                        <div>
-                            <img src="./img/star.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="info__tools_bottom d-flex">
-                        <div class="info__reatings d-flex">
-                            <p>Голоса: <span>735</span></p>
-                            <p>Слушатели: <span>28</span></p>
-                            <p>Ваш счет: <span>532 $</span></p>
-                        </div>
-                        <div class="info__tools_bottom_buttons d-flex">
-                            <button id="change-info"><img src="./img/pen.svg" alt=""></button>
-                            <button id="show-more-info">
-                                <img src="./img/button-list.svg" alt="">
-                            </button>
-                        </div>
+    </section>
 
+    <section class="section-three executor-section-three">
+        <div class="different__btn">
+            <ul class="tabs__buttons slider_button">
+                <li>
+                    <button id="track-list" class="active">Треки</button>
+                </li>
+                <li>
+                    <button id="album">Альбомы</button>
+                </li>
+                <li>
+                    <button id="listener-list">Слушатели</button>
+                </li>
+                <li>
+                    <button id="donation">Пожертвования</button>
+                </li>
+            </ul>
+
+
+
+
+        </div>
+        <div class="different__img">
+            <img src="./img/rings.svg" alt="">
+        </div>
+    </section>
+
+    <section class="section-four">
+        <div class="track__list_executor" data-id="track-list">
+            <div class="track__list_executor__track_top d-flex">
+                <p>Мои треки: 4</p>
+                <a href="#!">Показать все </a>
+            </div>
+            <div class="track__list_executor__gallery_list">
+                <div class="item-gallery">
+                    <div>
+                        <img src="./img/sides-lable.png" alt="">
                     </div>
+                    <p>Name</p>
+                    <p>Text</p>
                 </div>
-                <div class="info__gallery">
-                    <div class="info__gallery_top d-flex">
-                        <p>Фотографии: 24</p>
-                        <button>Загрузить фото</button>
+                <div class="item-gallery">
+                    <div>
+                        <img src="./img/sides-lable.png" alt="">
                     </div>
-                    <div class="info__gallery_list">
-                        <div class="item-gallery">
-                            <img src="./img/sides-lable.png" alt="">
+                    <p>Name</p>
+                    <p>Text</p>
+                </div>
+                <div class="item-gallery">
+                    <div>
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <p>Name</p>
+                    <p>Text</p>
+                </div>
+                <div class="item-gallery">
+                    <div>
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <p>Name</p>
+                    <p>Text</p>
+                </div>
+                <div class="item-gallery">
+                    <div>
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <p>Name</p>
+                    <p>Text</p>
+                </div>
+                <div class="item-gallery">
+                    <div>
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <p>Name</p>
+                    <p>Text</p>
+                </div>
+                <div class="item-gallery">
+                    <div>
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <p>Name</p>
+                    <p>Text</p>
+                </div>
+                <div class="item-gallery">
+                    <div>
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <p>Name</p>
+                    <p>Text</p>
+                </div>
+                <div class="item-gallery">
+                    <div>
+                        <img src="./img/sides-lable.png" alt="">
+                    </div>
+                    <p>Name</p>
+                    <p>Text</p>
+                </div>
+            </div>
+            <div class="d-flex track__list_executor__buttons_group">
+                <button id="upload-new">Загрузить новый</button>
+                <button>Распределить по альбомам</button>
+            </div>
+        </div>
+
+        <div class="donation position-relative d-none" data-id="donation">
+            <p class="donation__col">Количество донатов: <span>15</span></p>
+            <div class="donation__centre">
+                <div class="donation__title">
+                    <h2>Уникальная особенность данной платформы, работающая по системе донатов.</h2>
+                    <p>Любой Ваш фанат может внести на ваш счет определенную сумму средств на развитие творческого потенциала и написание новых треков.</p>
+                </div>
+                <div class="donation__line"></div>
+                <div class="donation__price">
+                    <h2>На твоем счету:</h2>
+                    <div class="donation__desc">
+                        <div class="donation__number">
+                            <div>5</div>
+                            <div>3</div>
+                            <div>2</div>
                         </div>
-                        <div class="item-gallery">
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <div class="item-gallery">
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <div class="item-gallery">
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <div class="item-gallery">
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <div class="item-gallery">
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
+                        <p class="donation__dollars">$</p>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section-three executor-section-three">
-            <div class="different__btn">
-                <ul class="tabs__buttons slider_button">
-                    <li>
-                        <button id="track-list" class="active">Треки</button>
-                    </li>
-                    <li>
-                        <button id="album">Альбомы</button>
-                    </li>
-                    <li>
-                        <button id="listener-list">Слушатели</button>
-                    </li>
-                    <li>
-                        <button id="donation">Пожертвования</button>
-                    </li>
-                </ul>
-
-
-
-
-            </div>
-            <div class="different__img">
-                <img src="./img/rings.svg" alt="">
-            </div>
-        </section>
-
-        <section class="section-four">
-            <div class="track__list_executor" data-id="track-list">
-                <div class="track__list_executor__track_top d-flex">
-                    <p>Мои треки: 4</p>
-                    <a href="#!">Показать все </a>
-                </div>
-                <div class="track__list_executor__gallery_list">
-                    <div class="item-gallery">
-                        <div>
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <p>Name</p>
-                        <p>Text</p>
-                    </div>
-                    <div class="item-gallery">
-                        <div>
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <p>Name</p>
-                        <p>Text</p>
-                    </div>
-                    <div class="item-gallery">
-                        <div>
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <p>Name</p>
-                        <p>Text</p>
-                    </div>
-                    <div class="item-gallery">
-                        <div>
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <p>Name</p>
-                        <p>Text</p>
-                    </div>
-                    <div class="item-gallery">
-                        <div>
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <p>Name</p>
-                        <p>Text</p>
-                    </div>
-                    <div class="item-gallery">
-                        <div>
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <p>Name</p>
-                        <p>Text</p>
-                    </div>
-                    <div class="item-gallery">
-                        <div>
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <p>Name</p>
-                        <p>Text</p>
-                    </div>
-                    <div class="item-gallery">
-                        <div>
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <p>Name</p>
-                        <p>Text</p>
-                    </div>
-                    <div class="item-gallery">
-                        <div>
-                            <img src="./img/sides-lable.png" alt="">
-                        </div>
-                        <p>Name</p>
-                        <p>Text</p>
-                    </div>
-                </div>
-                <div class="d-flex track__list_executor__buttons_group">
-                    <button id="upload-new">Загрузить новый</button>
-                    <button>Распределить по альбомам</button>
-                </div>
-            </div>
-
-            <div class="donation position-relative d-none" data-id="donation">
-                <p class="donation__col">Количество донатов: <span>15</span></p>
-                <div class="donation__centre">
-                    <div class="donation__title">
-                        <h2>Уникальная особенность данной платформы, работающая по системе донатов.</h2>
-                        <p>Любой Ваш фанат может внести на ваш счет определенную сумму средств на развитие творческого
-                            потенциала и написание новых треков.</p>
-                    </div>
-                    <div class="donation__line"></div>
-                    <div class="donation__price">
-                        <h2>На твоем счету:</h2>
-                        <div class="donation__desc">
-                            <div class="donation__number">
-                                <div>5</div>
-                                <div>3</div>
-                                <div>2</div>
-                            </div>
-                            <p class="donation__dollars">$</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="donation__export">
-                    <button class="donation__btn">Вывести</button>
-                    <div class="donation__button">
-                        <button>
+            <div class="donation__export">
+                <button class="donation__btn">Вывести</button>
+                <div class="donation__button">
+                    <button>
                             <img src="./img/star.svg" alt="">
                         </button>
-                        <button>
+                    <button>
                             <img src="./img/star-active.svg" alt="">
                         </button>
-                        <button>
+                    <button>
                             <img src="./img/star.svg" alt="">
                         </button>
-                    </div>
-                </div>
-                <div class="donation__img position-absolute">
-                    <img src="./img/gittar-boy.png" alt="">
                 </div>
             </div>
+            <div class="donation__img position-absolute">
+                <img src="./img/gittar-boy.png" alt="">
+            </div>
+        </div>
 
-            <div class="track__list_executor d-none" data-id="listener-list">
-                <div class="track__list_executor__track_top d-flex">
-                    <p>Мои слушатели: 6</p>
-                    <a href="#!">Показать все </a>
-                </div>
-
-                <div class="track__list_executor__listener">
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="track__list_executor_avatar_listener">
-                            <img src="./img/default-avatar.jpg" alt="">
-                        </div>
-                    </div>
-
-                </div>
+        <div class="track__list_executor d-none" data-id="listener-list">
+            <div class="track__list_executor__track_top d-flex">
+                <p>Мои слушатели: 6</p>
+                <a href="#!">Показать все </a>
             </div>
 
+            <div class="track__list_executor__listener">
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="track__list_executor_avatar_listener">
+                        <img src="./img/default-avatar.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
-        </section>
 
-        <!-------MODAL WINDOW FORM ADD NEW TRACK---------------->
-        <div class="modal_overlay form__add__track_modal">
-            <button class="btn__close close-modal-window" id="close-modal-form">
+    </section>
+
+    <!-------MODAL WINDOW FORM ADD NEW TRACK---------------->
+    <div class="modal_overlay form__add__track_modal">
+        <button class="btn__close close-modal-window" id="close-modal-form">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M0.703125 4.17122C-0.234375 3.23372 -0.234375 1.6734 0.703125 0.703125C1.6734 -0.234375 3.20094 -0.234375 4.17122 0.703125L24.982 21.5488L45.8277 0.703125C46.7652 -0.234375 48.3255 -0.234375 49.2608 0.703125C50.2311 1.6734 50.2311 3.2359 49.2608 4.17122L28.4501 24.9842L49.2608 45.8299C50.2311 46.7674 50.2311 48.3277 49.2608 49.298C48.3233 50.2355 46.763 50.2355 45.8277 49.298L24.982 28.4523L4.17122 49.298C3.20094 50.2355 1.6734 50.2355 0.703125 49.298C-0.234375 48.3277 -0.234375 46.7652 0.703125 45.8299L21.5139 24.9842L0.703125 4.17122Z"
                         fill="#F70E4D" />
                 </svg>
             </button>
-            <div class="form__add_track">
+        <div class="form__add_track">
 
-                <div class="d-flex form__add_track__wrap">
-                    <div class="form__add_track__forms position-relative">
-                        <p>Мои треки: 6</p>
-                        <div class="form__add_track__most">
-                            <div class="form__add_track__enter d-flex">
-                                <div class="form__add_track__item_form">
-                                    <p>Альбом №1</p>
-                                    <form action="">
-                                        <input type="text" placeholder="Название альбома">
-                                        <div class="d-flex form__add_track__justify">
-                                            <div class="form__add_track__upload_image">
-                                                <div>
-                                                    <img src="/img/upload-image-default.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="form__add_track__upload_track">
-                                                <div>
-                                                    <div>
-                                                        <p>Трек1</p>
-                                                    </div>
-                                                    <div>
-                                                        <p>Трек1</p>
-                                                    </div>
-                                                    <div>
-                                                        <p>Трек1</p>
-                                                    </div>
-                                                    <div>
-                                                        <p>Трек1</p>
-                                                    </div>
-                                                </div>
+            <div class="d-flex form__add_track__wrap">
+                <div class="form__add_track__forms position-relative">
+                    <p>Мои треки: 6</p>
+                    <div class="form__add_track__most">
+                        <div class="form__add_track__enter d-flex">
+                            <div class="form__add_track__item_form">
+                                <p>Альбом №1</p>
+                                <form action="">
+                                    <input type="text" placeholder="Название альбома">
+                                    <div class="d-flex form__add_track__justify">
+                                        <div class="form__add_track__upload_image">
+                                            <div>
+                                                <img src="/img/upload-image-default.svg" alt="">
                                             </div>
                                         </div>
-                                        <div class="form__add_track__buttons_upload d-flex">
-                                            <button class="upload__track_wrap">Загрузить обложку</button>
-                                            <button class="track__upload_btn">Загрузить трек</button>
-                                        </div>
-                                        <input type="text" placeholder="Пропиши хештеги">
-                                    </form>
-                                </div>
-
-                                <div class="form__add_track__item_form position-relative">
-                                    <p>Альбом №1</p>
-                                    <form action="">
-                                        <input type="text" placeholder="Название альбома">
-                                        <div class="d-flex ">
-                                            <div class="form__add_track__upload_image">
+                                        <div class="form__add_track__upload_track">
+                                            <div>
                                                 <div>
-                                                    <img src="/img/upload-image-default.svg" alt="">
+                                                    <p>Трек1</p>
                                                 </div>
-                                            </div>
-                                            <div class="form__add_track__upload_track">
                                                 <div>
-                                                    <div>
-                                                        <p>Трек1</p>
-                                                    </div>
-                                                    <div>
-                                                        <p>Трек1</p>
-                                                    </div>
-                                                    <div>
-                                                        <p>Трек1</p>
-                                                    </div>
-                                                    <div>
-                                                        <p>Трек1</p>
-                                                    </div>
+                                                    <p>Трек1</p>
+                                                </div>
+                                                <div>
+                                                    <p>Трек1</p>
+                                                </div>
+                                                <div>
+                                                    <p>Трек1</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form__add_track__buttons_upload d-flex">
-                                            <button class="upload__track_wrap">Загрузить обложку</button>
-                                            <button class="track__upload_btn">Загрузить трек</button>
-                                        </div>
-                                        <input type="text" placeholder="Пропиши хештеги">
-                                    </form>
-                                </div>
+                                    </div>
+                                    <div class="form__add_track__buttons_upload d-flex">
+                                        <button class="upload__track_wrap">Загрузить обложку</button>
+                                        <button class="track__upload_btn">Загрузить трек</button>
+                                    </div>
+                                    <input type="text" placeholder="Пропиши хештеги">
+                                </form>
                             </div>
-                            <button class="add-new-label" id="add-new-label">+</button>
-                        </div>
-                    </div>
 
-                    <div class="form__add_track__track_list">
-                        <ol>
-                            <li>
-                                <p>Танцпол</p>
-                            </li>
-                            <li>
-                                <p>DANCE</p>
-                            </li>
-                            <li>
-                                <p>Многоэтажки</p>
-                            </li>
-                            <li>
-                                <p>Неоновый свет</p>
-                            </li>
-                            <li>
-                                <p>Лампа</p>
-                            </li>
-                            <li>
-                                <p>Этот мир</p>
-                            </li>
-                            <li>
-                                <p>Моя семья</p>
-                            </li>
-                            <li>
-                                <p>Танцпол</p>
-                            </li>
-                            <li>
-                                <p>DANCE</p>
-                            </li>
-                            <li>
-                                <p>Многоэтажки</p>
-                            </li>
-                            <li>
-                                <p>Неоновый свет</p>
-                            </li>
-                        </ol>
+                            <div class="form__add_track__item_form position-relative">
+                                <p>Альбом №1</p>
+                                <form action="">
+                                    <input type="text" placeholder="Название альбома">
+                                    <div class="d-flex ">
+                                        <div class="form__add_track__upload_image">
+                                            <div>
+                                                <img src="/img/upload-image-default.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="form__add_track__upload_track">
+                                            <div>
+                                                <div>
+                                                    <p>Трек1</p>
+                                                </div>
+                                                <div>
+                                                    <p>Трек1</p>
+                                                </div>
+                                                <div>
+                                                    <p>Трек1</p>
+                                                </div>
+                                                <div>
+                                                    <p>Трек1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form__add_track__buttons_upload d-flex">
+                                        <button class="upload__track_wrap">Загрузить обложку</button>
+                                        <button class="track__upload_btn">Загрузить трек</button>
+                                    </div>
+                                    <input type="text" placeholder="Пропиши хештеги">
+                                </form>
+                            </div>
+                        </div>
+                        <button class="add-new-label" id="add-new-label">+</button>
                     </div>
                 </div>
-                <div class="button_group__add__track">
-                    <button>Загрузить новый</button>
-                    <button>Распределить по альбомам</button>
+
+                <div class="form__add_track__track_list">
+                    <ol>
+                        <li>
+                            <p>Танцпол</p>
+                        </li>
+                        <li>
+                            <p>DANCE</p>
+                        </li>
+                        <li>
+                            <p>Многоэтажки</p>
+                        </li>
+                        <li>
+                            <p>Неоновый свет</p>
+                        </li>
+                        <li>
+                            <p>Лампа</p>
+                        </li>
+                        <li>
+                            <p>Этот мир</p>
+                        </li>
+                        <li>
+                            <p>Моя семья</p>
+                        </li>
+                        <li>
+                            <p>Танцпол</p>
+                        </li>
+                        <li>
+                            <p>DANCE</p>
+                        </li>
+                        <li>
+                            <p>Многоэтажки</p>
+                        </li>
+                        <li>
+                            <p>Неоновый свет</p>
+                        </li>
+                    </ol>
                 </div>
             </div>
+            <div class="button_group__add__track">
+                <button>Загрузить новый</button>
+                <button>Распределить по альбомам</button>
+            </div>
         </div>
+    </div>
     </div>
 
     <!--Начало футера-->
@@ -1477,14 +1438,13 @@
                     </div>
                     <div class="footer__all">
                         <div class="footer__menu">
-                            <a href="">Чарт</a>
-                            <a href="">Платформа</a>
-                            <a href="">Авторство</a>
+                            <a href="track-generator.html">Чарт</a>
+                            <a href="broadcast.html">Платформа</a>
                         </div>
-                        <div class="footer__link">
-                            <a href="">Тарифы</a>
-                            <a href="">Отзывы</a>
-                            <a href="">Контакты</a>
+                        <div class="footer__menu">
+                            <a href="help.html">Помощь</a>
+                            <a href="setting.html">Настройки</a>
+                            <a href="#">Контакты</a>
                         </div>
                     </div>
                 </div>
@@ -1527,10 +1487,10 @@
             inputFile.click()
 
             if (imgElement !== null && imgElement) {
-                inputFile.onchange = function (e) {
+                inputFile.onchange = function(e) {
                     const imgSrc = URL.createObjectURL(e.path[0].files[0]);
                     imgElement[0].src = imgSrc;
-                    imgElement.onload = function () {
+                    imgElement.onload = function() {
                         URL.revokeObjectURL(imgElement.src)
                     }
                 }
@@ -1573,16 +1533,14 @@
                     slidesToScroll: 1,
                     arrows: false,
                 }
-            },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        arrows: false,
-                    }
+            }, {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
                 }
-            ]
+            }]
         })
 
 
@@ -1599,7 +1557,7 @@
             $('.account__rename').addClass('d-none')
         })
 
-        $('.upload__track_wrap').on('click', (e)=>{
+        $('.upload__track_wrap').on('click', (e) => {
             e.preventDefault()
             const parent = e.currentTarget.parentElement.parentElement
             const img = parent.querySelector('img')
@@ -1635,7 +1593,7 @@
         $('.account__button button').on('click', toggleChats)
         $('.account__button_mobile button').on('click', toggleChats)
 
-        function toggleChats(e){
+        function toggleChats(e) {
             const id = e.currentTarget.getAttribute('data-id')
             $('#chat-block').css('opacity', 1)
             $('#upload-track-form').css('opacity', 1)
@@ -1678,32 +1636,29 @@
                     slidesToScroll: 5,
                     arrows: true,
                     responsive: [{
-                            breakpoint: 900,
-                            settings: {
-                                slidesToShow: 9,
-                                slidesToScroll: 1,
-                                arrows: false,
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 6,
-                                slidesToScroll: 1,
-                                arrows: false,
-                            }
-                        },
-                        {
-                            breakpoint: 470,
-                            settings: {
-                                slidesToShow: 4,
-                                slidesToScroll: 1,
-                                arrows: false,
-                            }
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 9,
+                            slidesToScroll: 1,
+                            arrows: false,
                         }
-                    ]
+                    }, {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 6,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    }, {
+                        breakpoint: 470,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            arrows: false,
+                        }
+                    }]
                 })
-            }else{
+            } else {
                 $('.track__list_executor__gallery_list').slick({
                     slidesToShow: 6,
                     slidesToScroll: 1,
@@ -1715,23 +1670,21 @@
                             slidesToScroll: 1,
                             arrows: false,
                         }
-                    },
-                        {
-                            breakpoint: 460,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1,
-                                arrows: false,
-                            }
+                    }, {
+                        breakpoint: 460,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: false,
                         }
-                    ]
+                    }]
                 })
             }
             e.currentTarget.classList.add('active')
 
         })
 
-        $('.track__upload_btn').on('click', (e)=>{
+        $('.track__upload_btn').on('click', (e) => {
             e.preventDefault()
             $('.form__add__track_modal').removeClass('show')
             window.scrollTo({
